@@ -42,6 +42,7 @@ public class BarraTitulo extends javax.swing.JPanel {
         bGuardar.setBackground(new java.awt.Color(242, 242, 242));
         bGuardar.setText("guardar");
         bGuardar.setBorder(null);
+        bGuardar.setBorderPainted(false);
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 0;
@@ -54,6 +55,7 @@ public class BarraTitulo extends javax.swing.JPanel {
         bDeshacer.setBackground(new java.awt.Color(242, 242, 242));
         bDeshacer.setText("D");
         bDeshacer.setBorder(null);
+        bDeshacer.setBorderPainted(false);
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
         gridBagConstraints.ipadx = 5;
@@ -64,6 +66,7 @@ public class BarraTitulo extends javax.swing.JPanel {
         bRehacer.setBackground(new java.awt.Color(242, 242, 242));
         bRehacer.setText("R");
         bRehacer.setBorder(null);
+        bRehacer.setBorderPainted(false);
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
         gridBagConstraints.ipadx = 5;
@@ -74,6 +77,7 @@ public class BarraTitulo extends javax.swing.JPanel {
         bNose.setBackground(new java.awt.Color(242, 242, 242));
         bNose.setText("🞃");
         bNose.setBorder(null);
+        bNose.setBorderPainted(false);
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
         gridBagConstraints.ipadx = 5;
@@ -94,6 +98,7 @@ public class BarraTitulo extends javax.swing.JPanel {
         bNose2.setBackground(new java.awt.Color(242, 242, 242));
         bNose2.setText("A");
         bNose2.setBorder(null);
+        bNose2.setBorderPainted(false);
         bNose2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 bNose2ActionPerformed(evt);
@@ -109,6 +114,7 @@ public class BarraTitulo extends javax.swing.JPanel {
         bMinimizar.setBackground(new java.awt.Color(242, 242, 242));
         bMinimizar.setText("A");
         bMinimizar.setBorder(null);
+        bMinimizar.setBorderPainted(false);
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
         gridBagConstraints.ipadx = 5;
@@ -119,6 +125,7 @@ public class BarraTitulo extends javax.swing.JPanel {
         bMaximizar.setBackground(new java.awt.Color(242, 242, 242));
         bMaximizar.setText("A");
         bMaximizar.setBorder(null);
+        bMaximizar.setBorderPainted(false);
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
         gridBagConstraints.ipadx = 5;
@@ -129,6 +136,7 @@ public class BarraTitulo extends javax.swing.JPanel {
         bCerrar.setBackground(new java.awt.Color(242, 242, 242));
         bCerrar.setText("A");
         bCerrar.setBorder(null);
+        bCerrar.setBorderPainted(false);
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
         gridBagConstraints.ipadx = 5;

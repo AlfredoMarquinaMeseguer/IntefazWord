@@ -41,7 +41,7 @@ public class PanelParrafo extends javax.swing.JPanel {
         sangriaDerch = new javax.swing.JButton();
         jSeparator3 = new javax.swing.JSeparator();
         bAaZ = new javax.swing.JButton();
-        jSeparator4 = new javax.swing.JSeparator();
+        jSeparator5 = new javax.swing.JSeparator();
         bMarcasFormato = new javax.swing.JToggleButton();
         linea2 = new javax.swing.JPanel();
         tbAlineadoIzq = new javax.swing.JToggleButton();
@@ -53,8 +53,8 @@ public class PanelParrafo extends javax.swing.JPanel {
         bInterlineadoFlecha = new javax.swing.JButton();
         jSeparator7 = new javax.swing.JSeparator();
         bColorFondo = new javax.swing.JButton();
-        bLineaBorde = new javax.swing.JButton();
         bColorFondoFlecha = new javax.swing.JButton();
+        bLineaBorde = new javax.swing.JButton();
         bLineaBordeFlecha = new javax.swing.JButton();
         etiquetaInferior = new javax.swing.JPanel();
         etiqueta = new javax.swing.JLabel();
@@ -84,11 +84,11 @@ public class PanelParrafo extends javax.swing.JPanel {
         linea1.add(tbOrdenPuntos);
 
         tbOrdenPuntosFlecha.setBackground(new java.awt.Color(242, 242, 242));
-        tbOrdenPuntosFlecha.setText("˅");
+        tbOrdenPuntosFlecha.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/flechaInferior2.png"))); // NOI18N
         tbOrdenPuntosFlecha.setBorderPainted(false);
-        tbOrdenPuntosFlecha.setMaximumSize(new java.awt.Dimension(25, 25));
-        tbOrdenPuntosFlecha.setMinimumSize(new java.awt.Dimension(25, 25));
-        tbOrdenPuntosFlecha.setPreferredSize(new java.awt.Dimension(25, 25));
+        tbOrdenPuntosFlecha.setMaximumSize(new java.awt.Dimension(13, 25));
+        tbOrdenPuntosFlecha.setMinimumSize(new java.awt.Dimension(13, 25));
+        tbOrdenPuntosFlecha.setPreferredSize(new java.awt.Dimension(13, 25));
         linea1.add(tbOrdenPuntosFlecha);
 
         tbOrdenNumeros.setBackground(new java.awt.Color(242, 242, 242));
@@ -105,11 +105,11 @@ public class PanelParrafo extends javax.swing.JPanel {
         linea1.add(tbOrdenNumeros);
 
         tbOrdenNumerosFlecha.setBackground(new java.awt.Color(242, 242, 242));
-        tbOrdenNumerosFlecha.setText("˅");
+        tbOrdenNumerosFlecha.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/flechaInferior2.png"))); // NOI18N
         tbOrdenNumerosFlecha.setBorderPainted(false);
-        tbOrdenNumerosFlecha.setMaximumSize(new java.awt.Dimension(25, 25));
-        tbOrdenNumerosFlecha.setMinimumSize(new java.awt.Dimension(25, 25));
-        tbOrdenNumerosFlecha.setPreferredSize(new java.awt.Dimension(25, 25));
+        tbOrdenNumerosFlecha.setMaximumSize(new java.awt.Dimension(13, 25));
+        tbOrdenNumerosFlecha.setMinimumSize(new java.awt.Dimension(13, 25));
+        tbOrdenNumerosFlecha.setPreferredSize(new java.awt.Dimension(13, 25));
         linea1.add(tbOrdenNumerosFlecha);
 
         bOrdenFormato.setBackground(new java.awt.Color(242, 242, 242));
@@ -121,11 +121,11 @@ public class PanelParrafo extends javax.swing.JPanel {
         linea1.add(bOrdenFormato);
 
         bOrdenFormatoFlecha.setBackground(new java.awt.Color(242, 242, 242));
-        bOrdenFormatoFlecha.setText("˅");
+        bOrdenFormatoFlecha.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/flechaInferior2.png"))); // NOI18N
         bOrdenFormatoFlecha.setBorderPainted(false);
-        bOrdenFormatoFlecha.setMaximumSize(new java.awt.Dimension(25, 25));
-        bOrdenFormatoFlecha.setMinimumSize(new java.awt.Dimension(25, 25));
-        bOrdenFormatoFlecha.setPreferredSize(new java.awt.Dimension(25, 25));
+        bOrdenFormatoFlecha.setMaximumSize(new java.awt.Dimension(13, 25));
+        bOrdenFormatoFlecha.setMinimumSize(new java.awt.Dimension(13, 25));
+        bOrdenFormatoFlecha.setPreferredSize(new java.awt.Dimension(13, 25));
         linea1.add(bOrdenFormatoFlecha);
 
         jSeparator2.setBackground(new java.awt.Color(255, 102, 51));
@@ -136,7 +136,7 @@ public class PanelParrafo extends javax.swing.JPanel {
         linea1.add(jSeparator2);
 
         sangriaIzq.setBackground(new java.awt.Color(242, 242, 242));
-        sangriaIzq.setText("<");
+        sangriaIzq.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Parrafo/sangriaIzq.png"))); // NOI18N
         sangriaIzq.setBorderPainted(false);
         sangriaIzq.setMaximumSize(new java.awt.Dimension(25, 25));
         sangriaIzq.setMinimumSize(new java.awt.Dimension(25, 25));
@@ -165,9 +165,11 @@ public class PanelParrafo extends javax.swing.JPanel {
         bAaZ.setPreferredSize(new java.awt.Dimension(25, 25));
         linea1.add(bAaZ);
 
-        jSeparator4.setForeground(new java.awt.Color(0, 0, 0));
-        jSeparator4.setOrientation(javax.swing.SwingConstants.VERTICAL);
-        linea1.add(jSeparator4);
+        jSeparator5.setForeground(new java.awt.Color(204, 204, 204));
+        jSeparator5.setOrientation(javax.swing.SwingConstants.VERTICAL);
+        jSeparator5.setMinimumSize(new java.awt.Dimension(3, 15));
+        jSeparator5.setPreferredSize(new java.awt.Dimension(3, 15));
+        linea1.add(jSeparator5);
 
         bMarcasFormato.setBackground(new java.awt.Color(242, 242, 242));
         bMarcasFormato.setText("]");
@@ -182,7 +184,7 @@ public class PanelParrafo extends javax.swing.JPanel {
         linea2.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT));
 
         tbAlineadoIzq.setBackground(new java.awt.Color(242, 242, 242));
-        tbAlineadoIzq.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/alinearIzq.png"))); // NOI18N
+        tbAlineadoIzq.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Parrafo/alinearIzq.png"))); // NOI18N
         tbAlineadoIzq.setSelected(true);
         tbAlineadoIzq.setBorderPainted(false);
         tbAlineadoIzq.setMaximumSize(new java.awt.Dimension(25, 25));
@@ -191,7 +193,7 @@ public class PanelParrafo extends javax.swing.JPanel {
         linea2.add(tbAlineadoIzq);
 
         tbAlineadoCentro.setBackground(new java.awt.Color(242, 242, 242));
-        tbAlineadoCentro.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/alinear centro(1).png"))); // NOI18N
+        tbAlineadoCentro.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Parrafo/alinearCentro.png"))); // NOI18N
         tbAlineadoCentro.setToolTipText("");
         tbAlineadoCentro.setBorderPainted(false);
         tbAlineadoCentro.setMaximumSize(new java.awt.Dimension(25, 25));
@@ -230,11 +232,11 @@ public class PanelParrafo extends javax.swing.JPanel {
         linea2.add(bInterlineado);
 
         bInterlineadoFlecha.setBackground(new java.awt.Color(242, 242, 242));
-        bInterlineadoFlecha.setText("˅");
+        bInterlineadoFlecha.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/flechaInferior2.png"))); // NOI18N
         bInterlineadoFlecha.setBorderPainted(false);
-        bInterlineadoFlecha.setMaximumSize(new java.awt.Dimension(25, 25));
-        bInterlineadoFlecha.setMinimumSize(new java.awt.Dimension(25, 25));
-        bInterlineadoFlecha.setPreferredSize(new java.awt.Dimension(25, 25));
+        bInterlineadoFlecha.setMaximumSize(new java.awt.Dimension(13, 25));
+        bInterlineadoFlecha.setMinimumSize(new java.awt.Dimension(13, 25));
+        bInterlineadoFlecha.setPreferredSize(new java.awt.Dimension(13, 25));
         linea2.add(bInterlineadoFlecha);
 
         jSeparator7.setForeground(new java.awt.Color(204, 204, 204));
@@ -251,6 +253,14 @@ public class PanelParrafo extends javax.swing.JPanel {
         bColorFondo.setPreferredSize(new java.awt.Dimension(25, 25));
         linea2.add(bColorFondo);
 
+        bColorFondoFlecha.setBackground(new java.awt.Color(242, 242, 242));
+        bColorFondoFlecha.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/flechaInferior2.png"))); // NOI18N
+        bColorFondoFlecha.setBorderPainted(false);
+        bColorFondoFlecha.setMaximumSize(new java.awt.Dimension(13, 25));
+        bColorFondoFlecha.setMinimumSize(new java.awt.Dimension(13, 25));
+        bColorFondoFlecha.setPreferredSize(new java.awt.Dimension(13, 25));
+        linea2.add(bColorFondoFlecha);
+
         bLineaBorde.setBackground(new java.awt.Color(242, 242, 242));
         bLineaBorde.setText("C");
         bLineaBorde.setBorderPainted(false);
@@ -259,20 +269,12 @@ public class PanelParrafo extends javax.swing.JPanel {
         bLineaBorde.setPreferredSize(new java.awt.Dimension(25, 25));
         linea2.add(bLineaBorde);
 
-        bColorFondoFlecha.setBackground(new java.awt.Color(242, 242, 242));
-        bColorFondoFlecha.setText("˅");
-        bColorFondoFlecha.setBorderPainted(false);
-        bColorFondoFlecha.setMaximumSize(new java.awt.Dimension(25, 25));
-        bColorFondoFlecha.setMinimumSize(new java.awt.Dimension(25, 25));
-        bColorFondoFlecha.setPreferredSize(new java.awt.Dimension(25, 25));
-        linea2.add(bColorFondoFlecha);
-
         bLineaBordeFlecha.setBackground(new java.awt.Color(242, 242, 242));
-        bLineaBordeFlecha.setText("˅");
+        bLineaBordeFlecha.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/flechaInferior2.png"))); // NOI18N
         bLineaBordeFlecha.setBorderPainted(false);
-        bLineaBordeFlecha.setMaximumSize(new java.awt.Dimension(25, 25));
-        bLineaBordeFlecha.setMinimumSize(new java.awt.Dimension(25, 25));
-        bLineaBordeFlecha.setPreferredSize(new java.awt.Dimension(25, 25));
+        bLineaBordeFlecha.setMaximumSize(new java.awt.Dimension(13, 25));
+        bLineaBordeFlecha.setMinimumSize(new java.awt.Dimension(13, 25));
+        bLineaBordeFlecha.setPreferredSize(new java.awt.Dimension(13, 25));
         bLineaBordeFlecha.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 bLineaBordeFlechaActionPerformed(evt);
@@ -287,7 +289,7 @@ public class PanelParrafo extends javax.swing.JPanel {
         etiquetaInferior.setLayout(new java.awt.GridBagLayout());
 
         etiqueta.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        etiqueta.setText("Etiqueta");
+        etiqueta.setText("Párrafo");
         etiqueta.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
         etiqueta.setFocusable(false);
         etiqueta.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -353,7 +355,7 @@ public class PanelParrafo extends javax.swing.JPanel {
     private javax.swing.JLabel jLabel9;
     private javax.swing.JSeparator jSeparator2;
     private javax.swing.JSeparator jSeparator3;
-    private javax.swing.JSeparator jSeparator4;
+    private javax.swing.JSeparator jSeparator5;
     private javax.swing.JSeparator jSeparator6;
     private javax.swing.JSeparator jSeparator7;
     private javax.swing.JPanel linea1;
