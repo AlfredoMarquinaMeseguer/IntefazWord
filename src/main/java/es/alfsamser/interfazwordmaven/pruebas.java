@@ -39,11 +39,35 @@ public class pruebas extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        barraTitulo1 = new es.alfsamser.Plantillas.BarraTitulo();
+        PanelTabsTop = new javax.swing.JTabbedPane();
+        jLabel1 = new javax.swing.JLabel();
+        jPanel1 = new javax.swing.JPanel();
+        panelFuente1 = new es.alfsamser.Plantillas.PanelFuente();
+        jSeparator1 = new javax.swing.JSeparator();
+        panelParrafo1 = new es.alfsamser.Plantillas.PanelParrafo();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        getContentPane().setLayout(new javax.swing.BoxLayout(getContentPane(), javax.swing.BoxLayout.LINE_AXIS));
-        getContentPane().add(barraTitulo1);
+
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel1.setText("File tab");
+        PanelTabsTop.addTab("File", jLabel1);
+
+        jPanel1.setMinimumSize(new java.awt.Dimension(595, 86));
+        jPanel1.setPreferredSize(new java.awt.Dimension(595, 86));
+        jPanel1.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT));
+        jPanel1.add(panelFuente1);
+
+        jSeparator1.setOrientation(javax.swing.SwingConstants.VERTICAL);
+        jSeparator1.setPreferredSize(new java.awt.Dimension(5, 86));
+        jPanel1.add(jSeparator1);
+
+        panelParrafo1.setMinimumSize(new java.awt.Dimension(300, 86));
+        panelParrafo1.setPreferredSize(new java.awt.Dimension(300, 86));
+        jPanel1.add(panelParrafo1);
+
+        PanelTabsTop.addTab("Home", jPanel1);
+
+        getContentPane().add(PanelTabsTop, java.awt.BorderLayout.NORTH);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -94,6 +118,11 @@ public class pruebas extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private es.alfsamser.Plantillas.BarraTitulo barraTitulo1;
+    private javax.swing.JTabbedPane PanelTabsTop;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JSeparator jSeparator1;
+    private es.alfsamser.Plantillas.PanelFuente panelFuente1;
+    private es.alfsamser.Plantillas.PanelParrafo panelParrafo1;
     // End of variables declaration//GEN-END:variables
 }

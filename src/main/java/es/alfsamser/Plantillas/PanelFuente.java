@@ -82,11 +82,17 @@ public class PanelFuente extends javax.swing.JPanel {
         bAumetarTamannoF.setBackground(new java.awt.Color(242, 242, 242));
         bAumetarTamannoF.setText("A");
         bAumetarTamannoF.setBorder(null);
+        bAumetarTamannoF.setMaximumSize(new java.awt.Dimension(25, 25));
+        bAumetarTamannoF.setMinimumSize(new java.awt.Dimension(25, 25));
+        bAumetarTamannoF.setPreferredSize(new java.awt.Dimension(25, 25));
         linea1.add(bAumetarTamannoF);
 
         bDisminuirTamannoF.setBackground(new java.awt.Color(242, 242, 242));
         bDisminuirTamannoF.setText("A");
         bDisminuirTamannoF.setBorder(null);
+        bDisminuirTamannoF.setMaximumSize(new java.awt.Dimension(25, 25));
+        bDisminuirTamannoF.setMinimumSize(new java.awt.Dimension(25, 25));
+        bDisminuirTamannoF.setPreferredSize(new java.awt.Dimension(25, 25));
         bDisminuirTamannoF.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 bDisminuirTamannoFActionPerformed(evt);
@@ -104,8 +110,9 @@ public class PanelFuente extends javax.swing.JPanel {
         bCambiarMayus.setBorder(null);
         bCambiarMayus.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         bCambiarMayus.setMargin(new java.awt.Insets(0, 0, 0, 0));
-        bCambiarMayus.setMinimumSize(new java.awt.Dimension(25, 16));
-        bCambiarMayus.setPreferredSize(new java.awt.Dimension(24, 22));
+        bCambiarMayus.setMaximumSize(new java.awt.Dimension(38, 25));
+        bCambiarMayus.setMinimumSize(new java.awt.Dimension(38, 25));
+        bCambiarMayus.setPreferredSize(new java.awt.Dimension(38, 25));
         linea1.add(bCambiarMayus);
 
         jSeparator8.setOrientation(javax.swing.SwingConstants.VERTICAL);
@@ -116,6 +123,9 @@ public class PanelFuente extends javax.swing.JPanel {
         bBorrarFormato.setBackground(new java.awt.Color(242, 242, 242));
         bBorrarFormato.setText("A");
         bBorrarFormato.setBorder(null);
+        bBorrarFormato.setMaximumSize(new java.awt.Dimension(25, 25));
+        bBorrarFormato.setMinimumSize(new java.awt.Dimension(25, 25));
+        bBorrarFormato.setPreferredSize(new java.awt.Dimension(25, 25));
         bBorrarFormato.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 bBorrarFormatoActionPerformed(evt);
@@ -128,18 +138,29 @@ public class PanelFuente extends javax.swing.JPanel {
         liena2.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 0, 5));
 
         tbNegrita.setBackground(new java.awt.Color(242, 242, 242));
+        tbNegrita.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         tbNegrita.setText("B");
         tbNegrita.setBorder(null);
+        tbNegrita.setMaximumSize(new java.awt.Dimension(25, 25));
+        tbNegrita.setMinimumSize(new java.awt.Dimension(25, 25));
+        tbNegrita.setPreferredSize(new java.awt.Dimension(25, 25));
         liena2.add(tbNegrita);
 
         tbCursiva.setBackground(new java.awt.Color(242, 242, 242));
+        tbCursiva.setFont(new java.awt.Font("Arial", 2, 12)); // NOI18N
         tbCursiva.setText("I");
         tbCursiva.setBorder(null);
+        tbCursiva.setMaximumSize(new java.awt.Dimension(25, 25));
+        tbCursiva.setMinimumSize(new java.awt.Dimension(25, 25));
+        tbCursiva.setPreferredSize(new java.awt.Dimension(25, 25));
         liena2.add(tbCursiva);
 
         tbSubrayado.setBackground(new java.awt.Color(242, 242, 242));
         tbSubrayado.setText("U");
         tbSubrayado.setBorder(null);
+        tbSubrayado.setMaximumSize(new java.awt.Dimension(25, 25));
+        tbSubrayado.setMinimumSize(new java.awt.Dimension(25, 25));
+        tbSubrayado.setPreferredSize(new java.awt.Dimension(25, 25));
         tbSubrayado.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 tbSubrayadoActionPerformed(evt);
@@ -151,9 +172,9 @@ public class PanelFuente extends javax.swing.JPanel {
         tbSubrayadoFlecha.setText("🞃");
         tbSubrayadoFlecha.setBorder(null);
         tbSubrayadoFlecha.setMargin(new java.awt.Insets(0, 0, 0, 0));
-        tbSubrayadoFlecha.setMaximumSize(new java.awt.Dimension(12, 24));
-        tbSubrayadoFlecha.setMinimumSize(new java.awt.Dimension(12, 24));
-        tbSubrayadoFlecha.setPreferredSize(new java.awt.Dimension(12, 24));
+        tbSubrayadoFlecha.setMaximumSize(new java.awt.Dimension(13, 25));
+        tbSubrayadoFlecha.setMinimumSize(new java.awt.Dimension(13, 25));
+        tbSubrayadoFlecha.setPreferredSize(new java.awt.Dimension(13, 25));
         tbSubrayadoFlecha.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 tbSubrayadoFlechaActionPerformed(evt);
@@ -164,11 +185,17 @@ public class PanelFuente extends javax.swing.JPanel {
         tbTachado.setBackground(new java.awt.Color(242, 242, 242));
         tbTachado.setText("T");
         tbTachado.setBorder(null);
+        tbTachado.setMaximumSize(new java.awt.Dimension(25, 25));
+        tbTachado.setMinimumSize(new java.awt.Dimension(25, 25));
+        tbTachado.setPreferredSize(new java.awt.Dimension(25, 25));
         liena2.add(tbTachado);
 
         tbSubIndice.setBackground(new java.awt.Color(242, 242, 242));
         tbSubIndice.setText("b");
         tbSubIndice.setBorder(null);
+        tbSubIndice.setMaximumSize(new java.awt.Dimension(25, 25));
+        tbSubIndice.setMinimumSize(new java.awt.Dimension(25, 25));
+        tbSubIndice.setPreferredSize(new java.awt.Dimension(25, 25));
         tbSubIndice.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 tbSubIndiceActionPerformed(evt);
@@ -179,6 +206,9 @@ public class PanelFuente extends javax.swing.JPanel {
         tbSuperIndice.setBackground(new java.awt.Color(242, 242, 242));
         tbSuperIndice.setText("p");
         tbSuperIndice.setBorder(null);
+        tbSuperIndice.setMaximumSize(new java.awt.Dimension(25, 25));
+        tbSuperIndice.setMinimumSize(new java.awt.Dimension(25, 25));
+        tbSuperIndice.setPreferredSize(new java.awt.Dimension(25, 25));
         liena2.add(tbSuperIndice);
 
         jSeparator2.setOrientation(javax.swing.SwingConstants.VERTICAL);
@@ -190,23 +220,26 @@ public class PanelFuente extends javax.swing.JPanel {
         bEfectos.setText("A 🞃");
         bEfectos.setBorder(null);
         bEfectos.setMargin(new java.awt.Insets(0, 0, 0, 0));
-        bEfectos.setMaximumSize(new java.awt.Dimension(23, 23));
-        bEfectos.setMinimumSize(new java.awt.Dimension(23, 23));
-        bEfectos.setPreferredSize(new java.awt.Dimension(23, 23));
+        bEfectos.setMaximumSize(new java.awt.Dimension(38, 25));
+        bEfectos.setMinimumSize(new java.awt.Dimension(38, 25));
+        bEfectos.setPreferredSize(new java.awt.Dimension(38, 25));
         liena2.add(bEfectos);
 
         bResaltado.setBackground(new java.awt.Color(242, 242, 242));
         bResaltado.setText("S");
         bResaltado.setBorder(null);
+        bResaltado.setMaximumSize(new java.awt.Dimension(25, 25));
+        bResaltado.setMinimumSize(new java.awt.Dimension(25, 25));
+        bResaltado.setPreferredSize(new java.awt.Dimension(25, 25));
         liena2.add(bResaltado);
 
         bResaltadoFlecha.setBackground(new java.awt.Color(242, 242, 242));
         bResaltadoFlecha.setText("🞃");
         bResaltadoFlecha.setBorder(null);
         bResaltadoFlecha.setMargin(new java.awt.Insets(0, 0, 0, 0));
-        bResaltadoFlecha.setMaximumSize(new java.awt.Dimension(12, 24));
-        bResaltadoFlecha.setMinimumSize(new java.awt.Dimension(12, 24));
-        bResaltadoFlecha.setPreferredSize(new java.awt.Dimension(12, 24));
+        bResaltadoFlecha.setMaximumSize(new java.awt.Dimension(13, 25));
+        bResaltadoFlecha.setMinimumSize(new java.awt.Dimension(13, 25));
+        bResaltadoFlecha.setPreferredSize(new java.awt.Dimension(13, 25));
         bResaltadoFlecha.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 bResaltadoFlechaActionPerformed(evt);
@@ -217,15 +250,18 @@ public class PanelFuente extends javax.swing.JPanel {
         bColorLetra.setBackground(new java.awt.Color(242, 242, 242));
         bColorLetra.setText("S");
         bColorLetra.setBorder(null);
+        bColorLetra.setMaximumSize(new java.awt.Dimension(25, 25));
+        bColorLetra.setMinimumSize(new java.awt.Dimension(25, 25));
+        bColorLetra.setPreferredSize(new java.awt.Dimension(25, 25));
         liena2.add(bColorLetra);
 
         bColorLetraFlecha.setBackground(new java.awt.Color(242, 242, 242));
         bColorLetraFlecha.setText("🞃");
         bColorLetraFlecha.setBorder(null);
-        bColorLetraFlecha.setMargin(new java.awt.Insets(3, 0, 3, 0));
-        bColorLetraFlecha.setMaximumSize(new java.awt.Dimension(12, 24));
-        bColorLetraFlecha.setMinimumSize(new java.awt.Dimension(12, 24));
-        bColorLetraFlecha.setPreferredSize(new java.awt.Dimension(12, 24));
+        bColorLetraFlecha.setMargin(new java.awt.Insets(0, 0, 0, 0));
+        bColorLetraFlecha.setMaximumSize(new java.awt.Dimension(13, 25));
+        bColorLetraFlecha.setMinimumSize(new java.awt.Dimension(13, 25));
+        bColorLetraFlecha.setPreferredSize(new java.awt.Dimension(13, 25));
         liena2.add(bColorLetraFlecha);
 
         contenido.add(liena2);
