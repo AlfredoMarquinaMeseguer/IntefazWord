@@ -70,6 +70,9 @@
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="f2" green="f2" red="f2" type="rgb"/>
                 </Property>
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="6c" green="6c" red="70" type="rgb"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="&lt;html&gt;A&lt;sup&gt;&lt;font color=#377abe&gt;\ud83d\udf81&lt;/font&gt;&lt;/sup&gt;&lt;/html&gt;" containsInvalidXMLChars="true"/>
                 <Property name="toolTipText" type="java.lang.String" value=""/>
                 <Property name="alignmentY" type="float" value="0.0"/>
@@ -94,6 +97,9 @@
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="f2" green="f2" red="f2" type="rgb"/>
+                </Property>
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="6c" green="6c" red="70" type="rgb"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="&lt;html&gt;&lt;font size=&quot;-1&quot;&gt;A&lt;/font&gt;&lt;sup&gt;&lt;font color=#377abe&gt;\ud83d\udf83&lt;/font&gt;&lt;/sup&gt;&lt;/html&gt;" containsInvalidXMLChars="true"/>
                 <Property name="alignmentY" type="float" value="0.0"/>
@@ -132,6 +138,9 @@
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="f2" green="f2" red="f2" type="rgb"/>
+                </Property>
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="6c" green="6c" red="70" type="rgb"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="&lt;html&gt;&lt;b&gt;Aa &lt;/b&gt;\ud83d\udf83&lt;/html&gt;" containsInvalidXMLChars="true"/>
                 <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -205,6 +214,9 @@
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Arial" size="12" style="1"/>
                 </Property>
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="6c" green="6c" red="70" type="rgb"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="B"/>
                 <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                   <Border info="null"/>
@@ -228,6 +240,9 @@
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Arial" size="12" style="2"/>
                 </Property>
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="6c" green="6c" red="70" type="rgb"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="I"/>
                 <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                   <Border info="null"/>
@@ -247,6 +262,9 @@
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="f2" green="f2" red="f2" type="rgb"/>
+                </Property>
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="6c" green="6c" red="70" type="rgb"/>
                 </Property>
                 <Property name="selected" type="boolean" value="true"/>
                 <Property name="text" type="java.lang.String" value="&lt;html&gt;&lt;u&gt;U&lt;/u&gt;&lt;/html&gt;"/>
@@ -272,6 +290,9 @@
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="f2" green="f2" red="f2" type="rgb"/>
+                </Property>
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="6c" green="6c" red="70" type="rgb"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="\ud83d\udf83" containsInvalidXMLChars="true"/>
                 <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -321,6 +342,9 @@
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="f2" green="f2" red="f2" type="rgb"/>
                 </Property>
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="6c" green="6c" red="70" type="rgb"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="&lt;html&gt;&lt;b&gt;x&lt;sub&gt;&lt;font color=#377abe size=&quot;-2&quot;&gt;2&lt;/font&gt;&lt;/sub&gt;&lt;/b&gt;&lt;/html&gt;"/>
                 <Property name="toolTipText" type="java.lang.String" value=""/>
                 <Property name="alignmentY" type="float" value="0.0"/>
@@ -347,6 +371,9 @@
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="f2" green="f2" red="f2" type="rgb"/>
+                </Property>
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="6c" green="6c" red="70" type="rgb"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="&lt;html&gt;&lt;b&gt;x&lt;sup&gt;&lt;font color=#377abe size=&quot;-2&quot;&gt;2&lt;/font&gt;&lt;/sup&gt;&lt;/b&gt;&lt;/html&gt;"/>
                 <Property name="alignmentY" type="float" value="0.0"/>
@@ -380,6 +407,9 @@
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="f2" green="f2" red="f2" type="rgb"/>
+                </Property>
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="6c" green="6c" red="70" type="rgb"/>
                 </Property>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/images/Fuente/efectosTexto.png"/>
@@ -429,6 +459,9 @@
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="f2" green="f2" red="f2" type="rgb"/>
                 </Property>
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="6c" green="6c" red="70" type="rgb"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="\ud83d\udf83" containsInvalidXMLChars="true"/>
                 <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                   <Border info="null"/>
@@ -477,6 +510,9 @@
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="f2" green="f2" red="f2" type="rgb"/>
                 </Property>
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="6c" green="6c" red="70" type="rgb"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="\ud83d\udf83" containsInvalidXMLChars="true"/>
                 <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                   <Border info="null"/>
@@ -510,6 +546,9 @@
       <SubComponents>
         <Component class="javax.swing.JLabel" name="etiqueta">
           <Properties>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="6c" green="6c" red="70" type="rgb"/>
+            </Property>
             <Property name="horizontalAlignment" type="int" value="0"/>
             <Property name="text" type="java.lang.String" value="Fuente"/>
             <Property name="verticalAlignment" type="int" value="3"/>
@@ -530,7 +569,9 @@
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="f2" green="f2" red="f2" type="rgb"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="O"/>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/images/flechaInferiorIzq8.png"/>
+            </Property>
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="null"/>
             </Property>
@@ -541,7 +582,7 @@
           </Events>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout" value="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout$GridBagConstraintsDescription">
-              <GridBagConstraints gridX="1" gridY="0" gridWidth="1" gridHeight="1" fill="1" ipadX="0" ipadY="0" insetsTop="0" insetsLeft="0" insetsBottom="0" insetsRight="0" anchor="1792" weightX="0.0" weightY="0.0"/>
+              <GridBagConstraints gridX="1" gridY="0" gridWidth="1" gridHeight="1" fill="1" ipadX="0" ipadY="0" insetsTop="0" insetsLeft="0" insetsBottom="0" insetsRight="3" anchor="1792" weightX="0.0" weightY="0.0"/>
             </Constraint>
           </Constraints>
         </Component>

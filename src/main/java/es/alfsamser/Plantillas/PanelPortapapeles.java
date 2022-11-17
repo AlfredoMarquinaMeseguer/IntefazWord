@@ -44,6 +44,7 @@ public class PanelPortapapeles extends javax.swing.JPanel {
         contenido.setLayout(new java.awt.GridBagLayout());
 
         jButton1.setBackground(new java.awt.Color(241, 241, 241));
+        jButton1.setForeground(new java.awt.Color(112, 108, 108));
         jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Portapapeles/Pegar36x36.png"))); // NOI18N
         jButton1.setText("Pegar");
         jButton1.setBorder(null);
@@ -59,6 +60,7 @@ public class PanelPortapapeles extends javax.swing.JPanel {
         contenido.add(jButton1, gridBagConstraints);
 
         jButton2.setBackground(new java.awt.Color(241, 241, 241));
+        jButton2.setForeground(new java.awt.Color(112, 108, 108));
         jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Portapapeles/cortar18x18.png"))); // NOI18N
         jButton2.setText("Cortar");
         jButton2.setBorder(null);
@@ -72,6 +74,7 @@ public class PanelPortapapeles extends javax.swing.JPanel {
         contenido.add(jButton2, gridBagConstraints);
 
         jButton3.setBackground(new java.awt.Color(241, 241, 241));
+        jButton3.setForeground(new java.awt.Color(112, 108, 108));
         jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Portapapeles/copiar18x18.png"))); // NOI18N
         jButton3.setText("Copiar");
         jButton3.setBorder(null);
@@ -88,6 +91,7 @@ public class PanelPortapapeles extends javax.swing.JPanel {
         contenido.add(jButton3, gridBagConstraints);
 
         jButton4.setBackground(new java.awt.Color(241, 241, 241));
+        jButton4.setForeground(new java.awt.Color(112, 108, 108));
         jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Portapapeles/copiarFormato18x18.png"))); // NOI18N
         jButton4.setText("CopiarFormato");
         jButton4.setBorder(null);
@@ -108,6 +112,7 @@ public class PanelPortapapeles extends javax.swing.JPanel {
         etiquetaInferior.setLayout(new java.awt.GridBagLayout());
 
         etiqueta.setBackground(new java.awt.Color(241, 241, 241));
+        etiqueta.setForeground(new java.awt.Color(112, 108, 108));
         etiqueta.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         etiqueta.setText("Portapapeles");
         etiqueta.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
@@ -123,7 +128,7 @@ public class PanelPortapapeles extends javax.swing.JPanel {
         gridBagConstraints.weightx = 1.0;
         etiquetaInferior.add(etiqueta, gridBagConstraints);
 
-        bIcono.setText("O");
+        bIcono.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/flechaInferiorIzq8.png"))); // NOI18N
         bIcono.setBorder(null);
         bIcono.setContentAreaFilled(false);
         bIcono.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -132,6 +137,7 @@ public class PanelPortapapeles extends javax.swing.JPanel {
         gridBagConstraints.gridx = 1;
         gridBagConstraints.gridy = 0;
         gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+        gridBagConstraints.ipadx = 3;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.BELOW_BASELINE;
         etiquetaInferior.add(bIcono, gridBagConstraints);
 

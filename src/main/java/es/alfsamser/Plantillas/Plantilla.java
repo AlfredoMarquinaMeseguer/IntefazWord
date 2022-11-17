@@ -36,6 +36,7 @@ public class Plantilla extends javax.swing.JPanel {
 
         setLayout(new java.awt.BorderLayout());
 
+        placeHolder.setForeground(new java.awt.Color(112, 108, 108));
         placeHolder.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         placeHolder.setText("Aquí va el contenido del panel");
         placeHolder.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -47,20 +48,21 @@ public class Plantilla extends javax.swing.JPanel {
             .addGroup(contenidoLayout.createSequentialGroup()
                 .addGap(107, 107, 107)
                 .addComponent(placeHolder)
-                .addContainerGap(103, Short.MAX_VALUE))
+                .addContainerGap(101, Short.MAX_VALUE))
         );
         contenidoLayout.setVerticalGroup(
             contenidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(contenidoLayout.createSequentialGroup()
                 .addGap(121, 121, 121)
                 .addComponent(placeHolder)
-                .addContainerGap(50, Short.MAX_VALUE))
+                .addContainerGap(51, Short.MAX_VALUE))
         );
 
         add(contenido, java.awt.BorderLayout.CENTER);
 
         etiquetaInferior.setLayout(new java.awt.GridBagLayout());
 
+        etiqueta.setForeground(new java.awt.Color(112, 108, 108));
         etiqueta.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         etiqueta.setText("Etiqueta");
         etiqueta.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
@@ -76,13 +78,14 @@ public class Plantilla extends javax.swing.JPanel {
         etiquetaInferior.add(etiqueta, gridBagConstraints);
 
         bIcono.setBackground(new java.awt.Color(242, 242, 242));
-        bIcono.setText("O");
+        bIcono.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/flechaInferiorIzq8.png"))); // NOI18N
         bIcono.setBorder(null);
         bIcono.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
         gridBagConstraints.gridy = 0;
         gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+        gridBagConstraints.ipadx = 5;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.BELOW_BASELINE;
         etiquetaInferior.add(bIcono, gridBagConstraints);
 

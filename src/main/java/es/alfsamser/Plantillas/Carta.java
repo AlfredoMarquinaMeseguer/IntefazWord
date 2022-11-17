@@ -26,61 +26,107 @@ public class Carta extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jTabbedPane1 = new javax.swing.JTabbedPane();
-        jLabel1 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
+        jTabbedPane1 = new javax.swing.JTabbedPane();
+        lArchivo = new javax.swing.JLabel();
+        pHome = new javax.swing.JPanel();
         panelPortapapeles1 = new es.alfsamser.Plantillas.PanelPortapapeles();
         jSeparator1 = new javax.swing.JSeparator();
         panelFuente1 = new es.alfsamser.Plantillas.PanelFuente();
         jSeparator2 = new javax.swing.JSeparator();
-        panelParrafo1 = new es.alfsamser.Plantillas.PanelParrafo();
+        panelParrafo2 = new es.alfsamser.Plantillas.PanelParrafo();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        pVista = new javax.swing.JPanel();
 
         setLayout(new javax.swing.BoxLayout(this, javax.swing.BoxLayout.LINE_AXIS));
 
         jTabbedPane1.setBackground(new java.awt.Color(55, 122, 190));
         jTabbedPane1.setForeground(new java.awt.Color(255, 255, 255));
 
-        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setText("Archivo");
-        jTabbedPane1.addTab("Archivo", jLabel1);
+        lArchivo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lArchivo.setText("Archivo");
+        jTabbedPane1.addTab("Archivo", lArchivo);
 
-        jPanel1.setLayout(new javax.swing.BoxLayout(jPanel1, javax.swing.BoxLayout.LINE_AXIS));
-        jPanel1.add(panelPortapapeles1);
+        java.awt.FlowLayout flowLayout1 = new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 0, 0);
+        flowLayout1.setAlignOnBaseline(true);
+        pHome.setLayout(flowLayout1);
+
+        panelPortapapeles1.setMinimumSize(new java.awt.Dimension(158, 90));
+        panelPortapapeles1.setPreferredSize(new java.awt.Dimension(211, 90));
+        pHome.add(panelPortapapeles1);
 
         jSeparator1.setOrientation(javax.swing.SwingConstants.VERTICAL);
         jSeparator1.setEnabled(false);
-        jSeparator1.setMaximumSize(new java.awt.Dimension(10, 80));
+        jSeparator1.setMaximumSize(new java.awt.Dimension(10, 90));
         jSeparator1.setMinimumSize(new java.awt.Dimension(10, 30));
         jSeparator1.setName(""); // NOI18N
-        jSeparator1.setPreferredSize(new java.awt.Dimension(10, 60));
+        jSeparator1.setPreferredSize(new java.awt.Dimension(10, 85));
         jSeparator1.setRequestFocusEnabled(false);
-        jPanel1.add(jSeparator1);
-        jPanel1.add(panelFuente1);
+        pHome.add(jSeparator1);
+
+        panelFuente1.setMinimumSize(new java.awt.Dimension(297, 90));
+        panelFuente1.setPreferredSize(new java.awt.Dimension(280, 90));
+        pHome.add(panelFuente1);
 
         jSeparator2.setOrientation(javax.swing.SwingConstants.VERTICAL);
         jSeparator2.setAlignmentX(0.0F);
         jSeparator2.setEnabled(false);
-        jSeparator2.setMaximumSize(new java.awt.Dimension(10, 80));
+        jSeparator2.setMaximumSize(new java.awt.Dimension(10, 90));
         jSeparator2.setMinimumSize(new java.awt.Dimension(10, 30));
         jSeparator2.setName(""); // NOI18N
-        jSeparator2.setPreferredSize(new java.awt.Dimension(10, 60));
+        jSeparator2.setPreferredSize(new java.awt.Dimension(10, 85));
         jSeparator2.setRequestFocusEnabled(false);
-        jPanel1.add(jSeparator2);
-        jPanel1.add(panelParrafo1);
+        pHome.add(jSeparator2);
 
-        jTabbedPane1.addTab("Home", jPanel1);
+        panelParrafo2.setMinimumSize(new java.awt.Dimension(254, 90));
+        panelParrafo2.setPreferredSize(new java.awt.Dimension(254, 90));
+        pHome.add(panelParrafo2);
+
+        jTabbedPane1.addTab("Inicio", pHome);
+
+        jLabel6.setText("jLabel6");
+        jTabbedPane1.addTab("Insertar", jLabel6);
+
+        jLabel1.setText("jLabel1");
+        jTabbedPane1.addTab("Diseño", jLabel1);
+
+        jLabel2.setText("jLabel2");
+        jTabbedPane1.addTab("Disposición", jLabel2);
+
+        jLabel3.setText("jLabel3");
+        jTabbedPane1.addTab("Referencias", jLabel3);
+
+        jLabel4.setText("jLabel4");
+        jTabbedPane1.addTab("Correspondecias", jLabel4);
+
+        jLabel5.setText("jLabel5");
+        jTabbedPane1.addTab("Revisar", jLabel5);
+        jTabbedPane1.addTab("Vista", pVista);
 
         add(jTabbedPane1);
     }// </editor-fold>//GEN-END:initComponents
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator2;
     private javax.swing.JTabbedPane jTabbedPane1;
+    private javax.swing.JLabel lArchivo;
+    private javax.swing.JPanel pHome;
+    private javax.swing.JPanel pVista;
     private es.alfsamser.Plantillas.PanelFuente panelFuente1;
-    private es.alfsamser.Plantillas.PanelParrafo panelParrafo1;
+    private es.alfsamser.Plantillas.PanelParrafo panelParrafo2;
     private es.alfsamser.Plantillas.PanelPortapapeles panelPortapapeles1;
     // End of variables declaration//GEN-END:variables
 }

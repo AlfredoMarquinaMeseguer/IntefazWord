@@ -65,8 +65,8 @@ public class PanelParrafo extends javax.swing.JPanel {
         etiqueta = new javax.swing.JLabel();
         bIcono = new javax.swing.JButton();
 
-        setMinimumSize(new java.awt.Dimension(254, 120));
-        setPreferredSize(new java.awt.Dimension(254, 120));
+        setMinimumSize(new java.awt.Dimension(254, 100));
+        setPreferredSize(new java.awt.Dimension(254, 100));
         setLayout(new java.awt.BorderLayout());
 
         contenido.setLayout(new javax.swing.BoxLayout(contenido, javax.swing.BoxLayout.Y_AXIS));
@@ -90,6 +90,7 @@ public class PanelParrafo extends javax.swing.JPanel {
         linea1.add(tbOrdenPuntos);
 
         tbOrdenPuntosFlecha.setBackground(new java.awt.Color(242, 242, 242));
+        tbOrdenPuntosFlecha.setForeground(new java.awt.Color(112, 108, 108));
         tbOrdenPuntosFlecha.setText("🞃");
         tbOrdenPuntosFlecha.setBorder(null);
         tbOrdenPuntosFlecha.setBorderPainted(false);
@@ -116,6 +117,7 @@ public class PanelParrafo extends javax.swing.JPanel {
         linea1.add(tbOrdenNumeros);
 
         tbOrdenNumerosFlecha.setBackground(new java.awt.Color(242, 242, 242));
+        tbOrdenNumerosFlecha.setForeground(new java.awt.Color(112, 108, 108));
         tbOrdenNumerosFlecha.setText("🞃");
         tbOrdenNumerosFlecha.setBorder(null);
         tbOrdenNumerosFlecha.setBorderPainted(false);
@@ -136,6 +138,7 @@ public class PanelParrafo extends javax.swing.JPanel {
         linea1.add(bOrdenFormato);
 
         bOrdenFormatoFlecha.setBackground(new java.awt.Color(242, 242, 242));
+        bOrdenFormatoFlecha.setForeground(new java.awt.Color(112, 108, 108));
         bOrdenFormatoFlecha.setText("🞃");
         bOrdenFormatoFlecha.setBorder(null);
         bOrdenFormatoFlecha.setBorderPainted(false);
@@ -194,7 +197,10 @@ public class PanelParrafo extends javax.swing.JPanel {
         linea1.add(jSeparator5);
 
         bMarcasFormato.setBackground(new java.awt.Color(242, 242, 242));
-        bMarcasFormato.setText("]");
+        bMarcasFormato.setFont(new java.awt.Font("Calibri", 0, 12)); // NOI18N
+        bMarcasFormato.setForeground(new java.awt.Color(112, 108, 108));
+        bMarcasFormato.setText("<html><font size =\"+1\" color=#706c6c>¶</font></html>");
+        bMarcasFormato.setToolTipText("");
         bMarcasFormato.setBorder(null);
         bMarcasFormato.setBorderPainted(false);
         bMarcasFormato.setMaximumSize(new java.awt.Dimension(25, 25));
@@ -256,7 +262,8 @@ public class PanelParrafo extends javax.swing.JPanel {
         linea2.add(jSeparator6);
 
         bInterlineado.setBackground(new java.awt.Color(242, 242, 242));
-        bInterlineado.setText("↨");
+        bInterlineado.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Parrafo/interlineado.png"))); // NOI18N
+        bInterlineado.setToolTipText("");
         bInterlineado.setBorder(null);
         bInterlineado.setBorderPainted(false);
         bInterlineado.setMaximumSize(new java.awt.Dimension(25, 25));
@@ -297,6 +304,7 @@ public class PanelParrafo extends javax.swing.JPanel {
         linea2.add(bColorFondo);
 
         bColorFondoFlecha.setBackground(new java.awt.Color(242, 242, 242));
+        bColorFondoFlecha.setForeground(new java.awt.Color(112, 108, 108));
         bColorFondoFlecha.setText("🞃");
         bColorFondoFlecha.setBorder(null);
         bColorFondoFlecha.setBorderPainted(false);
@@ -322,6 +330,7 @@ public class PanelParrafo extends javax.swing.JPanel {
         linea2.add(bLineaBorde);
 
         bLineaBordeFlecha.setBackground(new java.awt.Color(242, 242, 242));
+        bLineaBordeFlecha.setForeground(new java.awt.Color(112, 108, 108));
         bLineaBordeFlecha.setText("🞃");
         bLineaBordeFlecha.setBorder(null);
         bLineaBordeFlecha.setBorderPainted(false);
@@ -342,12 +351,14 @@ public class PanelParrafo extends javax.swing.JPanel {
 
         etiquetaInferior.setLayout(new java.awt.GridBagLayout());
 
+        etiqueta.setForeground(new java.awt.Color(112, 108, 108));
         etiqueta.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         etiqueta.setText("Párrafo");
         etiqueta.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
         etiqueta.setFocusable(false);
         etiqueta.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         etiqueta.setPreferredSize(new java.awt.Dimension(200, 15));
+        etiqueta.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 0;
@@ -357,7 +368,7 @@ public class PanelParrafo extends javax.swing.JPanel {
         etiquetaInferior.add(etiqueta, gridBagConstraints);
 
         bIcono.setBackground(new java.awt.Color(242, 242, 242));
-        bIcono.setText("O");
+        bIcono.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/flechaInferiorIzq8.png"))); // NOI18N
         bIcono.setBorder(null);
         bIcono.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         bIcono.addActionListener(new java.awt.event.ActionListener() {
@@ -370,6 +381,7 @@ public class PanelParrafo extends javax.swing.JPanel {
         gridBagConstraints.gridy = 0;
         gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.BELOW_BASELINE;
+        gridBagConstraints.insets = new java.awt.Insets(0, 0, 0, 3);
         etiquetaInferior.add(bIcono, gridBagConstraints);
 
         add(etiquetaInferior, java.awt.BorderLayout.SOUTH);

@@ -77,6 +77,7 @@ public class PanelFuente extends javax.swing.JPanel {
         linea1.add(cbTamannoF);
 
         bAumetarTamannoF.setBackground(new java.awt.Color(242, 242, 242));
+        bAumetarTamannoF.setForeground(new java.awt.Color(112, 108, 108));
         bAumetarTamannoF.setText("<html>A<sup><font color=#377abe>🞁</font></sup></html>");
         bAumetarTamannoF.setToolTipText("");
         bAumetarTamannoF.setAlignmentY(0.0F);
@@ -90,6 +91,7 @@ public class PanelFuente extends javax.swing.JPanel {
         linea1.add(bAumetarTamannoF);
 
         bDisminuirTamannoF.setBackground(new java.awt.Color(242, 242, 242));
+        bDisminuirTamannoF.setForeground(new java.awt.Color(112, 108, 108));
         bDisminuirTamannoF.setText("<html><font size=\"-1\">A</font><sup><font color=#377abe>🞃</font></sup></html>");
         bDisminuirTamannoF.setAlignmentY(0.0F);
         bDisminuirTamannoF.setBorder(null);
@@ -112,6 +114,7 @@ public class PanelFuente extends javax.swing.JPanel {
         linea1.add(jSeparator1);
 
         bCambiarMayus.setBackground(new java.awt.Color(242, 242, 242));
+        bCambiarMayus.setForeground(new java.awt.Color(112, 108, 108));
         bCambiarMayus.setText("<html><b>Aa </b>🞃</html>");
         bCambiarMayus.setBorder(null);
         bCambiarMayus.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -145,6 +148,7 @@ public class PanelFuente extends javax.swing.JPanel {
 
         tbNegrita.setBackground(new java.awt.Color(242, 242, 242));
         tbNegrita.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        tbNegrita.setForeground(new java.awt.Color(112, 108, 108));
         tbNegrita.setText("B");
         tbNegrita.setBorder(null);
         tbNegrita.setMaximumSize(new java.awt.Dimension(25, 25));
@@ -154,6 +158,7 @@ public class PanelFuente extends javax.swing.JPanel {
 
         tbCursiva.setBackground(new java.awt.Color(242, 242, 242));
         tbCursiva.setFont(new java.awt.Font("Arial", 2, 12)); // NOI18N
+        tbCursiva.setForeground(new java.awt.Color(112, 108, 108));
         tbCursiva.setText("I");
         tbCursiva.setBorder(null);
         tbCursiva.setMaximumSize(new java.awt.Dimension(25, 25));
@@ -162,6 +167,7 @@ public class PanelFuente extends javax.swing.JPanel {
         liena2.add(tbCursiva);
 
         tbSubrayado.setBackground(new java.awt.Color(242, 242, 242));
+        tbSubrayado.setForeground(new java.awt.Color(112, 108, 108));
         tbSubrayado.setSelected(true);
         tbSubrayado.setText("<html><u>U</u></html>");
         tbSubrayado.setActionCommand("<html><inst>U</inst></html>");
@@ -177,6 +183,7 @@ public class PanelFuente extends javax.swing.JPanel {
         liena2.add(tbSubrayado);
 
         tbSubrayadoFlecha.setBackground(new java.awt.Color(242, 242, 242));
+        tbSubrayadoFlecha.setForeground(new java.awt.Color(112, 108, 108));
         tbSubrayadoFlecha.setText("🞃");
         tbSubrayadoFlecha.setBorder(null);
         tbSubrayadoFlecha.setMargin(new java.awt.Insets(0, 0, 0, 0));
@@ -199,6 +206,7 @@ public class PanelFuente extends javax.swing.JPanel {
         liena2.add(tbTachado);
 
         tbSubIndice.setBackground(new java.awt.Color(242, 242, 242));
+        tbSubIndice.setForeground(new java.awt.Color(112, 108, 108));
         tbSubIndice.setText("<html><b>x<sub><font color=#377abe size=\"-2\">2</font></sub></b></html>");
         tbSubIndice.setToolTipText("");
         tbSubIndice.setAlignmentY(0.0F);
@@ -216,6 +224,7 @@ public class PanelFuente extends javax.swing.JPanel {
         liena2.add(tbSubIndice);
 
         tbSuperIndice.setBackground(new java.awt.Color(242, 242, 242));
+        tbSuperIndice.setForeground(new java.awt.Color(112, 108, 108));
         tbSuperIndice.setText("<html><b>x<sup><font color=#377abe size=\"-2\">2</font></sup></b></html>");
         tbSuperIndice.setAlignmentY(0.0F);
         tbSuperIndice.setBorder(null);
@@ -231,6 +240,7 @@ public class PanelFuente extends javax.swing.JPanel {
         liena2.add(jSeparator2);
 
         bEfectos.setBackground(new java.awt.Color(242, 242, 242));
+        bEfectos.setForeground(new java.awt.Color(112, 108, 108));
         bEfectos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Fuente/efectosTexto.png"))); // NOI18N
         bEfectos.setText("🞃");
         bEfectos.setBorder(null);
@@ -249,6 +259,7 @@ public class PanelFuente extends javax.swing.JPanel {
         liena2.add(bResaltado);
 
         bResaltadoFlecha.setBackground(new java.awt.Color(242, 242, 242));
+        bResaltadoFlecha.setForeground(new java.awt.Color(112, 108, 108));
         bResaltadoFlecha.setText("🞃");
         bResaltadoFlecha.setBorder(null);
         bResaltadoFlecha.setMargin(new java.awt.Insets(0, 0, 0, 0));
@@ -271,6 +282,7 @@ public class PanelFuente extends javax.swing.JPanel {
         liena2.add(bColorLetra);
 
         bColorLetraFlecha.setBackground(new java.awt.Color(242, 242, 242));
+        bColorLetraFlecha.setForeground(new java.awt.Color(112, 108, 108));
         bColorLetraFlecha.setText("🞃");
         bColorLetraFlecha.setBorder(null);
         bColorLetraFlecha.setMargin(new java.awt.Insets(0, 0, 0, 0));
@@ -285,6 +297,7 @@ public class PanelFuente extends javax.swing.JPanel {
 
         etiquetaInferior.setLayout(new java.awt.GridBagLayout());
 
+        etiqueta.setForeground(new java.awt.Color(112, 108, 108));
         etiqueta.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         etiqueta.setText("Fuente");
         etiqueta.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
@@ -300,7 +313,7 @@ public class PanelFuente extends javax.swing.JPanel {
         etiquetaInferior.add(etiqueta, gridBagConstraints);
 
         bIcono.setBackground(new java.awt.Color(242, 242, 242));
-        bIcono.setText("O");
+        bIcono.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/flechaInferiorIzq8.png"))); // NOI18N
         bIcono.setBorder(null);
         bIcono.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         bIcono.addActionListener(new java.awt.event.ActionListener() {
@@ -313,6 +326,7 @@ public class PanelFuente extends javax.swing.JPanel {
         gridBagConstraints.gridy = 0;
         gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.BELOW_BASELINE;
+        gridBagConstraints.insets = new java.awt.Insets(0, 0, 0, 3);
         etiquetaInferior.add(bIcono, gridBagConstraints);
 
         add(etiquetaInferior, java.awt.BorderLayout.SOUTH);
