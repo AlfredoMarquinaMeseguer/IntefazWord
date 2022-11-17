@@ -10,11 +10,15 @@ package es.alfsamser.Plantillas;
  */
 public class PanelParrafo extends javax.swing.JPanel {
 
+    boolean ordenPuntosPresionado, ordenNumerosPresionado;
+
     /**
      * Creates new form PlantillaLineas
      */
     public PanelParrafo() {
         initComponents();
+        ordenPuntosPresionado = false;
+        ordenNumerosPresionado = false;
     }
 
     /**
@@ -27,7 +31,8 @@ public class PanelParrafo extends javax.swing.JPanel {
     private void initComponents() {
         java.awt.GridBagConstraints gridBagConstraints;
 
-        jLabel9 = new javax.swing.JLabel();
+        btgAlineacion = new javax.swing.ButtonGroup();
+        btgPuntos = new javax.swing.ButtonGroup();
         contenido = new javax.swing.JPanel();
         linea1 = new javax.swing.JPanel();
         tbOrdenPuntos = new javax.swing.JToggleButton();
@@ -60,21 +65,22 @@ public class PanelParrafo extends javax.swing.JPanel {
         etiqueta = new javax.swing.JLabel();
         bIcono = new javax.swing.JButton();
 
-        jLabel9.setText("jLabel9");
-
         setMinimumSize(new java.awt.Dimension(254, 120));
         setPreferredSize(new java.awt.Dimension(254, 120));
         setLayout(new java.awt.BorderLayout());
 
         contenido.setLayout(new javax.swing.BoxLayout(contenido, javax.swing.BoxLayout.Y_AXIS));
 
-        linea1.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT));
+        linea1.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 0, 5));
 
         tbOrdenPuntos.setBackground(new java.awt.Color(242, 242, 242));
+        btgPuntos.add(tbOrdenPuntos);
         tbOrdenPuntos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Parrafo/ordenPuntos.png"))); // NOI18N
+        tbOrdenPuntos.setBorder(null);
         tbOrdenPuntos.setBorderPainted(false);
         tbOrdenPuntos.setMaximumSize(new java.awt.Dimension(25, 25));
         tbOrdenPuntos.setMinimumSize(new java.awt.Dimension(25, 25));
+        tbOrdenPuntos.setOpaque(true);
         tbOrdenPuntos.setPreferredSize(new java.awt.Dimension(25, 25));
         tbOrdenPuntos.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -84,18 +90,23 @@ public class PanelParrafo extends javax.swing.JPanel {
         linea1.add(tbOrdenPuntos);
 
         tbOrdenPuntosFlecha.setBackground(new java.awt.Color(242, 242, 242));
-        tbOrdenPuntosFlecha.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/flechaInferior2.png"))); // NOI18N
+        tbOrdenPuntosFlecha.setText("🞃");
+        tbOrdenPuntosFlecha.setBorder(null);
         tbOrdenPuntosFlecha.setBorderPainted(false);
         tbOrdenPuntosFlecha.setMaximumSize(new java.awt.Dimension(13, 25));
         tbOrdenPuntosFlecha.setMinimumSize(new java.awt.Dimension(13, 25));
+        tbOrdenPuntosFlecha.setOpaque(true);
         tbOrdenPuntosFlecha.setPreferredSize(new java.awt.Dimension(13, 25));
         linea1.add(tbOrdenPuntosFlecha);
 
         tbOrdenNumeros.setBackground(new java.awt.Color(242, 242, 242));
-        tbOrdenNumeros.setText("1");
+        btgPuntos.add(tbOrdenNumeros);
+        tbOrdenNumeros.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Parrafo/ordenNumerado.png"))); // NOI18N
+        tbOrdenNumeros.setBorder(null);
         tbOrdenNumeros.setBorderPainted(false);
         tbOrdenNumeros.setMaximumSize(new java.awt.Dimension(25, 25));
         tbOrdenNumeros.setMinimumSize(new java.awt.Dimension(25, 25));
+        tbOrdenNumeros.setOpaque(true);
         tbOrdenNumeros.setPreferredSize(new java.awt.Dimension(25, 25));
         tbOrdenNumeros.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -105,30 +116,35 @@ public class PanelParrafo extends javax.swing.JPanel {
         linea1.add(tbOrdenNumeros);
 
         tbOrdenNumerosFlecha.setBackground(new java.awt.Color(242, 242, 242));
-        tbOrdenNumerosFlecha.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/flechaInferior2.png"))); // NOI18N
+        tbOrdenNumerosFlecha.setText("🞃");
+        tbOrdenNumerosFlecha.setBorder(null);
         tbOrdenNumerosFlecha.setBorderPainted(false);
         tbOrdenNumerosFlecha.setMaximumSize(new java.awt.Dimension(13, 25));
         tbOrdenNumerosFlecha.setMinimumSize(new java.awt.Dimension(13, 25));
+        tbOrdenNumerosFlecha.setOpaque(true);
         tbOrdenNumerosFlecha.setPreferredSize(new java.awt.Dimension(13, 25));
         linea1.add(tbOrdenNumerosFlecha);
 
         bOrdenFormato.setBackground(new java.awt.Color(242, 242, 242));
-        bOrdenFormato.setText("f");
+        bOrdenFormato.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Parrafo/ordenFormato.png"))); // NOI18N
+        bOrdenFormato.setBorder(null);
         bOrdenFormato.setBorderPainted(false);
         bOrdenFormato.setMaximumSize(new java.awt.Dimension(25, 25));
         bOrdenFormato.setMinimumSize(new java.awt.Dimension(25, 25));
+        bOrdenFormato.setOpaque(true);
         bOrdenFormato.setPreferredSize(new java.awt.Dimension(25, 25));
         linea1.add(bOrdenFormato);
 
         bOrdenFormatoFlecha.setBackground(new java.awt.Color(242, 242, 242));
-        bOrdenFormatoFlecha.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/flechaInferior2.png"))); // NOI18N
+        bOrdenFormatoFlecha.setText("🞃");
+        bOrdenFormatoFlecha.setBorder(null);
         bOrdenFormatoFlecha.setBorderPainted(false);
         bOrdenFormatoFlecha.setMaximumSize(new java.awt.Dimension(13, 25));
         bOrdenFormatoFlecha.setMinimumSize(new java.awt.Dimension(13, 25));
+        bOrdenFormatoFlecha.setOpaque(true);
         bOrdenFormatoFlecha.setPreferredSize(new java.awt.Dimension(13, 25));
         linea1.add(bOrdenFormatoFlecha);
 
-        jSeparator2.setBackground(new java.awt.Color(255, 102, 51));
         jSeparator2.setForeground(new java.awt.Color(204, 204, 204));
         jSeparator2.setOrientation(javax.swing.SwingConstants.VERTICAL);
         jSeparator2.setMinimumSize(new java.awt.Dimension(3, 15));
@@ -137,17 +153,21 @@ public class PanelParrafo extends javax.swing.JPanel {
 
         sangriaIzq.setBackground(new java.awt.Color(242, 242, 242));
         sangriaIzq.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Parrafo/sangriaIzq.png"))); // NOI18N
+        sangriaIzq.setBorder(null);
         sangriaIzq.setBorderPainted(false);
         sangriaIzq.setMaximumSize(new java.awt.Dimension(25, 25));
         sangriaIzq.setMinimumSize(new java.awt.Dimension(25, 25));
+        sangriaIzq.setOpaque(true);
         sangriaIzq.setPreferredSize(new java.awt.Dimension(25, 25));
         linea1.add(sangriaIzq);
 
         sangriaDerch.setBackground(new java.awt.Color(242, 242, 242));
         sangriaDerch.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Parrafo/sangriaDerch.png"))); // NOI18N
+        sangriaDerch.setBorder(null);
         sangriaDerch.setBorderPainted(false);
         sangriaDerch.setMaximumSize(new java.awt.Dimension(25, 25));
         sangriaDerch.setMinimumSize(new java.awt.Dimension(25, 25));
+        sangriaDerch.setOpaque(true);
         sangriaDerch.setPreferredSize(new java.awt.Dimension(25, 25));
         linea1.add(sangriaDerch);
 
@@ -158,10 +178,12 @@ public class PanelParrafo extends javax.swing.JPanel {
         linea1.add(jSeparator3);
 
         bAaZ.setBackground(new java.awt.Color(242, 242, 242));
-        bAaZ.setText("A");
+        bAaZ.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Parrafo/ordenar.png"))); // NOI18N
+        bAaZ.setBorder(null);
         bAaZ.setBorderPainted(false);
         bAaZ.setMaximumSize(new java.awt.Dimension(25, 25));
         bAaZ.setMinimumSize(new java.awt.Dimension(25, 25));
+        bAaZ.setOpaque(true);
         bAaZ.setPreferredSize(new java.awt.Dimension(25, 25));
         linea1.add(bAaZ);
 
@@ -173,19 +195,23 @@ public class PanelParrafo extends javax.swing.JPanel {
 
         bMarcasFormato.setBackground(new java.awt.Color(242, 242, 242));
         bMarcasFormato.setText("]");
+        bMarcasFormato.setBorder(null);
         bMarcasFormato.setBorderPainted(false);
         bMarcasFormato.setMaximumSize(new java.awt.Dimension(25, 25));
         bMarcasFormato.setMinimumSize(new java.awt.Dimension(25, 25));
+        bMarcasFormato.setOpaque(true);
         bMarcasFormato.setPreferredSize(new java.awt.Dimension(25, 25));
         linea1.add(bMarcasFormato);
 
         contenido.add(linea1);
 
-        linea2.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT));
+        linea2.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 0, 5));
 
         tbAlineadoIzq.setBackground(new java.awt.Color(242, 242, 242));
+        btgAlineacion.add(tbAlineadoIzq);
         tbAlineadoIzq.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Parrafo/alinearIzq.png"))); // NOI18N
         tbAlineadoIzq.setSelected(true);
+        tbAlineadoIzq.setBorder(null);
         tbAlineadoIzq.setBorderPainted(false);
         tbAlineadoIzq.setMaximumSize(new java.awt.Dimension(25, 25));
         tbAlineadoIzq.setMinimumSize(new java.awt.Dimension(25, 25));
@@ -193,8 +219,10 @@ public class PanelParrafo extends javax.swing.JPanel {
         linea2.add(tbAlineadoIzq);
 
         tbAlineadoCentro.setBackground(new java.awt.Color(242, 242, 242));
+        btgAlineacion.add(tbAlineadoCentro);
         tbAlineadoCentro.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Parrafo/alinearCentro.png"))); // NOI18N
         tbAlineadoCentro.setToolTipText("");
+        tbAlineadoCentro.setBorder(null);
         tbAlineadoCentro.setBorderPainted(false);
         tbAlineadoCentro.setMaximumSize(new java.awt.Dimension(25, 25));
         tbAlineadoCentro.setMinimumSize(new java.awt.Dimension(25, 25));
@@ -202,7 +230,9 @@ public class PanelParrafo extends javax.swing.JPanel {
         linea2.add(tbAlineadoCentro);
 
         tbAlineadoDerch.setBackground(new java.awt.Color(242, 242, 242));
+        btgAlineacion.add(tbAlineadoDerch);
         tbAlineadoDerch.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Parrafo/alinearDerch.png"))); // NOI18N
+        tbAlineadoDerch.setBorder(null);
         tbAlineadoDerch.setBorderPainted(false);
         tbAlineadoDerch.setMaximumSize(new java.awt.Dimension(25, 25));
         tbAlineadoDerch.setMinimumSize(new java.awt.Dimension(25, 25));
@@ -210,7 +240,9 @@ public class PanelParrafo extends javax.swing.JPanel {
         linea2.add(tbAlineadoDerch);
 
         tbAlineadoJustificado.setBackground(new java.awt.Color(242, 242, 242));
+        btgAlineacion.add(tbAlineadoJustificado);
         tbAlineadoJustificado.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Parrafo/justificar.png"))); // NOI18N
+        tbAlineadoJustificado.setBorder(null);
         tbAlineadoJustificado.setBorderPainted(false);
         tbAlineadoJustificado.setMaximumSize(new java.awt.Dimension(25, 25));
         tbAlineadoJustificado.setMinimumSize(new java.awt.Dimension(25, 25));
@@ -225,17 +257,26 @@ public class PanelParrafo extends javax.swing.JPanel {
 
         bInterlineado.setBackground(new java.awt.Color(242, 242, 242));
         bInterlineado.setText("↨");
+        bInterlineado.setBorder(null);
         bInterlineado.setBorderPainted(false);
         bInterlineado.setMaximumSize(new java.awt.Dimension(25, 25));
         bInterlineado.setMinimumSize(new java.awt.Dimension(25, 25));
+        bInterlineado.setOpaque(true);
         bInterlineado.setPreferredSize(new java.awt.Dimension(25, 25));
+        bInterlineado.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bInterlineadoActionPerformed(evt);
+            }
+        });
         linea2.add(bInterlineado);
 
         bInterlineadoFlecha.setBackground(new java.awt.Color(242, 242, 242));
-        bInterlineadoFlecha.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/flechaInferior2.png"))); // NOI18N
+        bInterlineadoFlecha.setText("🞃");
+        bInterlineadoFlecha.setBorder(null);
         bInterlineadoFlecha.setBorderPainted(false);
         bInterlineadoFlecha.setMaximumSize(new java.awt.Dimension(13, 25));
         bInterlineadoFlecha.setMinimumSize(new java.awt.Dimension(13, 25));
+        bInterlineadoFlecha.setOpaque(true);
         bInterlineadoFlecha.setPreferredSize(new java.awt.Dimension(13, 25));
         linea2.add(bInterlineadoFlecha);
 
@@ -246,34 +287,47 @@ public class PanelParrafo extends javax.swing.JPanel {
         linea2.add(jSeparator7);
 
         bColorFondo.setBackground(new java.awt.Color(242, 242, 242));
-        bColorFondo.setText("C");
+        bColorFondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Parrafo/sombreado.png"))); // NOI18N
+        bColorFondo.setBorder(null);
         bColorFondo.setBorderPainted(false);
         bColorFondo.setMaximumSize(new java.awt.Dimension(25, 25));
         bColorFondo.setMinimumSize(new java.awt.Dimension(25, 25));
+        bColorFondo.setOpaque(true);
         bColorFondo.setPreferredSize(new java.awt.Dimension(25, 25));
         linea2.add(bColorFondo);
 
         bColorFondoFlecha.setBackground(new java.awt.Color(242, 242, 242));
-        bColorFondoFlecha.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/flechaInferior2.png"))); // NOI18N
+        bColorFondoFlecha.setText("🞃");
+        bColorFondoFlecha.setBorder(null);
         bColorFondoFlecha.setBorderPainted(false);
         bColorFondoFlecha.setMaximumSize(new java.awt.Dimension(13, 25));
         bColorFondoFlecha.setMinimumSize(new java.awt.Dimension(13, 25));
+        bColorFondoFlecha.setOpaque(true);
         bColorFondoFlecha.setPreferredSize(new java.awt.Dimension(13, 25));
         linea2.add(bColorFondoFlecha);
 
         bLineaBorde.setBackground(new java.awt.Color(242, 242, 242));
-        bLineaBorde.setText("C");
+        bLineaBorde.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Parrafo/bordes.png"))); // NOI18N
+        bLineaBorde.setBorder(null);
         bLineaBorde.setBorderPainted(false);
         bLineaBorde.setMaximumSize(new java.awt.Dimension(25, 25));
         bLineaBorde.setMinimumSize(new java.awt.Dimension(25, 25));
+        bLineaBorde.setOpaque(true);
         bLineaBorde.setPreferredSize(new java.awt.Dimension(25, 25));
+        bLineaBorde.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bLineaBordeActionPerformed(evt);
+            }
+        });
         linea2.add(bLineaBorde);
 
         bLineaBordeFlecha.setBackground(new java.awt.Color(242, 242, 242));
-        bLineaBordeFlecha.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/flechaInferior2.png"))); // NOI18N
+        bLineaBordeFlecha.setText("🞃");
+        bLineaBordeFlecha.setBorder(null);
         bLineaBordeFlecha.setBorderPainted(false);
         bLineaBordeFlecha.setMaximumSize(new java.awt.Dimension(13, 25));
         bLineaBordeFlecha.setMinimumSize(new java.awt.Dimension(13, 25));
+        bLineaBordeFlecha.setOpaque(true);
         bLineaBordeFlecha.setPreferredSize(new java.awt.Dimension(13, 25));
         bLineaBordeFlecha.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -326,16 +380,36 @@ public class PanelParrafo extends javax.swing.JPanel {
     }//GEN-LAST:event_bLineaBordeFlechaActionPerformed
 
     private void tbOrdenPuntosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tbOrdenPuntosActionPerformed
-        // TODO add your handling code here:
+        if (tbOrdenPuntos.isSelected()) {
+            tbOrdenPuntos.setSelected(false);
+            tbOrdenPuntosFlecha.setSelected(false);
+        } else {
+            tbOrdenPuntosFlecha.setSelected(true);
+            tbOrdenNumerosFlecha.setSelected(false);
+        }
+
     }//GEN-LAST:event_tbOrdenPuntosActionPerformed
 
     private void tbOrdenNumerosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tbOrdenNumerosActionPerformed
-        // TODO add your handling code here:
+
+        tbOrdenNumeros.setSelected(false);
+        tbOrdenPuntosFlecha.setSelected(false);
+        System.out.println("Algo");
+
     }//GEN-LAST:event_tbOrdenNumerosActionPerformed
 
     private void bIconoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bIconoActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_bIconoActionPerformed
+
+    private void bInterlineadoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bInterlineadoActionPerformed
+        bInterlineadoFlecha.doClick();
+
+    }//GEN-LAST:event_bInterlineadoActionPerformed
+
+    private void bLineaBordeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bLineaBordeActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_bLineaBordeActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton bAaZ;
@@ -349,10 +423,11 @@ public class PanelParrafo extends javax.swing.JPanel {
     private javax.swing.JToggleButton bMarcasFormato;
     private javax.swing.JButton bOrdenFormato;
     private javax.swing.JButton bOrdenFormatoFlecha;
+    private javax.swing.ButtonGroup btgAlineacion;
+    private javax.swing.ButtonGroup btgPuntos;
     private javax.swing.JPanel contenido;
     private javax.swing.JLabel etiqueta;
     private javax.swing.JPanel etiquetaInferior;
-    private javax.swing.JLabel jLabel9;
     private javax.swing.JSeparator jSeparator2;
     private javax.swing.JSeparator jSeparator3;
     private javax.swing.JSeparator jSeparator5;

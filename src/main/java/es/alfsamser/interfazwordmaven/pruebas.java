@@ -18,16 +18,6 @@ public class pruebas extends javax.swing.JFrame {
     public pruebas() {
         initComponents();
 
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (Exception ex) {
-            System.out.println("Algo");
-        }
     }
 
     /**
@@ -39,35 +29,13 @@ public class pruebas extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        PanelTabsTop = new javax.swing.JTabbedPane();
-        jLabel1 = new javax.swing.JLabel();
-        jPanel1 = new javax.swing.JPanel();
-        panelFuente1 = new es.alfsamser.Plantillas.PanelFuente();
-        jSeparator1 = new javax.swing.JSeparator();
-        panelParrafo1 = new es.alfsamser.Plantillas.PanelParrafo();
+        jComboBox1 = new javax.swing.JComboBox<>();
+        panelParrafo2 = new es.alfsamser.Plantillas.PanelParrafo();
+
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-
-        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setText("File tab");
-        PanelTabsTop.addTab("File", jLabel1);
-
-        jPanel1.setMinimumSize(new java.awt.Dimension(595, 86));
-        jPanel1.setPreferredSize(new java.awt.Dimension(595, 86));
-        jPanel1.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT));
-        jPanel1.add(panelFuente1);
-
-        jSeparator1.setOrientation(javax.swing.SwingConstants.VERTICAL);
-        jSeparator1.setPreferredSize(new java.awt.Dimension(5, 86));
-        jPanel1.add(jSeparator1);
-
-        panelParrafo1.setMinimumSize(new java.awt.Dimension(300, 86));
-        panelParrafo1.setPreferredSize(new java.awt.Dimension(300, 86));
-        jPanel1.add(panelParrafo1);
-
-        PanelTabsTop.addTab("Home", jPanel1);
-
-        getContentPane().add(PanelTabsTop, java.awt.BorderLayout.NORTH);
+        getContentPane().add(panelParrafo2, java.awt.BorderLayout.CENTER);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -100,7 +68,7 @@ public class pruebas extends javax.swing.JFrame {
         //</editor-fold>
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Windows".equals(info.getName())) {
+                if ("Nimbus".equals(info.getName())) {
                     javax.swing.UIManager.setLookAndFeel(info.getClassName());
                     break;
                 }
@@ -118,11 +86,7 @@ public class pruebas extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JTabbedPane PanelTabsTop;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JPanel jPanel1;
-    private javax.swing.JSeparator jSeparator1;
-    private es.alfsamser.Plantillas.PanelFuente panelFuente1;
-    private es.alfsamser.Plantillas.PanelParrafo panelParrafo1;
+    private javax.swing.JComboBox<String> jComboBox1;
+    private es.alfsamser.Plantillas.PanelParrafo panelParrafo2;
     // End of variables declaration//GEN-END:variables
 }

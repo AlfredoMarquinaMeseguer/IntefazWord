@@ -17,11 +17,7 @@ public class PanelFuente extends javax.swing.JPanel {
      */
     public PanelFuente() {
         initComponents();
-        try {
-            UIManager.setLookAndFeel("FlatLaf Light");
-        } catch (Exception ex) {
 
-        }
     }
 
     private void toggle(javax.swing.JToggleButton este) {
@@ -38,6 +34,7 @@ public class PanelFuente extends javax.swing.JPanel {
     private void initComponents() {
         java.awt.GridBagConstraints gridBagConstraints;
 
+        buttonGroup1 = new javax.swing.ButtonGroup();
         contenido = new javax.swing.JPanel();
         linea1 = new javax.swing.JPanel();
         cbFuente = new javax.swing.JComboBox<>();
@@ -72,7 +69,7 @@ public class PanelFuente extends javax.swing.JPanel {
 
         linea1.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 0, 5));
 
-        cbFuente.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        cbFuente.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Calibri (Body)" }));
         linea1.add(cbFuente);
 
         cbTamannoF.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "18" }));
@@ -80,19 +77,28 @@ public class PanelFuente extends javax.swing.JPanel {
         linea1.add(cbTamannoF);
 
         bAumetarTamannoF.setBackground(new java.awt.Color(242, 242, 242));
-        bAumetarTamannoF.setText("A");
+        bAumetarTamannoF.setText("<html>A<sup><font color=#377abe>🞁</font></sup></html>");
+        bAumetarTamannoF.setToolTipText("");
+        bAumetarTamannoF.setAlignmentY(0.0F);
         bAumetarTamannoF.setBorder(null);
+        bAumetarTamannoF.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         bAumetarTamannoF.setMaximumSize(new java.awt.Dimension(25, 25));
         bAumetarTamannoF.setMinimumSize(new java.awt.Dimension(25, 25));
         bAumetarTamannoF.setPreferredSize(new java.awt.Dimension(25, 25));
+        bAumetarTamannoF.setVerticalAlignment(javax.swing.SwingConstants.TOP);
+        bAumetarTamannoF.setVerticalTextPosition(javax.swing.SwingConstants.TOP);
         linea1.add(bAumetarTamannoF);
 
         bDisminuirTamannoF.setBackground(new java.awt.Color(242, 242, 242));
-        bDisminuirTamannoF.setText("A");
+        bDisminuirTamannoF.setText("<html><font size=\"-1\">A</font><sup><font color=#377abe>🞃</font></sup></html>");
+        bDisminuirTamannoF.setAlignmentY(0.0F);
         bDisminuirTamannoF.setBorder(null);
+        bDisminuirTamannoF.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         bDisminuirTamannoF.setMaximumSize(new java.awt.Dimension(25, 25));
         bDisminuirTamannoF.setMinimumSize(new java.awt.Dimension(25, 25));
         bDisminuirTamannoF.setPreferredSize(new java.awt.Dimension(25, 25));
+        bDisminuirTamannoF.setVerticalAlignment(javax.swing.SwingConstants.TOP);
+        bDisminuirTamannoF.setVerticalTextPosition(javax.swing.SwingConstants.TOP);
         bDisminuirTamannoF.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 bDisminuirTamannoFActionPerformed(evt);
@@ -106,7 +112,7 @@ public class PanelFuente extends javax.swing.JPanel {
         linea1.add(jSeparator1);
 
         bCambiarMayus.setBackground(new java.awt.Color(242, 242, 242));
-        bCambiarMayus.setText("A 🞃");
+        bCambiarMayus.setText("<html><b>Aa </b>🞃</html>");
         bCambiarMayus.setBorder(null);
         bCambiarMayus.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         bCambiarMayus.setMargin(new java.awt.Insets(0, 0, 0, 0));
@@ -121,7 +127,7 @@ public class PanelFuente extends javax.swing.JPanel {
         linea1.add(jSeparator8);
 
         bBorrarFormato.setBackground(new java.awt.Color(242, 242, 242));
-        bBorrarFormato.setText("A");
+        bBorrarFormato.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Fuente/borrarFormato.png"))); // NOI18N
         bBorrarFormato.setBorder(null);
         bBorrarFormato.setMaximumSize(new java.awt.Dimension(25, 25));
         bBorrarFormato.setMinimumSize(new java.awt.Dimension(25, 25));
@@ -156,7 +162,9 @@ public class PanelFuente extends javax.swing.JPanel {
         liena2.add(tbCursiva);
 
         tbSubrayado.setBackground(new java.awt.Color(242, 242, 242));
-        tbSubrayado.setText("U");
+        tbSubrayado.setSelected(true);
+        tbSubrayado.setText("<html><u>U</u></html>");
+        tbSubrayado.setActionCommand("<html><inst>U</inst></html>");
         tbSubrayado.setBorder(null);
         tbSubrayado.setMaximumSize(new java.awt.Dimension(25, 25));
         tbSubrayado.setMinimumSize(new java.awt.Dimension(25, 25));
@@ -183,7 +191,7 @@ public class PanelFuente extends javax.swing.JPanel {
         liena2.add(tbSubrayadoFlecha);
 
         tbTachado.setBackground(new java.awt.Color(242, 242, 242));
-        tbTachado.setText("T");
+        tbTachado.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Fuente/tachado.png"))); // NOI18N
         tbTachado.setBorder(null);
         tbTachado.setMaximumSize(new java.awt.Dimension(25, 25));
         tbTachado.setMinimumSize(new java.awt.Dimension(25, 25));
@@ -191,11 +199,15 @@ public class PanelFuente extends javax.swing.JPanel {
         liena2.add(tbTachado);
 
         tbSubIndice.setBackground(new java.awt.Color(242, 242, 242));
-        tbSubIndice.setText("b");
+        tbSubIndice.setText("<html><b>x<sub><font color=#377abe size=\"-2\">2</font></sub></b></html>");
+        tbSubIndice.setToolTipText("");
+        tbSubIndice.setAlignmentY(0.0F);
         tbSubIndice.setBorder(null);
         tbSubIndice.setMaximumSize(new java.awt.Dimension(25, 25));
         tbSubIndice.setMinimumSize(new java.awt.Dimension(25, 25));
         tbSubIndice.setPreferredSize(new java.awt.Dimension(25, 25));
+        tbSubIndice.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
+        tbSubIndice.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         tbSubIndice.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 tbSubIndiceActionPerformed(evt);
@@ -204,8 +216,10 @@ public class PanelFuente extends javax.swing.JPanel {
         liena2.add(tbSubIndice);
 
         tbSuperIndice.setBackground(new java.awt.Color(242, 242, 242));
-        tbSuperIndice.setText("p");
+        tbSuperIndice.setText("<html><b>x<sup><font color=#377abe size=\"-2\">2</font></sup></b></html>");
+        tbSuperIndice.setAlignmentY(0.0F);
         tbSuperIndice.setBorder(null);
+        tbSuperIndice.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         tbSuperIndice.setMaximumSize(new java.awt.Dimension(25, 25));
         tbSuperIndice.setMinimumSize(new java.awt.Dimension(25, 25));
         tbSuperIndice.setPreferredSize(new java.awt.Dimension(25, 25));
@@ -217,7 +231,8 @@ public class PanelFuente extends javax.swing.JPanel {
         liena2.add(jSeparator2);
 
         bEfectos.setBackground(new java.awt.Color(242, 242, 242));
-        bEfectos.setText("A 🞃");
+        bEfectos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Fuente/efectosTexto.png"))); // NOI18N
+        bEfectos.setText("🞃");
         bEfectos.setBorder(null);
         bEfectos.setMargin(new java.awt.Insets(0, 0, 0, 0));
         bEfectos.setMaximumSize(new java.awt.Dimension(38, 25));
@@ -226,7 +241,7 @@ public class PanelFuente extends javax.swing.JPanel {
         liena2.add(bEfectos);
 
         bResaltado.setBackground(new java.awt.Color(242, 242, 242));
-        bResaltado.setText("S");
+        bResaltado.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Fuente/colorResaltado.png"))); // NOI18N
         bResaltado.setBorder(null);
         bResaltado.setMaximumSize(new java.awt.Dimension(25, 25));
         bResaltado.setMinimumSize(new java.awt.Dimension(25, 25));
@@ -248,7 +263,7 @@ public class PanelFuente extends javax.swing.JPanel {
         liena2.add(bResaltadoFlecha);
 
         bColorLetra.setBackground(new java.awt.Color(242, 242, 242));
-        bColorLetra.setText("S");
+        bColorLetra.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Fuente/colorLetra.png"))); // NOI18N
         bColorLetra.setBorder(null);
         bColorLetra.setMaximumSize(new java.awt.Dimension(25, 25));
         bColorLetra.setMinimumSize(new java.awt.Dimension(25, 25));
@@ -347,6 +362,7 @@ public class PanelFuente extends javax.swing.JPanel {
     private javax.swing.JButton bIcono;
     private javax.swing.JButton bResaltado;
     private javax.swing.JButton bResaltadoFlecha;
+    private javax.swing.ButtonGroup buttonGroup1;
     private javax.swing.JComboBox<String> cbFuente;
     private javax.swing.JComboBox<String> cbTamannoF;
     private javax.swing.JPanel contenido;
