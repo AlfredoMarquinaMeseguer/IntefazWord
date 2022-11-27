@@ -30,79 +30,74 @@ public class PanelVistas extends javax.swing.JPanel {
         contenido = new javax.swing.JPanel();
         jPanel1 = new javax.swing.JPanel();
         bLectura = new javax.swing.JButton();
-        bDImpresion = new javax.swing.JButton();
-        bDWeb = new javax.swing.JButton();
+        tbDImpresion = new javax.swing.JToggleButton();
+        tbDWeb = new javax.swing.JToggleButton();
         jPanel2 = new javax.swing.JPanel();
-        bEsquema = new javax.swing.JButton();
-        bBorrador = new javax.swing.JButton();
+        tbEsquema = new javax.swing.JToggleButton();
+        tbBorrador = new javax.swing.JToggleButton();
         etiquetaInferior = new javax.swing.JPanel();
         etiqueta = new javax.swing.JLabel();
 
         setLayout(new java.awt.BorderLayout());
 
-        contenido.setLayout(new javax.swing.BoxLayout(contenido, javax.swing.BoxLayout.LINE_AXIS));
+        contenido.setBackground(new java.awt.Color(243, 243, 243));
+        contenido.setLayout(new java.awt.GridBagLayout());
+
+        jPanel1.setBackground(new java.awt.Color(243, 243, 243));
+        jPanel1.setLayout(new javax.swing.BoxLayout(jPanel1, javax.swing.BoxLayout.LINE_AXIS));
 
         bLectura.setBackground(new java.awt.Color(243, 243, 243));
-        bLectura.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Vista/LeerMas_1.png"))); // NOI18N
-        bLectura.setText("Modo Lectura");
+        bLectura.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Vista/LeerMas.png"))); // NOI18N
+        bLectura.setText("<html><p1 align=\"center\"><p>Modo</p><p>Lectura</p></p1></html>");
         bLectura.setBorder(null);
+        bLectura.setBorderPainted(false);
         bLectura.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         bLectura.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
         bLectura.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        jPanel1.add(bLectura);
 
-        bDImpresion.setBackground(new java.awt.Color(243, 243, 243));
-        bDImpresion.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Vista/DiseñoImpresion.png"))); // NOI18N
-        bDImpresion.setText("Diseño de impresión");
-        bDImpresion.setBorder(null);
-        bDImpresion.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        bDImpresion.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
-        bDImpresion.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        tbDImpresion.setBackground(new java.awt.Color(243, 243, 243));
+        tbDImpresion.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Vista/DiseñoImpresion.png"))); // NOI18N
+        tbDImpresion.setText("<html><p1 align=\"center\"><p>Diseño de</p><p>impresión</p></p1></html>");
+        tbDImpresion.setBorder(null);
+        tbDImpresion.setBorderPainted(false);
+        tbDImpresion.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        tbDImpresion.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
+        tbDImpresion.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        jPanel1.add(tbDImpresion);
 
-        bDWeb.setBackground(new java.awt.Color(243, 243, 243));
-        bDWeb.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Vista/DiseñoWeb.png"))); // NOI18N
-        bDWeb.setText("Diseño Web");
-        bDWeb.setBorder(null);
-        bDWeb.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        bDWeb.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
-        bDWeb.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        tbDWeb.setBackground(new java.awt.Color(243, 243, 243));
+        tbDWeb.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Vista/DiseñoWeb.png"))); // NOI18N
+        tbDWeb.setText("<html><p1 align=\"center\"><p>Diseño</p><p>web</p></p1></html>");
+        tbDWeb.setBorder(null);
+        tbDWeb.setBorderPainted(false);
+        tbDWeb.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        tbDWeb.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
+        tbDWeb.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        jPanel1.add(tbDWeb);
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(bLectura)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(bDImpresion)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(bDWeb)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(52, 52, 52)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(bLectura)
-                    .addComponent(bDImpresion)
-                    .addComponent(bDWeb))
-                .addContainerGap(12, Short.MAX_VALUE))
-        );
+        contenido.add(jPanel1, new java.awt.GridBagConstraints());
 
-        contenido.add(jPanel1);
-
+        jPanel2.setBackground(new java.awt.Color(243, 243, 243));
         jPanel2.setLayout(new javax.swing.BoxLayout(jPanel2, javax.swing.BoxLayout.Y_AXIS));
 
-        bEsquema.setBackground(new java.awt.Color(243, 243, 243));
-        bEsquema.setText("Esquema");
-        jPanel2.add(bEsquema);
+        tbEsquema.setBackground(new java.awt.Color(243, 243, 243));
+        tbEsquema.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Vista/esquema (1).png"))); // NOI18N
+        tbEsquema.setText("Esquema");
+        tbEsquema.setBorder(null);
+        tbEsquema.setBorderPainted(false);
+        jPanel2.add(tbEsquema);
 
-        bBorrador.setBackground(new java.awt.Color(243, 243, 243));
-        bBorrador.setText("Borrador");
-        jPanel2.add(bBorrador);
+        tbBorrador.setBackground(new java.awt.Color(243, 243, 243));
+        tbBorrador.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Vista/borrador (1).png"))); // NOI18N
+        tbBorrador.setText("Borrador");
+        tbBorrador.setBorder(null);
+        tbBorrador.setBorderPainted(false);
+        jPanel2.add(tbBorrador);
 
-        contenido.add(jPanel2);
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTH;
+        contenido.add(jPanel2, gridBagConstraints);
 
         add(contenido, java.awt.BorderLayout.CENTER);
 
@@ -127,15 +122,15 @@ public class PanelVistas extends javax.swing.JPanel {
     }// </editor-fold>//GEN-END:initComponents
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton bBorrador;
-    private javax.swing.JButton bDImpresion;
-    private javax.swing.JButton bDWeb;
-    private javax.swing.JButton bEsquema;
     private javax.swing.JButton bLectura;
     private javax.swing.JPanel contenido;
     private javax.swing.JLabel etiqueta;
     private javax.swing.JPanel etiquetaInferior;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
+    private javax.swing.JToggleButton tbBorrador;
+    private javax.swing.JToggleButton tbDImpresion;
+    private javax.swing.JToggleButton tbDWeb;
+    private javax.swing.JToggleButton tbEsquema;
     // End of variables declaration//GEN-END:variables
 }

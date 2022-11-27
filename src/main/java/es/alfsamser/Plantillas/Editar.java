@@ -41,6 +41,7 @@ public class Editar extends javax.swing.JPanel {
         setPreferredSize(new java.awt.Dimension(150, 100));
         setLayout(new java.awt.BorderLayout());
 
+        contenido.setBackground(new java.awt.Color(243, 243, 243));
         contenido.setAlignmentX(0.0F);
         contenido.setAlignmentY(0.0F);
         contenido.setMinimumSize(new java.awt.Dimension(110, 29));

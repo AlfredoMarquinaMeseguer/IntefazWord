@@ -25,40 +25,43 @@ public class PanelMovimientoPagina extends javax.swing.JPanel {
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
-        java.awt.GridBagConstraints gridBagConstraints;
 
         contenido = new javax.swing.JPanel();
-        bVertical = new javax.swing.JButton();
-        bParalelo = new javax.swing.JButton();
+        tbEditar = new javax.swing.JToggleButton();
+        tbParalelo = new javax.swing.JToggleButton();
         etiquetaInferior = new javax.swing.JPanel();
         etiqueta = new javax.swing.JLabel();
 
         setLayout(new java.awt.BorderLayout());
 
         contenido.setBackground(new java.awt.Color(243, 243, 243));
-        contenido.setLayout(new java.awt.GridLayout(1, 0));
+        contenido.setMaximumSize(new java.awt.Dimension(57, 57));
+        contenido.setLayout(new java.awt.GridLayout());
 
-        bVertical.setBackground(new java.awt.Color(243, 243, 243));
-        bVertical.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Vista/Vertical.png"))); // NOI18N
-        bVertical.setText("Vertical");
-        bVertical.setBorder(null);
-        bVertical.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        bVertical.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
-        bVertical.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
-        contenido.add(bVertical);
+        tbEditar.setBackground(new java.awt.Color(243, 243, 243));
+        tbEditar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Vista/Vertical.png"))); // NOI18N
+        tbEditar.setText("Vertical");
+        tbEditar.setBorder(null);
+        tbEditar.setBorderPainted(false);
+        tbEditar.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        tbEditar.setMargin(new java.awt.Insets(14, 14, 2, 14));
+        tbEditar.setVerticalAlignment(javax.swing.SwingConstants.TOP);
+        tbEditar.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        contenido.add(tbEditar);
 
-        bParalelo.setBackground(new java.awt.Color(243, 243, 243));
-        bParalelo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Vista/Paralelo.png"))); // NOI18N
-        bParalelo.setText("En paralelo");
-        bParalelo.setBorder(null);
-        bParalelo.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        bParalelo.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
-        bParalelo.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
-        contenido.add(bParalelo);
+        tbParalelo.setBackground(new java.awt.Color(243, 243, 243));
+        tbParalelo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Vista/Paralelo.png"))); // NOI18N
+        tbParalelo.setText("<html><p1 align=\"center\"><p>En</p><p>paralelo</p></p1></html>");
+        tbParalelo.setBorder(null);
+        tbParalelo.setBorderPainted(false);
+        tbParalelo.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        tbParalelo.setMargin(new java.awt.Insets(14, 14, 2, 14));
+        tbParalelo.setMaximumSize(new java.awt.Dimension(60, 80));
+        tbParalelo.setMinimumSize(new java.awt.Dimension(50, 57));
+        tbParalelo.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        contenido.add(tbParalelo);
 
         add(contenido, java.awt.BorderLayout.CENTER);
-
-        etiquetaInferior.setLayout(new java.awt.GridBagLayout());
 
         etiqueta.setForeground(new java.awt.Color(112, 108, 108));
         etiqueta.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -67,22 +70,26 @@ public class PanelMovimientoPagina extends javax.swing.JPanel {
         etiqueta.setFocusable(false);
         etiqueta.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         etiqueta.setPreferredSize(new java.awt.Dimension(200, 15));
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 0;
-        gridBagConstraints.gridy = 0;
-        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.BELOW_BASELINE;
-        gridBagConstraints.weightx = 1.0;
-        etiquetaInferior.add(etiqueta, gridBagConstraints);
+
+        javax.swing.GroupLayout etiquetaInferiorLayout = new javax.swing.GroupLayout(etiquetaInferior);
+        etiquetaInferior.setLayout(etiquetaInferiorLayout);
+        etiquetaInferiorLayout.setHorizontalGroup(
+            etiquetaInferiorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(etiqueta, javax.swing.GroupLayout.PREFERRED_SIZE, 203, javax.swing.GroupLayout.PREFERRED_SIZE)
+        );
+        etiquetaInferiorLayout.setVerticalGroup(
+            etiquetaInferiorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(etiqueta, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+        );
 
         add(etiquetaInferior, java.awt.BorderLayout.SOUTH);
     }// </editor-fold>//GEN-END:initComponents
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton bParalelo;
-    private javax.swing.JButton bVertical;
     private javax.swing.JPanel contenido;
     private javax.swing.JLabel etiqueta;
     private javax.swing.JPanel etiquetaInferior;
+    private javax.swing.JToggleButton tbEditar;
+    private javax.swing.JToggleButton tbParalelo;
     // End of variables declaration//GEN-END:variables
 }

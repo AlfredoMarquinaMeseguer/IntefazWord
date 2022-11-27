@@ -8,14 +8,14 @@ package es.alfsamser.Plantillas;
  *
  * @author Samu
  */
-public class PanelModoOscuro extends javax.swing.JPanel {
+public class CambiarModo extends javax.swing.JPanel {
 
     /**
      * Creates new form Plantilla
      */
-    public PanelModoOscuro() {
+    public CambiarModo() {
         initComponents();
-    }
+        }
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -28,23 +28,31 @@ public class PanelModoOscuro extends javax.swing.JPanel {
         java.awt.GridBagConstraints gridBagConstraints;
 
         contenido = new javax.swing.JPanel();
-        bOscuro = new javax.swing.JButton();
+        jToggleButton1 = new javax.swing.JToggleButton();
         etiquetaInferior = new javax.swing.JPanel();
         etiqueta = new javax.swing.JLabel();
 
+        setBackground(new java.awt.Color(243, 243, 243));
+        setMinimumSize(new java.awt.Dimension(70, 50));
+        setPreferredSize(new java.awt.Dimension(70, 100));
         setLayout(new java.awt.BorderLayout());
 
         contenido.setBackground(new java.awt.Color(243, 243, 243));
-        contenido.setLayout(new java.awt.GridLayout());
+        contenido.setAlignmentX(0.0F);
+        contenido.setAlignmentY(0.0F);
+        contenido.setMinimumSize(new java.awt.Dimension(50, 29));
+        contenido.setPreferredSize(new java.awt.Dimension(50, 100));
+        contenido.setLayout(new javax.swing.BoxLayout(contenido, javax.swing.BoxLayout.LINE_AXIS));
 
-        bOscuro.setBackground(new java.awt.Color(243, 243, 243));
-        bOscuro.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Vista/ModoOscuro.png"))); // NOI18N
-        bOscuro.setText("Modo oscuro");
-        bOscuro.setBorder(null);
-        bOscuro.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        bOscuro.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
-        bOscuro.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
-        contenido.add(bOscuro);
+        jToggleButton1.setBackground(new java.awt.Color(243, 243, 243));
+        jToggleButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Vista/ModoOscuro.png"))); // NOI18N
+        jToggleButton1.setText("<html><p>Modo</p><p>oscuro</p></html>");
+        jToggleButton1.setBorder(null);
+        jToggleButton1.setBorderPainted(false);
+        jToggleButton1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jToggleButton1.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
+        jToggleButton1.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        contenido.add(jToggleButton1);
 
         add(contenido, java.awt.BorderLayout.CENTER);
 
@@ -56,7 +64,9 @@ public class PanelModoOscuro extends javax.swing.JPanel {
         etiqueta.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
         etiqueta.setFocusable(false);
         etiqueta.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        etiqueta.setPreferredSize(new java.awt.Dimension(200, 15));
+        etiqueta.setMaximumSize(new java.awt.Dimension(70, 21));
+        etiqueta.setMinimumSize(new java.awt.Dimension(70, 21));
+        etiqueta.setPreferredSize(new java.awt.Dimension(70, 15));
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 0;
@@ -69,9 +79,9 @@ public class PanelModoOscuro extends javax.swing.JPanel {
     }// </editor-fold>//GEN-END:initComponents
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton bOscuro;
     private javax.swing.JPanel contenido;
     private javax.swing.JLabel etiqueta;
     private javax.swing.JPanel etiquetaInferior;
+    private javax.swing.JToggleButton jToggleButton1;
     // End of variables declaration//GEN-END:variables
 }
