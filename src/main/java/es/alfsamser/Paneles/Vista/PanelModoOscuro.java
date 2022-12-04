@@ -15,7 +15,7 @@ public class PanelModoOscuro extends javax.swing.JPanel {
      */
     public PanelModoOscuro() {
         initComponents();
-    }
+        }
 
     /**
      * This method is called from within the constructor to initialize the form.

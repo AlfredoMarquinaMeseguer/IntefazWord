@@ -34,11 +34,12 @@ public class PanelVistas extends javax.swing.JPanel {
         tbDImpresion = new javax.swing.JToggleButton();
         tbDWeb = new javax.swing.JToggleButton();
         jPanel2 = new javax.swing.JPanel();
-        tbEsquema = new javax.swing.JToggleButton();
+        bEsquema = new javax.swing.JButton();
         tbBorrador = new javax.swing.JToggleButton();
         etiquetaInferior = new javax.swing.JPanel();
         etiqueta = new javax.swing.JLabel();
 
+        setBackground(new java.awt.Color(243, 243, 243));
         setLayout(new java.awt.BorderLayout());
 
         contenido.setBackground(new java.awt.Color(243, 243, 243));
@@ -67,6 +68,11 @@ public class PanelVistas extends javax.swing.JPanel {
         tbDImpresion.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         tbDImpresion.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
         tbDImpresion.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        tbDImpresion.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                tbDImpresionActionPerformed(evt);
+            }
+        });
         jPanel1.add(tbDImpresion);
 
         tbDWeb.setBackground(new java.awt.Color(243, 243, 243));
@@ -78,24 +84,29 @@ public class PanelVistas extends javax.swing.JPanel {
         tbDWeb.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         tbDWeb.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
         tbDWeb.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        tbDWeb.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                tbDWebActionPerformed(evt);
+            }
+        });
         jPanel1.add(tbDWeb);
 
-        contenido.add(jPanel1, new java.awt.GridBagConstraints());
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.ipadx = 21;
+        contenido.add(jPanel1, gridBagConstraints);
 
         jPanel2.setBackground(new java.awt.Color(243, 243, 243));
-        jPanel2.setLayout(new javax.swing.BoxLayout(jPanel2, javax.swing.BoxLayout.Y_AXIS));
+        jPanel2.setLayout(new java.awt.GridLayout(0, 1, 0, 10));
 
-        tbEsquema.setBackground(new java.awt.Color(243, 243, 243));
-        bgVistas.add(tbEsquema);
-        tbEsquema.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Vista/esquema18.png"))); // NOI18N
-        tbEsquema.setText("Esquema");
-        tbEsquema.setBorder(null);
-        tbEsquema.setBorderPainted(false);
-        jPanel2.add(tbEsquema);
+        bEsquema.setBackground(new java.awt.Color(243, 243, 243));
+        bEsquema.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Vista/esquema.png"))); // NOI18N
+        bEsquema.setText("Esquema");
+        bEsquema.setBorder(null);
+        bEsquema.setBorderPainted(false);
+        jPanel2.add(bEsquema);
 
         tbBorrador.setBackground(new java.awt.Color(243, 243, 243));
-        bgVistas.add(tbBorrador);
-        tbBorrador.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Vista/borrador18.png"))); // NOI18N
+        tbBorrador.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Vista/borrador.png"))); // NOI18N
         tbBorrador.setText("Borrador");
         tbBorrador.setBorder(null);
         tbBorrador.setBorderPainted(false);
@@ -132,12 +143,24 @@ public class PanelVistas extends javax.swing.JPanel {
         add(etiquetaInferior, java.awt.BorderLayout.SOUTH);
     }// </editor-fold>//GEN-END:initComponents
 
+    private void tbDImpresionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tbDImpresionActionPerformed
+    this.tbDWeb.setSelected(false);
+    this.tbBorrador.setSelected(false);
+    }//GEN-LAST:event_tbDImpresionActionPerformed
+
+    private void tbDWebActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tbDWebActionPerformed
+    this. tbDImpresion.setSelected(false);
+    this.tbBorrador.setSelected(false);
+    }//GEN-LAST:event_tbDWebActionPerformed
+
     private void tbBorradorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tbBorradorActionPerformed
-        // TODO add your handling code here:
+    this. tbDImpresion.setSelected(false);
+    this.tbDWeb.setSelected(false);
     }//GEN-LAST:event_tbBorradorActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.ButtonGroup bgVistas;
+    private javax.swing.JButton bEsquema;
+    private javax.swing.JButton bLectura;
     private javax.swing.JPanel contenido;
     private javax.swing.JLabel etiqueta;
     private javax.swing.JPanel etiquetaInferior;
@@ -147,6 +170,5 @@ public class PanelVistas extends javax.swing.JPanel {
     private javax.swing.JToggleButton tbDImpresion;
     private javax.swing.JToggleButton tbDLectura;
     private javax.swing.JToggleButton tbDWeb;
-    private javax.swing.JToggleButton tbEsquema;
     // End of variables declaration//GEN-END:variables
 }
