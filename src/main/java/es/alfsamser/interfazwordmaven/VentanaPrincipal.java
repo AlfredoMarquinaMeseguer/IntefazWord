@@ -4,6 +4,9 @@
  */
 package es.alfsamser.interfazwordmaven;
 
+import javax.swing.JFileChooser;
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author Sergio
@@ -11,12 +14,29 @@ package es.alfsamser.interfazwordmaven;
 public class VentanaPrincipal extends javax.swing.JFrame {
 
     /**
-     * Creates new form main
+     * Creates new form VentanaPrincipal
      */
     public VentanaPrincipal() {
         initComponents();
+        setDefaultCloseOperation(DO_NOTHING_ON_CLOSE);
     }
-
+    
+    
+    
+    //Metodo para comprobar si el usuario quiere guardar el documento
+    private void cerrar(){
+        String botones[] = {"No", "Si"};
+        int eleccion = JOptionPane.showOptionDialog(this, "¿Desea guardar el fichero?", "Confirmar cierre", 0, 0, null, botones, this);
+        if (eleccion ==JOptionPane.YES_OPTION){
+            System.exit(0);
+        }else if(eleccion==JOptionPane.NO_OPTION){
+            JFileChooser j = new JFileChooser();
+            j.showOpenDialog(null);
+            System.out.println(j.getSelectedFile().getAbsolutePath());
+        }
+    }
+    
+   
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -26,21 +46,48 @@ public class VentanaPrincipal extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        jPTop = new javax.swing.JPanel();
+        panelSuperior1 = new es.alfsamser.Paneles.PanelSuperior();
+        jPMid = new javax.swing.JPanel();
+        jPBot = new javax.swing.JPanel();
+        panelInferior1 = new es.alfsamser.Paneles.PanelInferior();
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        addWindowListener(new java.awt.event.WindowAdapter() {
+            public void windowClosing(java.awt.event.WindowEvent evt) {
+                formWindowClosing(evt);
+            }
+        });
+
+        jPTop.setLayout(new javax.swing.BoxLayout(jPTop, javax.swing.BoxLayout.LINE_AXIS));
+        jPTop.add(panelSuperior1);
+
+        getContentPane().add(jPTop, java.awt.BorderLayout.PAGE_START);
+
+        javax.swing.GroupLayout jPMidLayout = new javax.swing.GroupLayout(jPMid);
+        jPMid.setLayout(jPMidLayout);
+        jPMidLayout.setHorizontalGroup(
+            jPMidLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 868, Short.MAX_VALUE)
         );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+        jPMidLayout.setVerticalGroup(
+            jPMidLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 149, Short.MAX_VALUE)
         );
+
+        getContentPane().add(jPMid, java.awt.BorderLayout.CENTER);
+
+        jPBot.setLayout(new javax.swing.BoxLayout(jPBot, javax.swing.BoxLayout.LINE_AXIS));
+        jPBot.add(panelInferior1);
+
+        getContentPane().add(jPBot, java.awt.BorderLayout.PAGE_END);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void formWindowClosing(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowClosing
+        cerrar();
+    }//GEN-LAST:event_formWindowClosing
 
     /**
      * @param args the command line arguments
@@ -53,7 +100,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
          */
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
+                if ("FlatLaf".equals(info.getName())) {
                     javax.swing.UIManager.setLookAndFeel(info.getClassName());
                     break;
                 }
@@ -68,7 +115,6 @@ public class VentanaPrincipal extends javax.swing.JFrame {
             java.util.logging.Logger.getLogger(VentanaPrincipal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
-        //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
@@ -79,5 +125,10 @@ public class VentanaPrincipal extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JPanel jPBot;
+    private javax.swing.JPanel jPMid;
+    private javax.swing.JPanel jPTop;
+    private es.alfsamser.Paneles.PanelInferior panelInferior1;
+    private es.alfsamser.Paneles.PanelSuperior panelSuperior1;
     // End of variables declaration//GEN-END:variables
 }
