@@ -40,9 +40,9 @@ public class PanelSuperior extends javax.swing.JPanel {
         lInsertar = new javax.swing.JLabel();
         lDiseño = new javax.swing.JLabel();
         lDisposicion = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
+        lReferencias = new javax.swing.JLabel();
+        lCorrespondencias = new javax.swing.JLabel();
+        lRevisar = new javax.swing.JLabel();
         pVista = new javax.swing.JPanel();
         panelVistas1 = new es.alfsamser.Paneles.Vista.PanelVistas();
         jSeparator4 = new javax.swing.JSeparator();
@@ -50,6 +50,10 @@ public class PanelSuperior extends javax.swing.JPanel {
         jSeparator5 = new javax.swing.JSeparator();
         jLabel7 = new javax.swing.JLabel();
         jSeparator6 = new javax.swing.JSeparator();
+        planelZoom1 = new es.alfsamser.Paneles.Vista.PlanelZoom();
+        jSeparator7 = new javax.swing.JSeparator();
+        panelModoOscuro1 = new es.alfsamser.Paneles.Vista.PanelModoOscuro();
+        jSeparator8 = new javax.swing.JSeparator();
 
         setLayout(new javax.swing.BoxLayout(this, javax.swing.BoxLayout.LINE_AXIS));
 
@@ -120,14 +124,16 @@ public class PanelSuperior extends javax.swing.JPanel {
         lDisposicion.setText("Disposición");
         jTabbedPane1.addTab("Disposición", lDisposicion);
 
-        jLabel3.setText("jLabel3");
-        jTabbedPane1.addTab("Referencias", jLabel3);
+        lReferencias.setText("Referencias");
+        jTabbedPane1.addTab("Referencias", lReferencias);
 
-        jLabel4.setText("jLabel4");
-        jTabbedPane1.addTab("Correspondecias", jLabel4);
+        lCorrespondencias.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lCorrespondencias.setText("Correspondencias");
+        jTabbedPane1.addTab("Correspondecias", lCorrespondencias);
 
-        jLabel5.setText("jLabel5");
-        jTabbedPane1.addTab("Revisar", jLabel5);
+        lRevisar.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lRevisar.setText("Revisar");
+        jTabbedPane1.addTab("Revisar", lRevisar);
 
         java.awt.FlowLayout flowLayout2 = new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 0, 0);
         flowLayout2.setAlignOnBaseline(true);
@@ -169,15 +175,36 @@ public class PanelSuperior extends javax.swing.JPanel {
         jSeparator6.setRequestFocusEnabled(false);
         pVista.add(jSeparator6);
 
+        planelZoom1.setPreferredSize(new java.awt.Dimension(122, 92));
+        pVista.add(planelZoom1);
+
+        jSeparator7.setOrientation(javax.swing.SwingConstants.VERTICAL);
+        jSeparator7.setEnabled(false);
+        jSeparator7.setMaximumSize(new java.awt.Dimension(10, 90));
+        jSeparator7.setMinimumSize(new java.awt.Dimension(10, 30));
+        jSeparator7.setName(""); // NOI18N
+        jSeparator7.setPreferredSize(new java.awt.Dimension(10, 85));
+        jSeparator7.setRequestFocusEnabled(false);
+        pVista.add(jSeparator7);
+
+        panelModoOscuro1.setPreferredSize(new java.awt.Dimension(80, 90));
+        pVista.add(panelModoOscuro1);
+
+        jSeparator8.setOrientation(javax.swing.SwingConstants.VERTICAL);
+        jSeparator8.setEnabled(false);
+        jSeparator8.setMaximumSize(new java.awt.Dimension(10, 90));
+        jSeparator8.setMinimumSize(new java.awt.Dimension(10, 30));
+        jSeparator8.setName(""); // NOI18N
+        jSeparator8.setPreferredSize(new java.awt.Dimension(10, 85));
+        jSeparator8.setRequestFocusEnabled(false);
+        pVista.add(jSeparator8);
+
         jTabbedPane1.addTab("Vista", pVista);
 
         add(jTabbedPane1);
     }// </editor-fold>//GEN-END:initComponents
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JSeparator jSeparator1;
@@ -186,18 +213,25 @@ public class PanelSuperior extends javax.swing.JPanel {
     private javax.swing.JSeparator jSeparator4;
     private javax.swing.JSeparator jSeparator5;
     private javax.swing.JSeparator jSeparator6;
+    private javax.swing.JSeparator jSeparator7;
+    private javax.swing.JSeparator jSeparator8;
     private javax.swing.JTabbedPane jTabbedPane1;
     private javax.swing.JLabel lArchivo;
+    private javax.swing.JLabel lCorrespondencias;
     private javax.swing.JLabel lDiseño;
     private javax.swing.JLabel lDisposicion;
     private javax.swing.JLabel lInsertar;
+    private javax.swing.JLabel lReferencias;
+    private javax.swing.JLabel lRevisar;
     private javax.swing.JPanel pHome;
     private javax.swing.JPanel pVista;
     private es.alfsamser.Paneles.Inicio.PanelEditar panelEditar1;
     private es.alfsamser.Paneles.Inicio.PanelFuente panelFuente1;
+    private es.alfsamser.Paneles.Vista.PanelModoOscuro panelModoOscuro1;
     private es.alfsamser.Paneles.Vista.PanelMovimientoPagina panelMovimientoPagina1;
     private es.alfsamser.Paneles.Inicio.PanelParrafo panelParrafo2;
     private es.alfsamser.Paneles.Inicio.PanelPortapapeles panelPortapapeles1;
     private es.alfsamser.Paneles.Vista.PanelVistas panelVistas1;
+    private es.alfsamser.Paneles.Vista.PlanelZoom planelZoom1;
     // End of variables declaration//GEN-END:variables
 }

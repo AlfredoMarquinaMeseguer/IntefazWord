@@ -80,27 +80,30 @@ public class PlanelZoom extends javax.swing.JPanel {
         contenido.add(lPorcentage, gridBagConstraints);
 
         bUnaPagina.setBackground(new java.awt.Color(241, 241, 241));
-        bUnaPagina.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Parrafo/justificar.png"))); // NOI18N
+        bUnaPagina.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Vista/unaPagina18.png"))); // NOI18N
         bUnaPagina.setBorder(null);
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 2;
         gridBagConstraints.gridy = 0;
+        gridBagConstraints.insets = new java.awt.Insets(5, 5, 5, 5);
         contenido.add(bUnaPagina, gridBagConstraints);
 
         bDoblePagina.setBackground(new java.awt.Color(241, 241, 241));
-        bDoblePagina.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Parrafo/justificar.png"))); // NOI18N
+        bDoblePagina.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Vista/variasPaginas18.png"))); // NOI18N
         bDoblePagina.setBorder(null);
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 2;
         gridBagConstraints.gridy = 1;
+        gridBagConstraints.insets = new java.awt.Insets(5, 5, 5, 5);
         contenido.add(bDoblePagina, gridBagConstraints);
 
         bLateralPagina.setBackground(new java.awt.Color(241, 241, 241));
-        bLateralPagina.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Parrafo/justificar.png"))); // NOI18N
+        bLateralPagina.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Vista/anchoPagina18.png"))); // NOI18N
         bLateralPagina.setBorder(null);
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 2;
         gridBagConstraints.gridy = 2;
+        gridBagConstraints.insets = new java.awt.Insets(5, 5, 5, 5);
         contenido.add(bLateralPagina, gridBagConstraints);
 
         add(contenido, java.awt.BorderLayout.CENTER);

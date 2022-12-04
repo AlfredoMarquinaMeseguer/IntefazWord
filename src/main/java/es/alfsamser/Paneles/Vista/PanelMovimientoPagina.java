@@ -26,6 +26,7 @@ public class PanelMovimientoPagina extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        bgMovimientoPagina = new javax.swing.ButtonGroup();
         contenido = new javax.swing.JPanel();
         tbVertical = new javax.swing.JToggleButton();
         tbParalelo = new javax.swing.JToggleButton();
@@ -40,6 +41,7 @@ public class PanelMovimientoPagina extends javax.swing.JPanel {
         contenido.setLayout(flowLayout1);
 
         tbVertical.setBackground(new java.awt.Color(243, 243, 243));
+        bgMovimientoPagina.add(tbVertical);
         tbVertical.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Vista/Vertical.png"))); // NOI18N
         tbVertical.setText("<html><p1 align=\"center\"><p>Vertical</p></p1></html>");
         tbVertical.setAlignmentY(1.0F);
@@ -54,6 +56,7 @@ public class PanelMovimientoPagina extends javax.swing.JPanel {
         contenido.add(tbVertical);
 
         tbParalelo.setBackground(new java.awt.Color(243, 243, 243));
+        bgMovimientoPagina.add(tbParalelo);
         tbParalelo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Vista/Paralelo.png"))); // NOI18N
         tbParalelo.setText("<html><p1 align=\"center\"><p>En</p><p>paralelo</p></p1></html>");
         tbParalelo.setBorder(null);
@@ -78,6 +81,7 @@ public class PanelMovimientoPagina extends javax.swing.JPanel {
     }// </editor-fold>//GEN-END:initComponents
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.ButtonGroup bgMovimientoPagina;
     private javax.swing.JPanel contenido;
     private javax.swing.JLabel etiqueta;
     private javax.swing.JToggleButton tbParalelo;

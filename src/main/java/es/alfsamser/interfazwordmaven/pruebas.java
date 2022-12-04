@@ -30,12 +30,12 @@ public class pruebas extends javax.swing.JFrame {
     private void initComponents() {
 
         jComboBox1 = new javax.swing.JComboBox<>();
-        panelParrafo2 = new es.alfsamser.Paneles.Inicio.PanelParrafo();
+        panelFuente1 = new es.alfsamser.Paneles.Inicio.PanelFuente();
 
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        getContentPane().add(panelParrafo2, java.awt.BorderLayout.CENTER);
+        getContentPane().add(panelFuente1, java.awt.BorderLayout.CENTER);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -63,6 +63,6 @@ public class pruebas extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JComboBox<String> jComboBox1;
-    private es.alfsamser.Paneles.Inicio.PanelParrafo panelParrafo2;
+    private es.alfsamser.Paneles.Inicio.PanelFuente panelFuente1;
     // End of variables declaration//GEN-END:variables
 }

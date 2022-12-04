@@ -27,9 +27,10 @@ public class PanelVistas extends javax.swing.JPanel {
     private void initComponents() {
         java.awt.GridBagConstraints gridBagConstraints;
 
+        bgVistas = new javax.swing.ButtonGroup();
         contenido = new javax.swing.JPanel();
         jPanel1 = new javax.swing.JPanel();
-        bLectura = new javax.swing.JButton();
+        tbDLectura = new javax.swing.JToggleButton();
         tbDImpresion = new javax.swing.JToggleButton();
         tbDWeb = new javax.swing.JToggleButton();
         jPanel2 = new javax.swing.JPanel();
@@ -44,19 +45,21 @@ public class PanelVistas extends javax.swing.JPanel {
         contenido.setLayout(new java.awt.GridBagLayout());
 
         jPanel1.setBackground(new java.awt.Color(243, 243, 243));
-        jPanel1.setLayout(new javax.swing.BoxLayout(jPanel1, javax.swing.BoxLayout.LINE_AXIS));
+        jPanel1.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.CENTER, 5, 0));
 
-        bLectura.setBackground(new java.awt.Color(243, 243, 243));
-        bLectura.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Vista/LeerMas.png"))); // NOI18N
-        bLectura.setText("<html><p1 align=\"center\"><p>Modo</p><p>Lectura</p></p1></html>");
-        bLectura.setBorder(null);
-        bLectura.setBorderPainted(false);
-        bLectura.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        bLectura.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
-        bLectura.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
-        jPanel1.add(bLectura);
+        tbDLectura.setBackground(new java.awt.Color(243, 243, 243));
+        bgVistas.add(tbDLectura);
+        tbDLectura.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Vista/LeerMas.png"))); // NOI18N
+        tbDLectura.setText("<html><p1 align=\"center\"><p>Modo</p><p>Lectura</p></p1></html>");
+        tbDLectura.setBorder(null);
+        tbDLectura.setBorderPainted(false);
+        tbDLectura.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        tbDLectura.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
+        tbDLectura.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        jPanel1.add(tbDLectura);
 
         tbDImpresion.setBackground(new java.awt.Color(243, 243, 243));
+        bgVistas.add(tbDImpresion);
         tbDImpresion.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Vista/DiseñoImpresion.png"))); // NOI18N
         tbDImpresion.setText("<html><p1 align=\"center\"><p>Diseño de</p><p>impresión</p></p1></html>");
         tbDImpresion.setBorder(null);
@@ -67,6 +70,7 @@ public class PanelVistas extends javax.swing.JPanel {
         jPanel1.add(tbDImpresion);
 
         tbDWeb.setBackground(new java.awt.Color(243, 243, 243));
+        bgVistas.add(tbDWeb);
         tbDWeb.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Vista/DiseñoWeb.png"))); // NOI18N
         tbDWeb.setText("<html><p1 align=\"center\"><p>Diseño</p><p>web</p></p1></html>");
         tbDWeb.setBorder(null);
@@ -82,12 +86,16 @@ public class PanelVistas extends javax.swing.JPanel {
         jPanel2.setLayout(new javax.swing.BoxLayout(jPanel2, javax.swing.BoxLayout.Y_AXIS));
 
         tbEsquema.setBackground(new java.awt.Color(243, 243, 243));
+        bgVistas.add(tbEsquema);
+        tbEsquema.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Vista/esquema18.png"))); // NOI18N
         tbEsquema.setText("Esquema");
         tbEsquema.setBorder(null);
         tbEsquema.setBorderPainted(false);
         jPanel2.add(tbEsquema);
 
         tbBorrador.setBackground(new java.awt.Color(243, 243, 243));
+        bgVistas.add(tbBorrador);
+        tbBorrador.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Vista/borrador18.png"))); // NOI18N
         tbBorrador.setText("Borrador");
         tbBorrador.setBorder(null);
         tbBorrador.setBorderPainted(false);
@@ -129,7 +137,7 @@ public class PanelVistas extends javax.swing.JPanel {
     }//GEN-LAST:event_tbBorradorActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton bLectura;
+    private javax.swing.ButtonGroup bgVistas;
     private javax.swing.JPanel contenido;
     private javax.swing.JLabel etiqueta;
     private javax.swing.JPanel etiquetaInferior;
@@ -137,6 +145,7 @@ public class PanelVistas extends javax.swing.JPanel {
     private javax.swing.JPanel jPanel2;
     private javax.swing.JToggleButton tbBorrador;
     private javax.swing.JToggleButton tbDImpresion;
+    private javax.swing.JToggleButton tbDLectura;
     private javax.swing.JToggleButton tbDWeb;
     private javax.swing.JToggleButton tbEsquema;
     // End of variables declaration//GEN-END:variables

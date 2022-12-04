@@ -41,8 +41,28 @@
             <Component class="javax.swing.JComboBox" name="cbFuente">
               <Properties>
                 <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-                  <StringArray count="1">
-                    <StringItem index="0" value="Calibri (Body)"/>
+                  <StringArray count="21">
+                    <StringItem index="0" value="Alef"/>
+                    <StringItem index="1" value="Amiri"/>
+                    <StringItem index="2" value="Arial"/>
+                    <StringItem index="3" value="Calibri"/>
+                    <StringItem index="4" value="Calibri Ligth"/>
+                    <StringItem index="5" value="Consolas"/>
+                    <StringItem index="6" value="Constantina"/>
+                    <StringItem index="7" value="Impact"/>
+                    <StringItem index="8" value="DejaVu Sans"/>
+                    <StringItem index="9" value="Gabriola"/>
+                    <StringItem index="10" value="Georgia"/>
+                    <StringItem index="11" value="Javanese Text"/>
+                    <StringItem index="12" value="Liberation Sans"/>
+                    <StringItem index="13" value="Liberation Serif"/>
+                    <StringItem index="14" value="Malgun Gothic"/>
+                    <StringItem index="15" value="Miriam Mono CLM"/>
+                    <StringItem index="16" value="Segoe UI"/>
+                    <StringItem index="17" value="Source Code Pro"/>
+                    <StringItem index="18" value="Times New Roman"/>
+                    <StringItem index="19" value="Verdana"/>
+                    <StringItem index="20" value="Yu Gothic"/>
                   </StringArray>
                 </Property>
               </Properties>
