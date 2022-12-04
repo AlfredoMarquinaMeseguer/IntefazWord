@@ -37,9 +37,9 @@ public class PanelSuperior extends javax.swing.JPanel {
         panelParrafo2 = new es.alfsamser.Paneles.Inicio.PanelParrafo();
         jSeparator3 = new javax.swing.JSeparator();
         panelEditar1 = new es.alfsamser.Paneles.Inicio.PanelEditar();
-        jLabel6 = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
+        lInsertar = new javax.swing.JLabel();
+        lDiseño = new javax.swing.JLabel();
+        lDisposicion = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
@@ -108,14 +108,17 @@ public class PanelSuperior extends javax.swing.JPanel {
 
         jTabbedPane1.addTab("Inicio", pHome);
 
-        jLabel6.setText("jLabel6");
-        jTabbedPane1.addTab("Insertar", jLabel6);
+        lInsertar.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lInsertar.setText("Insertar");
+        jTabbedPane1.addTab("Insertar", lInsertar);
 
-        jLabel1.setText("jLabel1");
-        jTabbedPane1.addTab("Diseño", jLabel1);
+        lDiseño.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lDiseño.setText("Diseño");
+        jTabbedPane1.addTab("Diseño", lDiseño);
 
-        jLabel2.setText("jLabel2");
-        jTabbedPane1.addTab("Disposición", jLabel2);
+        lDisposicion.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lDisposicion.setText("Disposición");
+        jTabbedPane1.addTab("Disposición", lDisposicion);
 
         jLabel3.setText("jLabel3");
         jTabbedPane1.addTab("Referencias", jLabel3);
@@ -172,12 +175,9 @@ public class PanelSuperior extends javax.swing.JPanel {
     }// </editor-fold>//GEN-END:initComponents
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JSeparator jSeparator1;
@@ -188,6 +188,9 @@ public class PanelSuperior extends javax.swing.JPanel {
     private javax.swing.JSeparator jSeparator6;
     private javax.swing.JTabbedPane jTabbedPane1;
     private javax.swing.JLabel lArchivo;
+    private javax.swing.JLabel lDiseño;
+    private javax.swing.JLabel lDisposicion;
+    private javax.swing.JLabel lInsertar;
     private javax.swing.JPanel pHome;
     private javax.swing.JPanel pVista;
     private es.alfsamser.Paneles.Inicio.PanelEditar panelEditar1;
