@@ -8,14 +8,14 @@ package es.alfsamser.Paneles.Inicio;
  *
  * @author Samu
  */
-public class PanelEditar extends javax.swing.JPanel {
+public class PanelEdición extends javax.swing.JPanel {
 
     /**
      * Creates new form Plantilla
      */
-    public PanelEditar() {
+    public PanelEdición() {
         initComponents();
-    }
+        }
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -31,29 +31,25 @@ public class PanelEditar extends javax.swing.JPanel {
         jPanel1 = new javax.swing.JPanel();
         bBuscar = new javax.swing.JButton();
         bBuscarFlecha = new javax.swing.JButton();
+        jPanel2 = new javax.swing.JPanel();
         bReemplazar = new javax.swing.JButton();
         bSeleccionar = new javax.swing.JButton();
         etiquetaInferior = new javax.swing.JPanel();
         etiqueta = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(243, 243, 243));
-        setMaximumSize(new java.awt.Dimension(93, 90));
-        setMinimumSize(new java.awt.Dimension(93, 90));
-        setPreferredSize(new java.awt.Dimension(93, 90));
+        setPreferredSize(new java.awt.Dimension(150, 100));
         setLayout(new java.awt.BorderLayout());
 
         contenido.setBackground(new java.awt.Color(243, 243, 243));
         contenido.setAlignmentX(0.0F);
         contenido.setAlignmentY(0.0F);
-        contenido.setMaximumSize(new java.awt.Dimension(92, 75));
-        contenido.setMinimumSize(new java.awt.Dimension(92, 75));
-        contenido.setPreferredSize(new java.awt.Dimension(92, 75));
-        contenido.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 0, 0));
+        contenido.setMinimumSize(new java.awt.Dimension(110, 29));
+        contenido.setPreferredSize(new java.awt.Dimension(150, 100));
+        contenido.setLayout(new java.awt.GridBagLayout());
 
-        jPanel1.setMaximumSize(new java.awt.Dimension(73, 29));
-        jPanel1.setMinimumSize(new java.awt.Dimension(73, 29));
-        jPanel1.setPreferredSize(new java.awt.Dimension(73, 29));
-        jPanel1.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.CENTER, 0, 5));
+        jPanel1.setBackground(new java.awt.Color(243, 243, 243));
+        jPanel1.setLayout(new javax.swing.BoxLayout(jPanel1, javax.swing.BoxLayout.LINE_AXIS));
 
         bBuscar.setBackground(new java.awt.Color(243, 243, 243));
         bBuscar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Editar/buscar (1).png"))); // NOI18N
@@ -61,6 +57,8 @@ public class PanelEditar extends javax.swing.JPanel {
         bBuscar.setAlignmentY(0.0F);
         bBuscar.setBorder(null);
         bBuscar.setBorderPainted(false);
+        bBuscar.setMaximumSize(new java.awt.Dimension(100, 30));
+        bBuscar.setMinimumSize(new java.awt.Dimension(100, 30));
         jPanel1.add(bBuscar);
 
         bBuscarFlecha.setBackground(new java.awt.Color(243, 243, 243));
@@ -68,32 +66,40 @@ public class PanelEditar extends javax.swing.JPanel {
         bBuscarFlecha.setAlignmentY(0.0F);
         bBuscarFlecha.setBorder(null);
         bBuscarFlecha.setBorderPainted(false);
-        bBuscarFlecha.setMaximumSize(new java.awt.Dimension(16, 18));
-        bBuscarFlecha.setMinimumSize(new java.awt.Dimension(16, 18));
-        bBuscarFlecha.setPreferredSize(new java.awt.Dimension(16, 18));
         jPanel1.add(bBuscarFlecha);
 
-        contenido.add(jPanel1);
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 0;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.LINE_START;
+        contenido.add(jPanel1, gridBagConstraints);
+
+        jPanel2.setLayout(new javax.swing.BoxLayout(jPanel2, javax.swing.BoxLayout.Y_AXIS));
 
         bReemplazar.setBackground(new java.awt.Color(243, 243, 243));
         bReemplazar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Editar/reemplazarW.png"))); // NOI18N
         bReemplazar.setText("Reemplazar    ");
         bReemplazar.setBorder(null);
         bReemplazar.setBorderPainted(false);
-        bReemplazar.setMaximumSize(new java.awt.Dimension(95, 28));
-        bReemplazar.setMinimumSize(new java.awt.Dimension(95, 28));
-        bReemplazar.setPreferredSize(new java.awt.Dimension(95, 25));
-        contenido.add(bReemplazar);
+        bReemplazar.setMaximumSize(new java.awt.Dimension(150, 30));
+        bReemplazar.setMinimumSize(new java.awt.Dimension(150, 30));
+        jPanel2.add(bReemplazar);
 
         bSeleccionar.setBackground(new java.awt.Color(243, 243, 243));
         bSeleccionar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Editar/seleccionar (1).png"))); // NOI18N
         bSeleccionar.setText("Seleccionar 🞃");
         bSeleccionar.setBorder(null);
         bSeleccionar.setBorderPainted(false);
-        bSeleccionar.setMaximumSize(new java.awt.Dimension(90, 28));
-        bSeleccionar.setMinimumSize(new java.awt.Dimension(90, 28));
-        bSeleccionar.setPreferredSize(new java.awt.Dimension(90, 25));
-        contenido.add(bSeleccionar);
+        bSeleccionar.setMaximumSize(new java.awt.Dimension(150, 30));
+        bSeleccionar.setMinimumSize(new java.awt.Dimension(150, 30));
+        jPanel2.add(bSeleccionar);
+
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 1;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.LINE_START;
+        contenido.add(jPanel2, gridBagConstraints);
 
         add(contenido, java.awt.BorderLayout.CENTER);
 
@@ -101,7 +107,7 @@ public class PanelEditar extends javax.swing.JPanel {
 
         etiqueta.setForeground(new java.awt.Color(112, 108, 108));
         etiqueta.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        etiqueta.setText("Editar");
+        etiqueta.setText("Edición");
         etiqueta.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
         etiqueta.setFocusable(false);
         etiqueta.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -126,5 +132,6 @@ public class PanelEditar extends javax.swing.JPanel {
     private javax.swing.JLabel etiqueta;
     private javax.swing.JPanel etiquetaInferior;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
     // End of variables declaration//GEN-END:variables
 }
