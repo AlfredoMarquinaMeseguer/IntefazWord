@@ -2,18 +2,18 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JPanel.java to edit this template
  */
-package es.alfsamser.Plantillas;
+package es.alfsamser.Paneles;
 
 /**
  *
  * @author Alfre
  */
-public class Carta extends javax.swing.JPanel {
+public class PanelSuperior extends javax.swing.JPanel {
 
     /**
      * Creates new form Carta
      */
-    public Carta() {
+    public PanelSuperior() {
         initComponents();
     }
 
@@ -30,11 +30,13 @@ public class Carta extends javax.swing.JPanel {
         jTabbedPane1 = new javax.swing.JTabbedPane();
         lArchivo = new javax.swing.JLabel();
         pHome = new javax.swing.JPanel();
-        panelPortapapeles1 = new es.alfsamser.Plantillas.PanelPortapapeles();
+        panelPortapapeles1 = new es.alfsamser.Paneles.Inicio.PanelPortapapeles();
         jSeparator1 = new javax.swing.JSeparator();
-        panelFuente1 = new es.alfsamser.Plantillas.PanelFuente();
+        panelFuente1 = new es.alfsamser.Paneles.Inicio.PanelFuente();
         jSeparator2 = new javax.swing.JSeparator();
-        panelParrafo2 = new es.alfsamser.Plantillas.PanelParrafo();
+        panelParrafo2 = new es.alfsamser.Paneles.Inicio.PanelParrafo();
+        jSeparator3 = new javax.swing.JSeparator();
+        panelEditar1 = new es.alfsamser.Paneles.Inicio.PanelEditar();
         jLabel6 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
@@ -42,6 +44,12 @@ public class Carta extends javax.swing.JPanel {
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         pVista = new javax.swing.JPanel();
+        panelVistas1 = new es.alfsamser.Paneles.Vista.PanelVistas();
+        jSeparator4 = new javax.swing.JSeparator();
+        panelMovimientoPagina1 = new es.alfsamser.Paneles.Vista.PanelMovimientoPagina();
+        jSeparator5 = new javax.swing.JSeparator();
+        jLabel7 = new javax.swing.JLabel();
+        jSeparator6 = new javax.swing.JSeparator();
 
         setLayout(new javax.swing.BoxLayout(this, javax.swing.BoxLayout.LINE_AXIS));
 
@@ -87,6 +95,17 @@ public class Carta extends javax.swing.JPanel {
         panelParrafo2.setPreferredSize(new java.awt.Dimension(254, 90));
         pHome.add(panelParrafo2);
 
+        jSeparator3.setOrientation(javax.swing.SwingConstants.VERTICAL);
+        jSeparator3.setAlignmentX(0.0F);
+        jSeparator3.setEnabled(false);
+        jSeparator3.setMaximumSize(new java.awt.Dimension(10, 90));
+        jSeparator3.setMinimumSize(new java.awt.Dimension(10, 30));
+        jSeparator3.setName(""); // NOI18N
+        jSeparator3.setPreferredSize(new java.awt.Dimension(10, 85));
+        jSeparator3.setRequestFocusEnabled(false);
+        pHome.add(jSeparator3);
+        pHome.add(panelEditar1);
+
         jTabbedPane1.addTab("Inicio", pHome);
 
         jLabel6.setText("jLabel6");
@@ -106,6 +125,47 @@ public class Carta extends javax.swing.JPanel {
 
         jLabel5.setText("jLabel5");
         jTabbedPane1.addTab("Revisar", jLabel5);
+
+        java.awt.FlowLayout flowLayout2 = new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 0, 0);
+        flowLayout2.setAlignOnBaseline(true);
+        pVista.setLayout(flowLayout2);
+
+        panelVistas1.setPreferredSize(new java.awt.Dimension(200, 90));
+        pVista.add(panelVistas1);
+
+        jSeparator4.setOrientation(javax.swing.SwingConstants.VERTICAL);
+        jSeparator4.setEnabled(false);
+        jSeparator4.setMaximumSize(new java.awt.Dimension(10, 90));
+        jSeparator4.setMinimumSize(new java.awt.Dimension(10, 30));
+        jSeparator4.setName(""); // NOI18N
+        jSeparator4.setPreferredSize(new java.awt.Dimension(10, 85));
+        jSeparator4.setRequestFocusEnabled(false);
+        pVista.add(jSeparator4);
+
+        panelMovimientoPagina1.setPreferredSize(new java.awt.Dimension(125, 89));
+        pVista.add(panelMovimientoPagina1);
+
+        jSeparator5.setOrientation(javax.swing.SwingConstants.VERTICAL);
+        jSeparator5.setEnabled(false);
+        jSeparator5.setMaximumSize(new java.awt.Dimension(10, 90));
+        jSeparator5.setMinimumSize(new java.awt.Dimension(10, 30));
+        jSeparator5.setName(""); // NOI18N
+        jSeparator5.setPreferredSize(new java.awt.Dimension(10, 85));
+        jSeparator5.setRequestFocusEnabled(false);
+        pVista.add(jSeparator5);
+
+        jLabel7.setText("Mostrar");
+        pVista.add(jLabel7);
+
+        jSeparator6.setOrientation(javax.swing.SwingConstants.VERTICAL);
+        jSeparator6.setEnabled(false);
+        jSeparator6.setMaximumSize(new java.awt.Dimension(10, 90));
+        jSeparator6.setMinimumSize(new java.awt.Dimension(10, 30));
+        jSeparator6.setName(""); // NOI18N
+        jSeparator6.setPreferredSize(new java.awt.Dimension(10, 85));
+        jSeparator6.setRequestFocusEnabled(false);
+        pVista.add(jSeparator6);
+
         jTabbedPane1.addTab("Vista", pVista);
 
         add(jTabbedPane1);
@@ -118,15 +178,23 @@ public class Carta extends javax.swing.JPanel {
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator2;
+    private javax.swing.JSeparator jSeparator3;
+    private javax.swing.JSeparator jSeparator4;
+    private javax.swing.JSeparator jSeparator5;
+    private javax.swing.JSeparator jSeparator6;
     private javax.swing.JTabbedPane jTabbedPane1;
     private javax.swing.JLabel lArchivo;
     private javax.swing.JPanel pHome;
     private javax.swing.JPanel pVista;
-    private es.alfsamser.Plantillas.PanelFuente panelFuente1;
-    private es.alfsamser.Plantillas.PanelParrafo panelParrafo2;
-    private es.alfsamser.Plantillas.PanelPortapapeles panelPortapapeles1;
+    private es.alfsamser.Paneles.Inicio.PanelEditar panelEditar1;
+    private es.alfsamser.Paneles.Inicio.PanelFuente panelFuente1;
+    private es.alfsamser.Paneles.Vista.PanelMovimientoPagina panelMovimientoPagina1;
+    private es.alfsamser.Paneles.Inicio.PanelParrafo panelParrafo2;
+    private es.alfsamser.Paneles.Inicio.PanelPortapapeles panelPortapapeles1;
+    private es.alfsamser.Paneles.Vista.PanelVistas panelVistas1;
     // End of variables declaration//GEN-END:variables
 }

@@ -2,20 +2,21 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JPanel.java to edit this template
  */
-package es.alfsamser.Plantillas;
+package es.alfsamser.Paneles.Vista;
+
+import es.alfsamser.Paneles.*;
 
 /**
  *
  * @author Alfre
  */
-public class Plantilla extends javax.swing.JPanel {
+public class PlanelZoom extends javax.swing.JPanel {
 
     /**
      * Creates new form Plantilla
      */
-    public Plantilla() {
+    public PlanelZoom() {
         initComponents();
-        bIcono.setOpaque(false);
     }
 
     /**
@@ -29,38 +30,80 @@ public class Plantilla extends javax.swing.JPanel {
         java.awt.GridBagConstraints gridBagConstraints;
 
         contenido = new javax.swing.JPanel();
-        placeHolder = new javax.swing.JLabel();
-        etiquetaInferior = new javax.swing.JPanel();
+        bZoom = new javax.swing.JButton();
+        cbZoom = new javax.swing.JComboBox<>();
+        bCien = new javax.swing.JButton();
+        lPorcentage = new javax.swing.JLabel();
+        bUnaPagina = new javax.swing.JButton();
+        bDoblePagina = new javax.swing.JButton();
+        bLateralPagina = new javax.swing.JButton();
         etiqueta = new javax.swing.JLabel();
-        bIcono = new javax.swing.JButton();
 
         setLayout(new java.awt.BorderLayout());
 
-        placeHolder.setForeground(new java.awt.Color(112, 108, 108));
-        placeHolder.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        placeHolder.setText("Aquí va el contenido del panel");
-        placeHolder.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        contenido.setLayout(new java.awt.GridBagLayout());
 
-        javax.swing.GroupLayout contenidoLayout = new javax.swing.GroupLayout(contenido);
-        contenido.setLayout(contenidoLayout);
-        contenidoLayout.setHorizontalGroup(
-            contenidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(contenidoLayout.createSequentialGroup()
-                .addGap(107, 107, 107)
-                .addComponent(placeHolder)
-                .addContainerGap(101, Short.MAX_VALUE))
-        );
-        contenidoLayout.setVerticalGroup(
-            contenidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(contenidoLayout.createSequentialGroup()
-                .addGap(121, 121, 121)
-                .addComponent(placeHolder)
-                .addContainerGap(51, Short.MAX_VALUE))
-        );
+        bZoom.setBackground(new java.awt.Color(241, 241, 241));
+        bZoom.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Vista/Lupa.png"))); // NOI18N
+        bZoom.setText("Zoom");
+        bZoom.setBorder(null);
+        bZoom.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        bZoom.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
+        bZoom.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 0;
+        gridBagConstraints.gridheight = 2;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+        contenido.add(bZoom, gridBagConstraints);
+
+        cbZoom.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "100%" }));
+        cbZoom.setMinimumSize(new java.awt.Dimension(60, 22));
+        cbZoom.setPreferredSize(new java.awt.Dimension(62, 22));
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 2;
+        contenido.add(cbZoom, gridBagConstraints);
+
+        bCien.setBackground(new java.awt.Color(241, 241, 241));
+        bCien.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Vista/100.png"))); // NOI18N
+        bCien.setBorder(null);
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 1;
+        gridBagConstraints.gridy = 0;
+        contenido.add(bCien, gridBagConstraints);
+
+        lPorcentage.setText("100%");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 1;
+        gridBagConstraints.gridy = 1;
+        contenido.add(lPorcentage, gridBagConstraints);
+
+        bUnaPagina.setBackground(new java.awt.Color(241, 241, 241));
+        bUnaPagina.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Parrafo/justificar.png"))); // NOI18N
+        bUnaPagina.setBorder(null);
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 2;
+        gridBagConstraints.gridy = 0;
+        contenido.add(bUnaPagina, gridBagConstraints);
+
+        bDoblePagina.setBackground(new java.awt.Color(241, 241, 241));
+        bDoblePagina.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Parrafo/justificar.png"))); // NOI18N
+        bDoblePagina.setBorder(null);
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 2;
+        gridBagConstraints.gridy = 1;
+        contenido.add(bDoblePagina, gridBagConstraints);
+
+        bLateralPagina.setBackground(new java.awt.Color(241, 241, 241));
+        bLateralPagina.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Parrafo/justificar.png"))); // NOI18N
+        bLateralPagina.setBorder(null);
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 2;
+        gridBagConstraints.gridy = 2;
+        contenido.add(bLateralPagina, gridBagConstraints);
 
         add(contenido, java.awt.BorderLayout.CENTER);
-
-        etiquetaInferior.setLayout(new java.awt.GridBagLayout());
 
         etiqueta.setForeground(new java.awt.Color(112, 108, 108));
         etiqueta.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -69,34 +112,18 @@ public class Plantilla extends javax.swing.JPanel {
         etiqueta.setFocusable(false);
         etiqueta.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         etiqueta.setPreferredSize(new java.awt.Dimension(200, 15));
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 0;
-        gridBagConstraints.gridy = 0;
-        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.BELOW_BASELINE;
-        gridBagConstraints.weightx = 1.0;
-        etiquetaInferior.add(etiqueta, gridBagConstraints);
-
-        bIcono.setBackground(new java.awt.Color(242, 242, 242));
-        bIcono.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/flechaInferiorIzq8.png"))); // NOI18N
-        bIcono.setBorder(null);
-        bIcono.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 1;
-        gridBagConstraints.gridy = 0;
-        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
-        gridBagConstraints.ipadx = 5;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.BELOW_BASELINE;
-        etiquetaInferior.add(bIcono, gridBagConstraints);
-
-        add(etiquetaInferior, java.awt.BorderLayout.SOUTH);
+        add(etiqueta, java.awt.BorderLayout.SOUTH);
     }// </editor-fold>//GEN-END:initComponents
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton bIcono;
+    private javax.swing.JButton bCien;
+    private javax.swing.JButton bDoblePagina;
+    private javax.swing.JButton bLateralPagina;
+    private javax.swing.JButton bUnaPagina;
+    private javax.swing.JButton bZoom;
+    private javax.swing.JComboBox<String> cbZoom;
     private javax.swing.JPanel contenido;
     private javax.swing.JLabel etiqueta;
-    private javax.swing.JPanel etiquetaInferior;
-    private javax.swing.JLabel placeHolder;
+    private javax.swing.JLabel lPorcentage;
     // End of variables declaration//GEN-END:variables
 }

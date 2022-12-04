@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JPanel.java to edit this template
  */
-package es.alfsamser.Plantillas;
+package es.alfsamser.Paneles.Vista;
 
 /**
  *
@@ -82,17 +82,20 @@ public class PanelVistas extends javax.swing.JPanel {
         jPanel2.setLayout(new javax.swing.BoxLayout(jPanel2, javax.swing.BoxLayout.Y_AXIS));
 
         tbEsquema.setBackground(new java.awt.Color(243, 243, 243));
-        tbEsquema.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Vista/esquema (1).png"))); // NOI18N
         tbEsquema.setText("Esquema");
         tbEsquema.setBorder(null);
         tbEsquema.setBorderPainted(false);
         jPanel2.add(tbEsquema);
 
         tbBorrador.setBackground(new java.awt.Color(243, 243, 243));
-        tbBorrador.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Vista/borrador (1).png"))); // NOI18N
         tbBorrador.setText("Borrador");
         tbBorrador.setBorder(null);
         tbBorrador.setBorderPainted(false);
+        tbBorrador.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                tbBorradorActionPerformed(evt);
+            }
+        });
         jPanel2.add(tbBorrador);
 
         gridBagConstraints = new java.awt.GridBagConstraints();
@@ -120,6 +123,10 @@ public class PanelVistas extends javax.swing.JPanel {
 
         add(etiquetaInferior, java.awt.BorderLayout.SOUTH);
     }// </editor-fold>//GEN-END:initComponents
+
+    private void tbBorradorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tbBorradorActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_tbBorradorActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton bLectura;

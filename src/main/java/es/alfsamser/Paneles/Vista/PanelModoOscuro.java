@@ -2,20 +2,20 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JPanel.java to edit this template
  */
-package es.alfsamser.Plantillas;
+package es.alfsamser.Paneles.Vista;
 
 /**
  *
  * @author Samu
  */
-public class CambiarModo extends javax.swing.JPanel {
+public class PanelModoOscuro extends javax.swing.JPanel {
 
     /**
      * Creates new form Plantilla
      */
-    public CambiarModo() {
+    public PanelModoOscuro() {
         initComponents();
-        }
+    }
 
     /**
      * This method is called from within the constructor to initialize the form.

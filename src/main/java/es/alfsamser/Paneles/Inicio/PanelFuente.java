@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JPanel.java to edit this template
  */
-package es.alfsamser.Plantillas;
+package es.alfsamser.Paneles.Inicio;
 
 import javax.swing.UIManager;
 
@@ -168,7 +168,6 @@ public class PanelFuente extends javax.swing.JPanel {
 
         tbSubrayado.setBackground(new java.awt.Color(242, 242, 242));
         tbSubrayado.setForeground(new java.awt.Color(112, 108, 108));
-        tbSubrayado.setSelected(true);
         tbSubrayado.setText("<html><u>U</u></html>");
         tbSubrayado.setActionCommand("<html><inst>U</inst></html>");
         tbSubrayado.setBorder(null);

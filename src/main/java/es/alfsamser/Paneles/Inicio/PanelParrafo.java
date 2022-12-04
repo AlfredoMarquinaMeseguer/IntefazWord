@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JPanel.java to edit this template
  */
-package es.alfsamser.Plantillas;
+package es.alfsamser.Paneles.Inicio;
 
 /**
  *
@@ -357,6 +357,8 @@ public class PanelParrafo extends javax.swing.JPanel {
         etiqueta.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
         etiqueta.setFocusable(false);
         etiqueta.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        etiqueta.setMaximumSize(new java.awt.Dimension(200, 15));
+        etiqueta.setMinimumSize(new java.awt.Dimension(200, 15));
         etiqueta.setPreferredSize(new java.awt.Dimension(200, 15));
         etiqueta.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         gridBagConstraints = new java.awt.GridBagConstraints();

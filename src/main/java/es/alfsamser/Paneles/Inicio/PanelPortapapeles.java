@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JPanel.java to edit this template
  */
-package es.alfsamser.Plantillas;
+package es.alfsamser.Paneles.Inicio;
 
 /**
  *
@@ -93,9 +93,14 @@ public class PanelPortapapeles extends javax.swing.JPanel {
         jButton4.setBackground(new java.awt.Color(241, 241, 241));
         jButton4.setForeground(new java.awt.Color(112, 108, 108));
         jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Portapapeles/copiarFormato18x18.png"))); // NOI18N
-        jButton4.setText("CopiarFormato");
+        jButton4.setText("Copiar formato");
         jButton4.setBorder(null);
         jButton4.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        jButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton4ActionPerformed(evt);
+            }
+        });
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
         gridBagConstraints.gridy = 2;
@@ -143,6 +148,10 @@ public class PanelPortapapeles extends javax.swing.JPanel {
 
         add(etiquetaInferior, java.awt.BorderLayout.SOUTH);
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton4ActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton bIcono;
