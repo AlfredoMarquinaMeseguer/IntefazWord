@@ -6,6 +6,9 @@ package es.alfsamser.interfazwordmaven;
 
 import javax.swing.JFileChooser;
 import javax.swing.JOptionPane;
+import javax.swing.UIManager;
+import javax.swing.UnsupportedLookAndFeelException;
+import com.formdev.flatlaf.FlatLightLaf;
 
 /**
  *
@@ -19,6 +22,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
     public VentanaPrincipal() {
         initComponents();
         setDefaultCloseOperation(DO_NOTHING_ON_CLOSE);
+       
     }
     
     
@@ -26,7 +30,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
     //Metodo para comprobar si el usuario quiere guardar el documento
     private void cerrar(){
         String botones[] = {"No", "Si"};
-        int eleccion = JOptionPane.showOptionDialog(this, "¿Desea guardar el fichero?", "Confirmar cierre", 0, 0, null, botones, this);
+        int eleccion = JOptionPane.showOptionDialog(this, "¿Desea guardar el fichero?", "Confirmar cierre", 0, 3, null, botones, this);
         if (eleccion ==JOptionPane.YES_OPTION){
             System.exit(0);
         }else if(eleccion==JOptionPane.NO_OPTION){
@@ -49,6 +53,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         jPTop = new javax.swing.JPanel();
         panelSuperior1 = new es.alfsamser.Paneles.PanelSuperior();
         jPMid = new javax.swing.JPanel();
+        panelCentral1 = new es.alfsamser.Paneles.PanelCentral();
         jPBot = new javax.swing.JPanel();
         panelInferior1 = new es.alfsamser.Paneles.PanelInferior();
 
@@ -64,16 +69,8 @@ public class VentanaPrincipal extends javax.swing.JFrame {
 
         getContentPane().add(jPTop, java.awt.BorderLayout.PAGE_START);
 
-        javax.swing.GroupLayout jPMidLayout = new javax.swing.GroupLayout(jPMid);
-        jPMid.setLayout(jPMidLayout);
-        jPMidLayout.setHorizontalGroup(
-            jPMidLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 868, Short.MAX_VALUE)
-        );
-        jPMidLayout.setVerticalGroup(
-            jPMidLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 149, Short.MAX_VALUE)
-        );
+        jPMid.setLayout(new javax.swing.BoxLayout(jPMid, javax.swing.BoxLayout.LINE_AXIS));
+        jPMid.add(panelCentral1);
 
         getContentPane().add(jPMid, java.awt.BorderLayout.CENTER);
 
@@ -98,21 +95,10 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
          * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
          */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("FlatLaf".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(VentanaPrincipal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(VentanaPrincipal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(VentanaPrincipal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(VentanaPrincipal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        try{
+            UIManager.setLookAndFeel(new FlatLightLaf());
+        }catch(UnsupportedLookAndFeelException e) {
+            e.printStackTrace();
         }
         //</editor-fold>
 
@@ -128,6 +114,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
     private javax.swing.JPanel jPBot;
     private javax.swing.JPanel jPMid;
     private javax.swing.JPanel jPTop;
+    private es.alfsamser.Paneles.PanelCentral panelCentral1;
     private es.alfsamser.Paneles.PanelInferior panelInferior1;
     private es.alfsamser.Paneles.PanelSuperior panelSuperior1;
     // End of variables declaration//GEN-END:variables

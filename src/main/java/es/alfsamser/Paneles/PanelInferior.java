@@ -4,14 +4,6 @@
  */
 package es.alfsamser.Paneles;
 
-import java.awt.event.ActionEvent;
-import java.awt.event.KeyEvent;
-import java.awt.event.MouseWheelEvent;
-import javax.swing.AbstractAction;
-import javax.swing.JButton;
-import javax.swing.JComponent;
-import javax.swing.KeyStroke;
-
 /**
  *
  * @author Sergio
