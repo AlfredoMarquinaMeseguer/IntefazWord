@@ -29,12 +29,12 @@ public class PanelVistas extends javax.swing.JPanel {
 
         bgVistas = new javax.swing.ButtonGroup();
         contenido = new javax.swing.JPanel();
-        jPanel1 = new javax.swing.JPanel();
-        tbDLectura = new javax.swing.JToggleButton();
+        pBotonesGrandes = new javax.swing.JPanel();
+        tbMLectura = new javax.swing.JToggleButton();
         tbDImpresion = new javax.swing.JToggleButton();
         tbDWeb = new javax.swing.JToggleButton();
-        jPanel2 = new javax.swing.JPanel();
-        bEsquema = new javax.swing.JButton();
+        pBotonesPequennos = new javax.swing.JPanel();
+        tbEsquema = new javax.swing.JToggleButton();
         tbBorrador = new javax.swing.JToggleButton();
         etiquetaInferior = new javax.swing.JPanel();
         etiqueta = new javax.swing.JLabel();
@@ -45,19 +45,19 @@ public class PanelVistas extends javax.swing.JPanel {
         contenido.setBackground(new java.awt.Color(243, 243, 243));
         contenido.setLayout(new java.awt.GridBagLayout());
 
-        jPanel1.setBackground(new java.awt.Color(243, 243, 243));
-        jPanel1.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.CENTER, 5, 0));
+        pBotonesGrandes.setBackground(new java.awt.Color(243, 243, 243));
+        pBotonesGrandes.setLayout(new javax.swing.BoxLayout(pBotonesGrandes, javax.swing.BoxLayout.LINE_AXIS));
 
-        tbDLectura.setBackground(new java.awt.Color(243, 243, 243));
-        bgVistas.add(tbDLectura);
-        tbDLectura.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Vista/LeerMas.png"))); // NOI18N
-        tbDLectura.setText("<html><p1 align=\"center\"><p>Modo</p><p>Lectura</p></p1></html>");
-        tbDLectura.setBorder(null);
-        tbDLectura.setBorderPainted(false);
-        tbDLectura.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        tbDLectura.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
-        tbDLectura.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
-        jPanel1.add(tbDLectura);
+        tbMLectura.setBackground(new java.awt.Color(243, 243, 243));
+        bgVistas.add(tbMLectura);
+        tbMLectura.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Vista/LeerMas.png"))); // NOI18N
+        tbMLectura.setText("<html><p1 align=\"center\"><p>Modo</p><p>Lectura</p></p1></html>");
+        tbMLectura.setBorder(null);
+        tbMLectura.setBorderPainted(false);
+        tbMLectura.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        tbMLectura.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
+        tbMLectura.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        pBotonesGrandes.add(tbMLectura);
 
         tbDImpresion.setBackground(new java.awt.Color(243, 243, 243));
         bgVistas.add(tbDImpresion);
@@ -73,7 +73,7 @@ public class PanelVistas extends javax.swing.JPanel {
                 tbDImpresionActionPerformed(evt);
             }
         });
-        jPanel1.add(tbDImpresion);
+        pBotonesGrandes.add(tbDImpresion);
 
         tbDWeb.setBackground(new java.awt.Color(243, 243, 243));
         bgVistas.add(tbDWeb);
@@ -89,23 +89,30 @@ public class PanelVistas extends javax.swing.JPanel {
                 tbDWebActionPerformed(evt);
             }
         });
-        jPanel1.add(tbDWeb);
+        pBotonesGrandes.add(tbDWeb);
 
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.ipadx = 21;
-        contenido.add(jPanel1, gridBagConstraints);
+        contenido.add(pBotonesGrandes, gridBagConstraints);
 
-        jPanel2.setBackground(new java.awt.Color(243, 243, 243));
-        jPanel2.setLayout(new java.awt.GridLayout(0, 1, 0, 10));
+        pBotonesPequennos.setBackground(new java.awt.Color(243, 243, 243));
+        pBotonesPequennos.setLayout(new java.awt.GridLayout(0, 1, 0, 10));
 
-        bEsquema.setBackground(new java.awt.Color(243, 243, 243));
-        bEsquema.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Vista/esquema.png"))); // NOI18N
-        bEsquema.setText("Esquema");
-        bEsquema.setBorder(null);
-        bEsquema.setBorderPainted(false);
-        jPanel2.add(bEsquema);
+        tbEsquema.setBackground(new java.awt.Color(243, 243, 243));
+        bgVistas.add(tbEsquema);
+        tbEsquema.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Vista/esquema18.png"))); // NOI18N
+        tbEsquema.setText("Esquema");
+        tbEsquema.setBorder(null);
+        tbEsquema.setBorderPainted(false);
+        tbEsquema.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                tbEsquemaActionPerformed(evt);
+            }
+        });
+        pBotonesPequennos.add(tbEsquema);
 
         tbBorrador.setBackground(new java.awt.Color(243, 243, 243));
+        bgVistas.add(tbBorrador);
         tbBorrador.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Vista/borrador.png"))); // NOI18N
         tbBorrador.setText("Borrador");
         tbBorrador.setBorder(null);
@@ -115,11 +122,11 @@ public class PanelVistas extends javax.swing.JPanel {
                 tbBorradorActionPerformed(evt);
             }
         });
-        jPanel2.add(tbBorrador);
+        pBotonesPequennos.add(tbBorrador);
 
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTH;
-        contenido.add(jPanel2, gridBagConstraints);
+        contenido.add(pBotonesPequennos, gridBagConstraints);
 
         add(contenido, java.awt.BorderLayout.CENTER);
 
@@ -144,31 +151,35 @@ public class PanelVistas extends javax.swing.JPanel {
     }// </editor-fold>//GEN-END:initComponents
 
     private void tbDImpresionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tbDImpresionActionPerformed
-    this.tbDWeb.setSelected(false);
-    this.tbBorrador.setSelected(false);
+        this.tbDWeb.setSelected(false);
+        this.tbBorrador.setSelected(false);
     }//GEN-LAST:event_tbDImpresionActionPerformed
 
     private void tbDWebActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tbDWebActionPerformed
-    this. tbDImpresion.setSelected(false);
-    this.tbBorrador.setSelected(false);
+        this.tbDImpresion.setSelected(false);
+        this.tbBorrador.setSelected(false);
     }//GEN-LAST:event_tbDWebActionPerformed
 
     private void tbBorradorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tbBorradorActionPerformed
-    this. tbDImpresion.setSelected(false);
-    this.tbDWeb.setSelected(false);
+        this.tbDImpresion.setSelected(false);
+        this.tbDWeb.setSelected(false);
     }//GEN-LAST:event_tbBorradorActionPerformed
 
+    private void tbEsquemaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tbEsquemaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_tbEsquemaActionPerformed
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton bEsquema;
-    private javax.swing.JButton bLectura;
+    private javax.swing.ButtonGroup bgVistas;
     private javax.swing.JPanel contenido;
     private javax.swing.JLabel etiqueta;
     private javax.swing.JPanel etiquetaInferior;
-    private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel2;
+    private javax.swing.JPanel pBotonesGrandes;
+    private javax.swing.JPanel pBotonesPequennos;
     private javax.swing.JToggleButton tbBorrador;
     private javax.swing.JToggleButton tbDImpresion;
-    private javax.swing.JToggleButton tbDLectura;
     private javax.swing.JToggleButton tbDWeb;
+    private javax.swing.JToggleButton tbEsquema;
+    private javax.swing.JToggleButton tbMLectura;
     // End of variables declaration//GEN-END:variables
 }

@@ -11,43 +11,32 @@
     <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
     <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
     <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
-    <AuxValue name="designerSize" type="java.awt.Dimension" value="-84,-19,0,5,115,114,0,18,106,97,118,97,46,97,119,116,46,68,105,109,101,110,115,105,111,110,65,-114,-39,-41,-84,95,68,20,2,0,2,73,0,6,104,101,105,103,104,116,73,0,5,119,105,100,116,104,120,112,0,0,0,-78,0,0,3,80"/>
+    <AuxValue name="designerSize" type="java.awt.Dimension" value="-84,-19,0,5,115,114,0,18,106,97,118,97,46,97,119,116,46,68,105,109,101,110,115,105,111,110,65,-114,-39,-41,-84,95,68,20,2,0,2,73,0,6,104,101,105,103,104,116,73,0,5,119,105,100,116,104,120,112,0,0,0,-78,0,0,5,-36"/>
   </AuxValues>
 
   <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout"/>
   <SubComponents>
-    <Container class="javax.swing.JPanel" name="contenido">
+    <Container class="javax.swing.JScrollPane" name="contenido">
+      <Properties>
+        <Property name="horizontalScrollBarPolicy" type="int" value="32"/>
+        <Property name="verticalScrollBarPolicy" type="int" value="21"/>
+        <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+          <Dimension value="[100, 75]"/>
+        </Property>
+        <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+          <Dimension value="[100, 75]"/>
+        </Property>
+        <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+          <Dimension value="[100, 75]"/>
+        </Property>
+      </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
-          <BorderConstraints direction="Center"/>
+          <BorderConstraints direction="First"/>
         </Constraint>
       </Constraints>
 
-      <Layout>
-        <DimensionLayout dim="0">
-          <Group type="103" groupAlignment="0" attributes="0">
-              <EmptySpace min="0" pref="848" max="32767" attributes="0"/>
-              <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="1" attributes="0">
-                      <EmptySpace min="0" pref="6" max="32767" attributes="0"/>
-                      <Component id="jListEstilos" min="-2" pref="842" max="-2" attributes="0"/>
-                  </Group>
-              </Group>
-          </Group>
-        </DimensionLayout>
-        <DimensionLayout dim="1">
-          <Group type="103" groupAlignment="0" attributes="0">
-              <EmptySpace min="0" pref="163" max="32767" attributes="0"/>
-              <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="1" attributes="0">
-                      <EmptySpace max="32767" attributes="0"/>
-                      <Component id="jListEstilos" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace pref="7" max="32767" attributes="0"/>
-                  </Group>
-              </Group>
-          </Group>
-        </DimensionLayout>
-      </Layout>
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
       <SubComponents>
         <Component class="javax.swing.JList" name="jListEstilos">
           <Properties>
@@ -57,10 +46,13 @@
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="null"/>
             </Property>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Segoe UI" size="5" style="0"/>
+            </Property>
             <Property name="model" type="javax.swing.ListModel" editor="org.netbeans.modules.form.editors2.ListModelEditor">
-              <StringArray count="15">
+              <StringArray count="14">
                 <StringItem index="0" value="&lt;html&gt;&lt;body align=&quot;center&quot; style=&quot;background-color:#FFF&quot;&gt;&lt;p1&gt;&lt;font color=#000 size =&quot;+1&quot;&gt;&lt;h&gt;AaBbCcDd&lt;/h&gt;&lt;/font&gt;&lt;/p1&gt;&lt;br&gt;&lt;br&gt;&lt;p2&gt;&lt;font color=#706c6c size =&quot;+1&quot;&gt; &#xb6; Descripc...&lt;/font&gt;&lt;/p2&gt;&lt;/body&gt;&lt;/html&gt;"/>
-                <StringItem index="1" value="&lt;html&gt;&lt;body align=&quot;center&quot; style=&quot;background-color:#FFF&quot;&gt;&lt;p1&gt;&lt;font color=#000size =&quot;+1&quot;&gt;&lt;h&gt;AaBbCcDd&lt;/h&gt;&lt;/font&gt;&lt;/p1&gt;&lt;br&gt;&lt;br&gt;&lt;p2&gt;&lt;font color=#706c6c size =&quot;+1&quot;&gt; &#xb6; Normal&lt;/font&gt;&lt;/p2&gt;&lt;/body&gt;&lt;/html&gt;"/>
+                <StringItem index="1" value="&lt;html&gt;&lt;body align=&quot;center&quot; style=&quot;background-color:#FFF&quot;&gt;&lt;p1&gt;&lt;font color=#000size =&quot;+3&quot;&gt;&lt;h size=&quot;+2&quot;&gt;AaBbCcDd&lt;/h&gt;&lt;/font&gt;&lt;/p1&gt;&lt;br&gt;&lt;br&gt;&lt;p2&gt;&lt;font color=#706c6c size =&quot;+1&quot;&gt; &#xb6; Normal&lt;/font&gt;&lt;/p2&gt;&lt;/body&gt;&lt;/html&gt;"/>
                 <StringItem index="2" value="&lt;html&gt;&lt;body align=&quot;center&quot; style=&quot;background-color:#FFF&quot;&gt;&lt;p1&gt;&lt;font color=#000 size =&quot;+1&quot;&gt;&lt;h&gt;AaBbCcDd&lt;/h&gt;&lt;/font&gt;&lt;/p1&gt;&lt;br&gt;&lt;br&gt;&lt;p2&gt;&lt;font color=#706c6c size =&quot;+1&quot;&gt; &#xb6; P&#xe1;rrafo ...&lt;/font&gt;&lt;/p2&gt;&lt;/body&gt;&lt;/html&gt;"/>
                 <StringItem index="3" value="&lt;html&gt;&lt;body align=&quot;center&quot; style=&quot;background-color:#FFF&quot;&gt;&lt;head&gt;&lt;font color=#000 size =&quot;+1&quot;&gt;&lt;h&gt;AaBbCcDd&lt;/h&gt;&lt;/font&gt;&lt;/head&gt;&lt;br&gt;&lt;br&gt;&lt;p2&gt;&lt;font color=#706c6c size =&quot;+1&quot;&gt; &#xb6; Sin espa...&lt;/font&gt;&lt;/p2&gt;&lt;/body&gt;&lt;/html&gt;"/>
                 <StringItem index="4" value="&lt;html&gt;&lt;body align=&quot;center&quot; style=&quot;background-color:#FFF&quot;&gt;&lt;head&gt;&lt;font color=#000 size =&quot;+2&quot;&gt;&lt;h&gt;&lt;b&gt;AaBbCc&lt;/b&gt;&lt;/h&gt;&lt;/font&gt;&lt;/head&gt;&lt;br&gt;&lt;br&gt;&lt;p2&gt;&lt;font color=#706c6c size =&quot;+1&quot;&gt; T&#xed;tulo 1&lt;/font&gt;&lt;/p2&gt;&lt;/body&gt;&lt;/html&gt;"/>
@@ -73,14 +65,15 @@
                 <StringItem index="11" value="&lt;html&gt;&lt;body align=&quot;center&quot; style=&quot;background-color:#FFF&quot;&gt;&lt;head&gt;&lt;font color=#000 size =&quot;+1&quot;&gt;&lt;h&gt;AaBbCcDd&lt;/h&gt;&lt;/font&gt;&lt;/head&gt;&lt;br&gt;&lt;br&gt;&lt;p2&gt;&lt;font color=#706c6c size =&quot;+1&quot;&gt;Cita&lt;/font&gt;&lt;/p2&gt;&lt;/body&gt;&lt;/html&gt;"/>
                 <StringItem index="12" value="&lt;html&gt;&lt;body align=&quot;center&quot; style=&quot;background-color:#FFF&quot;&gt;&lt;head&gt;&lt;font font color=#377abe size =&quot;+1&quot;&gt;&lt;span style=&quot;text-decoration:overline&quot;&gt;&lt;u&gt;&lt;h&gt;&lt;em&gt;AaBbCcDd&lt;/em&gt;&lt;/h&gt;&lt;/u&gt;&lt;/span&gt;&lt;/font&gt;&lt;/head&gt;&lt;br&gt;&lt;br&gt;&lt;p2&gt;&lt;font color=#706c6c size =&quot;+1&quot;&gt;Cita desta...&lt;/font&gt;&lt;/p2&gt;&lt;/body&gt;&lt;/html&gt;"/>
                 <StringItem index="13" value="&lt;html&gt;&lt;body align=&quot;center&quot; style=&quot;background-color:#FFF&quot;&gt;&lt;head&gt;&lt;font font color=#000 size =&quot;+1&quot;&gt;&lt;h&gt;&lt;b&gt;&lt;em&gt;AaBbCcDd&lt;/em&gt;&lt;/b&gt;&lt;/h&gt;&lt;/font&gt;&lt;/head&gt;&lt;br&gt;&lt;br&gt;&lt;p2&gt;&lt;font color=#706c6c size =&quot;+1&quot;&gt;T&#xed;tulo del...&lt;/font&gt;&lt;/p2&gt;&lt;/body&gt;&lt;/html&gt;"/>
-                <StringItem index="14" value=" "/>
               </StringArray>
             </Property>
+            <Property name="selectionMode" type="int" value="1"/>
             <Property name="layoutOrientation" type="int" value="2"/>
+            <Property name="opaque" type="boolean" value="false"/>
             <Property name="selectionBackground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="66" green="66" red="66" type="rgb"/>
             </Property>
-            <Property name="visibleRowCount" type="int" value="2"/>
+            <Property name="visibleRowCount" type="int" value="1"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
@@ -89,6 +82,15 @@
       </SubComponents>
     </Container>
     <Container class="javax.swing.JPanel" name="etiquetaInferior">
+      <Properties>
+        <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+          <Dimension value="[213, 15]"/>
+        </Property>
+        <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+          <Dimension value="[213, 15]"/>
+        </Property>
+        <Property name="name" type="java.lang.String" value="" noResource="true"/>
+      </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
           <BorderConstraints direction="South"/>

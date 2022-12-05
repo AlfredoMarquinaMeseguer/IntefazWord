@@ -4,8 +4,6 @@
   <NonVisualComponents>
     <Component class="javax.swing.ButtonGroup" name="btgAlineacion">
     </Component>
-    <Component class="javax.swing.ButtonGroup" name="btgPuntos">
-    </Component>
   </NonVisualComponents>
   <Properties>
     <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
@@ -54,7 +52,7 @@
                   <Color blue="f2" green="f2" red="f2" type="rgb"/>
                 </Property>
                 <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
-                  <ComponentRef name="btgPuntos"/>
+                  <ComponentRef name="default"/>
                 </Property>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/images/Parrafo/ordenPuntos.png"/>
@@ -102,6 +100,9 @@
                   <Dimension value="[13, 25]"/>
                 </Property>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="tbOrdenPuntosFlechaActionPerformed"/>
+              </Events>
             </Component>
             <Component class="javax.swing.JToggleButton" name="tbOrdenNumeros">
               <Properties>
@@ -109,7 +110,7 @@
                   <Color blue="f2" green="f2" red="f2" type="rgb"/>
                 </Property>
                 <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
-                  <ComponentRef name="btgPuntos"/>
+                  <ComponentRef name="default"/>
                 </Property>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/images/Parrafo/ordenNumerado.png"/>
@@ -157,6 +158,9 @@
                   <Dimension value="[13, 25]"/>
                 </Property>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="tbOrdenNumerosFlechaActionPerformed"/>
+              </Events>
             </Component>
             <Component class="javax.swing.JButton" name="bOrdenFormato">
               <Properties>

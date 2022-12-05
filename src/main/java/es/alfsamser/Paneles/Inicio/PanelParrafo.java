@@ -21,6 +21,10 @@ public class PanelParrafo extends javax.swing.JPanel {
         ordenNumerosPresionado = false;
     }
 
+    private void toggle(javax.swing.JToggleButton este) {
+        este.setSelected(!este.isSelected());
+    }
+
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -32,7 +36,6 @@ public class PanelParrafo extends javax.swing.JPanel {
         java.awt.GridBagConstraints gridBagConstraints;
 
         btgAlineacion = new javax.swing.ButtonGroup();
-        btgPuntos = new javax.swing.ButtonGroup();
         contenido = new javax.swing.JPanel();
         linea1 = new javax.swing.JPanel();
         tbOrdenPuntos = new javax.swing.JToggleButton();
@@ -74,7 +77,6 @@ public class PanelParrafo extends javax.swing.JPanel {
         linea1.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 0, 5));
 
         tbOrdenPuntos.setBackground(new java.awt.Color(242, 242, 242));
-        btgPuntos.add(tbOrdenPuntos);
         tbOrdenPuntos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Parrafo/ordenPuntos.png"))); // NOI18N
         tbOrdenPuntos.setBorder(null);
         tbOrdenPuntos.setBorderPainted(false);
@@ -98,10 +100,14 @@ public class PanelParrafo extends javax.swing.JPanel {
         tbOrdenPuntosFlecha.setMinimumSize(new java.awt.Dimension(13, 25));
         tbOrdenPuntosFlecha.setOpaque(true);
         tbOrdenPuntosFlecha.setPreferredSize(new java.awt.Dimension(13, 25));
+        tbOrdenPuntosFlecha.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                tbOrdenPuntosFlechaActionPerformed(evt);
+            }
+        });
         linea1.add(tbOrdenPuntosFlecha);
 
         tbOrdenNumeros.setBackground(new java.awt.Color(242, 242, 242));
-        btgPuntos.add(tbOrdenNumeros);
         tbOrdenNumeros.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Parrafo/ordenNumerado.png"))); // NOI18N
         tbOrdenNumeros.setBorder(null);
         tbOrdenNumeros.setBorderPainted(false);
@@ -125,6 +131,11 @@ public class PanelParrafo extends javax.swing.JPanel {
         tbOrdenNumerosFlecha.setMinimumSize(new java.awt.Dimension(13, 25));
         tbOrdenNumerosFlecha.setOpaque(true);
         tbOrdenNumerosFlecha.setPreferredSize(new java.awt.Dimension(13, 25));
+        tbOrdenNumerosFlecha.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                tbOrdenNumerosFlechaActionPerformed(evt);
+            }
+        });
         linea1.add(tbOrdenNumerosFlecha);
 
         bOrdenFormato.setBackground(new java.awt.Color(242, 242, 242));
@@ -394,21 +405,17 @@ public class PanelParrafo extends javax.swing.JPanel {
     }//GEN-LAST:event_bLineaBordeFlechaActionPerformed
 
     private void tbOrdenPuntosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tbOrdenPuntosActionPerformed
-        if (tbOrdenPuntos.isSelected()) {
-            tbOrdenPuntos.setSelected(false);
-            tbOrdenPuntosFlecha.setSelected(false);
-        } else {
-            tbOrdenPuntosFlecha.setSelected(true);
-            tbOrdenNumerosFlecha.setSelected(false);
-        }
 
+        tbOrdenNumeros.setSelected(false);
+        tbOrdenPuntosFlecha.setSelected(tbOrdenPuntos.isSelected());
+        tbOrdenNumerosFlecha.setSelected(false);
     }//GEN-LAST:event_tbOrdenPuntosActionPerformed
 
     private void tbOrdenNumerosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tbOrdenNumerosActionPerformed
 
-        tbOrdenNumeros.setSelected(false);
+        tbOrdenPuntos.setSelected(false);
         tbOrdenPuntosFlecha.setSelected(false);
-        System.out.println("Algo");
+        tbOrdenNumerosFlecha.setSelected(tbOrdenNumeros.isSelected());
 
     }//GEN-LAST:event_tbOrdenNumerosActionPerformed
 
@@ -425,6 +432,20 @@ public class PanelParrafo extends javax.swing.JPanel {
         // TODO add your handling code here:
     }//GEN-LAST:event_bLineaBordeActionPerformed
 
+    private void tbOrdenPuntosFlechaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tbOrdenPuntosFlechaActionPerformed
+        tbOrdenNumeros.setSelected(false);
+        tbOrdenNumerosFlecha.setSelected(false);
+
+        tbOrdenPuntos.setSelected(tbOrdenPuntosFlecha.isSelected());
+    }//GEN-LAST:event_tbOrdenPuntosFlechaActionPerformed
+
+    private void tbOrdenNumerosFlechaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tbOrdenNumerosFlechaActionPerformed
+        tbOrdenPuntos.setSelected(false);
+        tbOrdenPuntosFlecha.setSelected(false);
+
+        tbOrdenNumeros.setSelected(tbOrdenNumerosFlecha.isSelected());
+    }//GEN-LAST:event_tbOrdenNumerosFlechaActionPerformed
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton bAaZ;
     private javax.swing.JButton bColorFondo;
@@ -438,7 +459,6 @@ public class PanelParrafo extends javax.swing.JPanel {
     private javax.swing.JButton bOrdenFormato;
     private javax.swing.JButton bOrdenFormatoFlecha;
     private javax.swing.ButtonGroup btgAlineacion;
-    private javax.swing.ButtonGroup btgPuntos;
     private javax.swing.JPanel contenido;
     private javax.swing.JLabel etiqueta;
     private javax.swing.JPanel etiquetaInferior;

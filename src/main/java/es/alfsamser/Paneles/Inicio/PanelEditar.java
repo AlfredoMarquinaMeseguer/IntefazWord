@@ -8,12 +8,12 @@ package es.alfsamser.Paneles.Inicio;
  *
  * @author Samu
  */
-public class PanelEdición extends javax.swing.JPanel {
+public class PanelEditar extends javax.swing.JPanel {
 
     /**
      * Creates new form Plantilla
      */
-    public PanelEdición() {
+    public PanelEditar() {
         initComponents();
         }
 

@@ -4,6 +4,8 @@
  */
 package es.alfsamser.Paneles;
 
+import java.awt.Font;
+
 /**
  *
  * @author Alfre
@@ -15,6 +17,14 @@ public class PanelSuperior extends javax.swing.JPanel {
      */
     public PanelSuperior() {
         initComponents();
+    }
+
+    public Font actualizarFuente() {
+        return this.panelFuente1.actulizarFuente();
+    }
+
+    public void actualizarZoom(int nuevoValor) {
+        this.planelZoom1.actualizarZoom(nuevoValor);
     }
 
     /**
@@ -35,6 +45,8 @@ public class PanelSuperior extends javax.swing.JPanel {
         panelFuente1 = new es.alfsamser.Paneles.Inicio.PanelFuente();
         jSeparator2 = new javax.swing.JSeparator();
         panelParrafo2 = new es.alfsamser.Paneles.Inicio.PanelParrafo();
+        jSeparator10 = new javax.swing.JSeparator();
+        panelEstilos1 = new es.alfsamser.Paneles.Inicio.PanelEstilos();
         jSeparator3 = new javax.swing.JSeparator();
         panelEditar1 = new es.alfsamser.Paneles.Inicio.PanelEditar();
         lInsertar = new javax.swing.JLabel();
@@ -46,9 +58,9 @@ public class PanelSuperior extends javax.swing.JPanel {
         pVista = new javax.swing.JPanel();
         panelVistas1 = new es.alfsamser.Paneles.Vista.PanelVistas();
         jSeparator4 = new javax.swing.JSeparator();
-        panelMovimientoPagina1 = new es.alfsamser.Paneles.Vista.PanelMovimientoPagina();
+        panelMovimientoPagina2 = new es.alfsamser.Paneles.Vista.PanelMovimientoPagina();
         jSeparator5 = new javax.swing.JSeparator();
-        jLabel7 = new javax.swing.JLabel();
+        panelMostrar1 = new es.alfsamser.Paneles.Vista.PanelMostrar();
         jSeparator6 = new javax.swing.JSeparator();
         planelZoom1 = new es.alfsamser.Paneles.Vista.PlanelZoom();
         jSeparator7 = new javax.swing.JSeparator();
@@ -82,7 +94,7 @@ public class PanelSuperior extends javax.swing.JPanel {
         pHome.add(jSeparator1);
 
         panelFuente1.setMinimumSize(new java.awt.Dimension(297, 90));
-        panelFuente1.setPreferredSize(new java.awt.Dimension(280, 90));
+        panelFuente1.setPreferredSize(new java.awt.Dimension(320, 90));
         pHome.add(panelFuente1);
 
         jSeparator2.setOrientation(javax.swing.SwingConstants.VERTICAL);
@@ -99,6 +111,19 @@ public class PanelSuperior extends javax.swing.JPanel {
         panelParrafo2.setPreferredSize(new java.awt.Dimension(254, 90));
         pHome.add(panelParrafo2);
 
+        jSeparator10.setOrientation(javax.swing.SwingConstants.VERTICAL);
+        jSeparator10.setAlignmentX(0.0F);
+        jSeparator10.setEnabled(false);
+        jSeparator10.setMaximumSize(new java.awt.Dimension(10, 90));
+        jSeparator10.setMinimumSize(new java.awt.Dimension(10, 30));
+        jSeparator10.setName(""); // NOI18N
+        jSeparator10.setPreferredSize(new java.awt.Dimension(10, 85));
+        jSeparator10.setRequestFocusEnabled(false);
+        pHome.add(jSeparator10);
+
+        panelEstilos1.setPreferredSize(new java.awt.Dimension(800, 90));
+        pHome.add(panelEstilos1);
+
         jSeparator3.setOrientation(javax.swing.SwingConstants.VERTICAL);
         jSeparator3.setAlignmentX(0.0F);
         jSeparator3.setEnabled(false);
@@ -108,6 +133,10 @@ public class PanelSuperior extends javax.swing.JPanel {
         jSeparator3.setPreferredSize(new java.awt.Dimension(10, 85));
         jSeparator3.setRequestFocusEnabled(false);
         pHome.add(jSeparator3);
+
+        panelEditar1.setMaximumSize(new java.awt.Dimension(150, 90));
+        panelEditar1.setMinimumSize(new java.awt.Dimension(150, 90));
+        panelEditar1.setPreferredSize(new java.awt.Dimension(100, 90));
         pHome.add(panelEditar1);
 
         jTabbedPane1.addTab("Inicio", pHome);
@@ -124,7 +153,9 @@ public class PanelSuperior extends javax.swing.JPanel {
         lDisposicion.setText("Disposición");
         jTabbedPane1.addTab("Disposición", lDisposicion);
 
+        lReferencias.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lReferencias.setText("Referencias");
+        lReferencias.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jTabbedPane1.addTab("Referencias", lReferencias);
 
         lCorrespondencias.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -138,8 +169,6 @@ public class PanelSuperior extends javax.swing.JPanel {
         java.awt.FlowLayout flowLayout2 = new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 0, 0);
         flowLayout2.setAlignOnBaseline(true);
         pVista.setLayout(flowLayout2);
-
-        panelVistas1.setPreferredSize(new java.awt.Dimension(200, 90));
         pVista.add(panelVistas1);
 
         jSeparator4.setOrientation(javax.swing.SwingConstants.VERTICAL);
@@ -151,8 +180,10 @@ public class PanelSuperior extends javax.swing.JPanel {
         jSeparator4.setRequestFocusEnabled(false);
         pVista.add(jSeparator4);
 
-        panelMovimientoPagina1.setPreferredSize(new java.awt.Dimension(125, 89));
-        pVista.add(panelMovimientoPagina1);
+        panelMovimientoPagina2.setMaximumSize(new java.awt.Dimension(125, 90));
+        panelMovimientoPagina2.setMinimumSize(new java.awt.Dimension(125, 90));
+        panelMovimientoPagina2.setPreferredSize(new java.awt.Dimension(125, 90));
+        pVista.add(panelMovimientoPagina2);
 
         jSeparator5.setOrientation(javax.swing.SwingConstants.VERTICAL);
         jSeparator5.setEnabled(false);
@@ -163,8 +194,8 @@ public class PanelSuperior extends javax.swing.JPanel {
         jSeparator5.setRequestFocusEnabled(false);
         pVista.add(jSeparator5);
 
-        jLabel7.setText("Mostrar");
-        pVista.add(jLabel7);
+        panelMostrar1.setPreferredSize(new java.awt.Dimension(140, 90));
+        pVista.add(panelMostrar1);
 
         jSeparator6.setOrientation(javax.swing.SwingConstants.VERTICAL);
         jSeparator6.setEnabled(false);
@@ -201,13 +232,15 @@ public class PanelSuperior extends javax.swing.JPanel {
 
         jTabbedPane1.addTab("Vista", pVista);
 
+        jTabbedPane1.setSelectedIndex(1);
+
         add(jTabbedPane1);
     }// </editor-fold>//GEN-END:initComponents
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel jLabel7;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JSeparator jSeparator1;
+    private javax.swing.JSeparator jSeparator10;
     private javax.swing.JSeparator jSeparator2;
     private javax.swing.JSeparator jSeparator3;
     private javax.swing.JSeparator jSeparator4;
@@ -226,9 +259,11 @@ public class PanelSuperior extends javax.swing.JPanel {
     private javax.swing.JPanel pHome;
     private javax.swing.JPanel pVista;
     private es.alfsamser.Paneles.Inicio.PanelEditar panelEditar1;
+    private es.alfsamser.Paneles.Inicio.PanelEstilos panelEstilos1;
     private es.alfsamser.Paneles.Inicio.PanelFuente panelFuente1;
     private es.alfsamser.Paneles.Vista.PanelModoOscuro panelModoOscuro1;
-    private es.alfsamser.Paneles.Vista.PanelMovimientoPagina panelMovimientoPagina1;
+    private es.alfsamser.Paneles.Vista.PanelMostrar panelMostrar1;
+    private es.alfsamser.Paneles.Vista.PanelMovimientoPagina panelMovimientoPagina2;
     private es.alfsamser.Paneles.Inicio.PanelParrafo panelParrafo2;
     private es.alfsamser.Paneles.Inicio.PanelPortapapeles panelPortapapeles1;
     private es.alfsamser.Paneles.Vista.PanelVistas panelVistas1;

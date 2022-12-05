@@ -29,10 +29,10 @@ public class PanelPortapapeles extends javax.swing.JPanel {
         java.awt.GridBagConstraints gridBagConstraints;
 
         contenido = new javax.swing.JPanel();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
+        bPegar = new javax.swing.JButton();
+        bCortar = new javax.swing.JButton();
+        bCopiar = new javax.swing.JButton();
+        bCopiarFormato = new javax.swing.JButton();
         etiquetaInferior = new javax.swing.JPanel();
         etiqueta = new javax.swing.JLabel();
         bIcono = new javax.swing.JButton();
@@ -43,44 +43,53 @@ public class PanelPortapapeles extends javax.swing.JPanel {
         contenido.setOpaque(false);
         contenido.setLayout(new java.awt.GridBagLayout());
 
-        jButton1.setBackground(new java.awt.Color(241, 241, 241));
-        jButton1.setForeground(new java.awt.Color(112, 108, 108));
-        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Portapapeles/Pegar36x36.png"))); // NOI18N
-        jButton1.setText("Pegar");
-        jButton1.setBorder(null);
-        jButton1.setHideActionText(true);
-        jButton1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButton1.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        bPegar.setBackground(new java.awt.Color(241, 241, 241));
+        bPegar.setForeground(new java.awt.Color(112, 108, 108));
+        bPegar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Portapapeles/Pegar36x36.png"))); // NOI18N
+        bPegar.setText("Pegar");
+        bPegar.setBorder(null);
+        bPegar.setEnabled(false);
+        bPegar.setHideActionText(true);
+        bPegar.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        bPegar.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridheight = 3;
         gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
         gridBagConstraints.weightx = 1.0;
         gridBagConstraints.weighty = 1.0;
         gridBagConstraints.insets = new java.awt.Insets(10, 10, 10, 10);
-        contenido.add(jButton1, gridBagConstraints);
+        contenido.add(bPegar, gridBagConstraints);
 
-        jButton2.setBackground(new java.awt.Color(241, 241, 241));
-        jButton2.setForeground(new java.awt.Color(112, 108, 108));
-        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Portapapeles/cortar18x18.png"))); // NOI18N
-        jButton2.setText("Cortar");
-        jButton2.setBorder(null);
-        jButton2.setEnabled(false);
-        jButton2.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        bCortar.setBackground(new java.awt.Color(241, 241, 241));
+        bCortar.setForeground(new java.awt.Color(112, 108, 108));
+        bCortar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Portapapeles/cortar18x18.png"))); // NOI18N
+        bCortar.setText("Cortar");
+        bCortar.setBorder(null);
+        bCortar.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        bCortar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bCortarActionPerformed(evt);
+            }
+        });
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
         gridBagConstraints.ipady = 5;
         gridBagConstraints.weightx = 1.0;
         gridBagConstraints.weighty = 1.0;
-        contenido.add(jButton2, gridBagConstraints);
+        contenido.add(bCortar, gridBagConstraints);
 
-        jButton3.setBackground(new java.awt.Color(241, 241, 241));
-        jButton3.setForeground(new java.awt.Color(112, 108, 108));
-        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Portapapeles/copiar18x18.png"))); // NOI18N
-        jButton3.setText("Copiar");
-        jButton3.setBorder(null);
-        jButton3.setEnabled(false);
-        jButton3.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        jButton3.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
+        bCopiar.setBackground(new java.awt.Color(241, 241, 241));
+        bCopiar.setForeground(new java.awt.Color(112, 108, 108));
+        bCopiar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Portapapeles/copiar18x18.png"))); // NOI18N
+        bCopiar.setText("Copiar");
+        bCopiar.setBorder(null);
+        bCopiar.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        bCopiar.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
+        bCopiar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bCopiarActionPerformed(evt);
+            }
+        });
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
         gridBagConstraints.gridy = 1;
@@ -88,19 +97,14 @@ public class PanelPortapapeles extends javax.swing.JPanel {
         gridBagConstraints.ipady = 5;
         gridBagConstraints.weightx = 1.0;
         gridBagConstraints.weighty = 1.0;
-        contenido.add(jButton3, gridBagConstraints);
+        contenido.add(bCopiar, gridBagConstraints);
 
-        jButton4.setBackground(new java.awt.Color(241, 241, 241));
-        jButton4.setForeground(new java.awt.Color(112, 108, 108));
-        jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Portapapeles/copiarFormato18x18.png"))); // NOI18N
-        jButton4.setText("Copiar formato");
-        jButton4.setBorder(null);
-        jButton4.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        jButton4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton4ActionPerformed(evt);
-            }
-        });
+        bCopiarFormato.setBackground(new java.awt.Color(241, 241, 241));
+        bCopiarFormato.setForeground(new java.awt.Color(112, 108, 108));
+        bCopiarFormato.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Portapapeles/copiarFormato18x18.png"))); // NOI18N
+        bCopiarFormato.setText("Copiar formato");
+        bCopiarFormato.setBorder(null);
+        bCopiarFormato.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
         gridBagConstraints.gridy = 2;
@@ -108,7 +112,7 @@ public class PanelPortapapeles extends javax.swing.JPanel {
         gridBagConstraints.ipady = 5;
         gridBagConstraints.weightx = 1.0;
         gridBagConstraints.weighty = 1.0;
-        contenido.add(jButton4, gridBagConstraints);
+        contenido.add(bCopiarFormato, gridBagConstraints);
 
         add(contenido, java.awt.BorderLayout.CENTER);
 
@@ -149,18 +153,22 @@ public class PanelPortapapeles extends javax.swing.JPanel {
         add(etiquetaInferior, java.awt.BorderLayout.SOUTH);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton4ActionPerformed
+    private void bCopiarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bCopiarActionPerformed
+        bPegar.setEnabled(true);
+    }//GEN-LAST:event_bCopiarActionPerformed
+
+    private void bCortarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bCortarActionPerformed
+        bPegar.setEnabled(true);
+    }//GEN-LAST:event_bCortarActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton bCopiar;
+    private javax.swing.JButton bCopiarFormato;
+    private javax.swing.JButton bCortar;
     private javax.swing.JButton bIcono;
+    private javax.swing.JButton bPegar;
     private javax.swing.JPanel contenido;
     private javax.swing.JLabel etiqueta;
     private javax.swing.JPanel etiquetaInferior;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
     // End of variables declaration//GEN-END:variables
 }

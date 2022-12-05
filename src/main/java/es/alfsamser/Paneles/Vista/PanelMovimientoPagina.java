@@ -15,7 +15,7 @@ public class PanelMovimientoPagina extends javax.swing.JPanel {
      */
     public PanelMovimientoPagina() {
         initComponents();
-       }
+    }
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -26,21 +26,26 @@ public class PanelMovimientoPagina extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        bgMovimientoPagina = new javax.swing.ButtonGroup();
+        bgMoviminetoPagina = new javax.swing.ButtonGroup();
         contenido = new javax.swing.JPanel();
         tbEditar = new javax.swing.JToggleButton();
         tbParalelo = new javax.swing.JToggleButton();
-        etiquetaInferior = new javax.swing.JPanel();
         etiqueta = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(243, 243, 243));
+        setMaximumSize(new java.awt.Dimension(150, 90));
+        setMinimumSize(new java.awt.Dimension(150, 90));
+        setPreferredSize(new java.awt.Dimension(150, 90));
         setLayout(new java.awt.BorderLayout());
 
         contenido.setBackground(new java.awt.Color(243, 243, 243));
-        contenido.setMaximumSize(new java.awt.Dimension(57, 57));
+        contenido.setMaximumSize(new java.awt.Dimension(84, 75));
+        contenido.setMinimumSize(new java.awt.Dimension(84, 75));
+        contenido.setPreferredSize(new java.awt.Dimension(84, 75));
         contenido.setLayout(new java.awt.GridLayout(1, 0));
 
         tbEditar.setBackground(new java.awt.Color(243, 243, 243));
+        bgMoviminetoPagina.add(tbEditar);
         tbEditar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Vista/Vertical.png"))); // NOI18N
         tbEditar.setText("Vertical");
         tbEditar.setBorder(null);
@@ -57,7 +62,7 @@ public class PanelMovimientoPagina extends javax.swing.JPanel {
         contenido.add(tbEditar);
 
         tbParalelo.setBackground(new java.awt.Color(243, 243, 243));
-        bgMovimientoPagina.add(tbParalelo);
+        bgMoviminetoPagina.add(tbParalelo);
         tbParalelo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Vista/Paralelo.png"))); // NOI18N
         tbParalelo.setText("<html><p1 align=\"center\"><p>En</p><p>paralelo</p></p1></html>");
         tbParalelo.setBorder(null);
@@ -83,35 +88,24 @@ public class PanelMovimientoPagina extends javax.swing.JPanel {
         etiqueta.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
         etiqueta.setFocusable(false);
         etiqueta.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        etiqueta.setPreferredSize(new java.awt.Dimension(200, 15));
-
-        javax.swing.GroupLayout etiquetaInferiorLayout = new javax.swing.GroupLayout(etiquetaInferior);
-        etiquetaInferior.setLayout(etiquetaInferiorLayout);
-        etiquetaInferiorLayout.setHorizontalGroup(
-            etiquetaInferiorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(etiqueta, javax.swing.GroupLayout.PREFERRED_SIZE, 203, javax.swing.GroupLayout.PREFERRED_SIZE)
-        );
-        etiquetaInferiorLayout.setVerticalGroup(
-            etiquetaInferiorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(etiqueta, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-        );
-
-        add(etiquetaInferior, java.awt.BorderLayout.SOUTH);
+        etiqueta.setMaximumSize(new java.awt.Dimension(0, 15));
+        etiqueta.setMinimumSize(new java.awt.Dimension(0, 15));
+        etiqueta.setPreferredSize(new java.awt.Dimension(0, 15));
+        add(etiqueta, java.awt.BorderLayout.SOUTH);
     }// </editor-fold>//GEN-END:initComponents
 
     private void tbParaleloActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tbParaleloActionPerformed
-     this.tbEditar.setSelected(false);
+        this.tbEditar.setSelected(false);
     }//GEN-LAST:event_tbParaleloActionPerformed
 
     private void tbEditarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tbEditarActionPerformed
-    this.tbParalelo.setSelected(false);
+        this.tbParalelo.setSelected(false);
     }//GEN-LAST:event_tbEditarActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.ButtonGroup bgMovimientoPagina;
+    private javax.swing.ButtonGroup bgMoviminetoPagina;
     private javax.swing.JPanel contenido;
     private javax.swing.JLabel etiqueta;
-    private javax.swing.JPanel etiquetaInferior;
     private javax.swing.JToggleButton tbEditar;
     private javax.swing.JToggleButton tbParalelo;
     // End of variables declaration//GEN-END:variables

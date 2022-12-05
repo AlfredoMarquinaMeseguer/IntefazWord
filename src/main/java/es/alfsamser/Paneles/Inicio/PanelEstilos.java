@@ -3,6 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JPanel.java to edit this template
  */
 package es.alfsamser.Paneles.Inicio;
+
 /**
  *
  * @author Samu
@@ -27,7 +28,7 @@ public class PanelEstilos extends javax.swing.JPanel {
     private void initComponents() {
         java.awt.GridBagConstraints gridBagConstraints;
 
-        contenido = new javax.swing.JPanel();
+        contenido = new javax.swing.JScrollPane();
         jListEstilos = new javax.swing.JList<>();
         etiquetaInferior = new javax.swing.JPanel();
         etiqueta = new javax.swing.JLabel();
@@ -35,39 +36,32 @@ public class PanelEstilos extends javax.swing.JPanel {
 
         setLayout(new java.awt.BorderLayout());
 
+        contenido.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_ALWAYS);
+        contenido.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
+        contenido.setMaximumSize(new java.awt.Dimension(100, 75));
+        contenido.setMinimumSize(new java.awt.Dimension(100, 75));
+        contenido.setPreferredSize(new java.awt.Dimension(100, 75));
+
         jListEstilos.setBackground(new java.awt.Color(243, 243, 243));
         jListEstilos.setBorder(null);
+        jListEstilos.setFont(new java.awt.Font("Segoe UI", 0, 5)); // NOI18N
         jListEstilos.setModel(new javax.swing.AbstractListModel<String>() {
-            String[] strings = { "<html><body align=\"center\" style=\"background-color:#FFF\"><p1><font color=#000 size =\"+1\"><h>AaBbCcDd</h></font></p1><br><br><p2><font color=#706c6c size =\"+1\"> ¶ Descripc...</font></p2></body></html>", "<html><body align=\"center\" style=\"background-color:#FFF\"><p1><font color=#000size =\"+1\"><h>AaBbCcDd</h></font></p1><br><br><p2><font color=#706c6c size =\"+1\"> ¶ Normal</font></p2></body></html>", "<html><body align=\"center\" style=\"background-color:#FFF\"><p1><font color=#000 size =\"+1\"><h>AaBbCcDd</h></font></p1><br><br><p2><font color=#706c6c size =\"+1\"> ¶ Párrafo ...</font></p2></body></html>", "<html><body align=\"center\" style=\"background-color:#FFF\"><head><font color=#000 size =\"+1\"><h>AaBbCcDd</h></font></head><br><br><p2><font color=#706c6c size =\"+1\"> ¶ Sin espa...</font></p2></body></html>", "<html><body align=\"center\" style=\"background-color:#FFF\"><head><font color=#000 size =\"+2\"><h><b>AaBbCc</b></h></font></head><br><br><p2><font color=#706c6c size =\"+1\"> Título 1</font></p2></body></html>", "<html><body align=\"center\" style=\"background-color:#FFF\"><head><font color=#000 size =\"+2\"><h><b>AaBbCc</b></h></font></head><br><br><p2><font color=#706c6c size =\"+1\"> Título</font></p2></body></html>", "<html><body align=\"center\" style=\"background-color:#FFF\"><head><font color=#000 size =\"+1\"><h>AaBbCcDd</h></font></head><br><br><p2><font color=#706c6c size =\"+1\"> Subtítulo</font></p2></body></html>", "<html><body align=\"center\" style=\"background-color:#FFF\"><head><font color=#000 size =\"+1\"><h><em>AaBbCcDd</em></h></font></head><br><br><p2><font color=#706c6c size =\"+1\">Énfasis sutil</font></p2></body></html>", "<html><body align=\"center\" style=\"background-color:#FFF\"><head><font color=#000 size =\"+1\"><h><b><em>AaBbCcDd</em></b></h></font></head><br><br><p2><font color=#706c6c size =\"+1\">Énfasis</font></p2></body></html>", "<html><body align=\"center\" style=\"background-color:#FFF\"><head><font color=#377abe size =\"+1\"><h><em>AaBbCcDd</em></h></font></head><br><br><p2><font color=#706c6c size =\"+1\">Énfasis int...</font></p2></body></html>", "<html><body align=\"center\" style=\"background-color:#FFF\"><head><font color=#000 size =\"+1\"><h><b>AaBbCcDd</b></h></font></head><br><br><p2><font color=#706c6c size =\"+1\">Texto en n...</font></p2></body></html>", "<html><body align=\"center\" style=\"background-color:#FFF\"><head><font color=#000 size =\"+1\"><h>AaBbCcDd</h></font></head><br><br><p2><font color=#706c6c size =\"+1\">Cita</font></p2></body></html>", "<html><body align=\"center\" style=\"background-color:#FFF\"><head><font font color=#377abe size =\"+1\"><span style=\"text-decoration:overline\"><u><h><em>AaBbCcDd</em></h></u></span></font></head><br><br><p2><font color=#706c6c size =\"+1\">Cita desta...</font></p2></body></html>", "<html><body align=\"center\" style=\"background-color:#FFF\"><head><font font color=#000 size =\"+1\"><h><b><em>AaBbCcDd</em></b></h></font></head><br><br><p2><font color=#706c6c size =\"+1\">Título del...</font></p2></body></html>", " " };
+            String[] strings = { "<html><body align=\"center\" style=\"background-color:#FFF\"><p1><font color=#000 size =\"+1\"><h>AaBbCcDd</h></font></p1><br><br><p2><font color=#706c6c size =\"+1\"> ¶ Descripc...</font></p2></body></html>", "<html><body align=\"center\" style=\"background-color:#FFF\"><p1><font color=#000size =\"+3\"><h size=\"+2\">AaBbCcDd</h></font></p1><br><br><p2><font color=#706c6c size =\"+1\"> ¶ Normal</font></p2></body></html>", "<html><body align=\"center\" style=\"background-color:#FFF\"><p1><font color=#000 size =\"+1\"><h>AaBbCcDd</h></font></p1><br><br><p2><font color=#706c6c size =\"+1\"> ¶ Párrafo ...</font></p2></body></html>", "<html><body align=\"center\" style=\"background-color:#FFF\"><head><font color=#000 size =\"+1\"><h>AaBbCcDd</h></font></head><br><br><p2><font color=#706c6c size =\"+1\"> ¶ Sin espa...</font></p2></body></html>", "<html><body align=\"center\" style=\"background-color:#FFF\"><head><font color=#000 size =\"+2\"><h><b>AaBbCc</b></h></font></head><br><br><p2><font color=#706c6c size =\"+1\"> Título 1</font></p2></body></html>", "<html><body align=\"center\" style=\"background-color:#FFF\"><head><font color=#000 size =\"+2\"><h><b>AaBbCc</b></h></font></head><br><br><p2><font color=#706c6c size =\"+1\"> Título</font></p2></body></html>", "<html><body align=\"center\" style=\"background-color:#FFF\"><head><font color=#000 size =\"+1\"><h>AaBbCcDd</h></font></head><br><br><p2><font color=#706c6c size =\"+1\"> Subtítulo</font></p2></body></html>", "<html><body align=\"center\" style=\"background-color:#FFF\"><head><font color=#000 size =\"+1\"><h><em>AaBbCcDd</em></h></font></head><br><br><p2><font color=#706c6c size =\"+1\">Énfasis sutil</font></p2></body></html>", "<html><body align=\"center\" style=\"background-color:#FFF\"><head><font color=#000 size =\"+1\"><h><b><em>AaBbCcDd</em></b></h></font></head><br><br><p2><font color=#706c6c size =\"+1\">Énfasis</font></p2></body></html>", "<html><body align=\"center\" style=\"background-color:#FFF\"><head><font color=#377abe size =\"+1\"><h><em>AaBbCcDd</em></h></font></head><br><br><p2><font color=#706c6c size =\"+1\">Énfasis int...</font></p2></body></html>", "<html><body align=\"center\" style=\"background-color:#FFF\"><head><font color=#000 size =\"+1\"><h><b>AaBbCcDd</b></h></font></head><br><br><p2><font color=#706c6c size =\"+1\">Texto en n...</font></p2></body></html>", "<html><body align=\"center\" style=\"background-color:#FFF\"><head><font color=#000 size =\"+1\"><h>AaBbCcDd</h></font></head><br><br><p2><font color=#706c6c size =\"+1\">Cita</font></p2></body></html>", "<html><body align=\"center\" style=\"background-color:#FFF\"><head><font font color=#377abe size =\"+1\"><span style=\"text-decoration:overline\"><u><h><em>AaBbCcDd</em></h></u></span></font></head><br><br><p2><font color=#706c6c size =\"+1\">Cita desta...</font></p2></body></html>", "<html><body align=\"center\" style=\"background-color:#FFF\"><head><font font color=#000 size =\"+1\"><h><b><em>AaBbCcDd</em></b></h></font></head><br><br><p2><font color=#706c6c size =\"+1\">Título del...</font></p2></body></html>" };
             public int getSize() { return strings.length; }
             public String getElementAt(int i) { return strings[i]; }
         });
+        jListEstilos.setSelectionMode(javax.swing.ListSelectionModel.SINGLE_INTERVAL_SELECTION);
         jListEstilos.setLayoutOrientation(javax.swing.JList.HORIZONTAL_WRAP);
+        jListEstilos.setOpaque(false);
         jListEstilos.setSelectionBackground(new java.awt.Color(102, 102, 102));
-        jListEstilos.setVisibleRowCount(2);
+        jListEstilos.setVisibleRowCount(1);
+        contenido.setViewportView(jListEstilos);
 
-        javax.swing.GroupLayout contenidoLayout = new javax.swing.GroupLayout(contenido);
-        contenido.setLayout(contenidoLayout);
-        contenidoLayout.setHorizontalGroup(
-            contenidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 848, Short.MAX_VALUE)
-            .addGroup(contenidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, contenidoLayout.createSequentialGroup()
-                    .addGap(0, 6, Short.MAX_VALUE)
-                    .addComponent(jListEstilos, javax.swing.GroupLayout.PREFERRED_SIZE, 842, javax.swing.GroupLayout.PREFERRED_SIZE)))
-        );
-        contenidoLayout.setVerticalGroup(
-            contenidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 163, Short.MAX_VALUE)
-            .addGroup(contenidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, contenidoLayout.createSequentialGroup()
-                    .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jListEstilos)
-                    .addContainerGap(7, Short.MAX_VALUE)))
-        );
+        add(contenido, java.awt.BorderLayout.PAGE_START);
 
-        add(contenido, java.awt.BorderLayout.CENTER);
-
+        etiquetaInferior.setMaximumSize(new java.awt.Dimension(213, 15));
+        etiquetaInferior.setMinimumSize(new java.awt.Dimension(213, 15));
+        etiquetaInferior.setName(""); // NOI18N
         etiquetaInferior.setLayout(new java.awt.GridBagLayout());
 
         etiqueta.setForeground(new java.awt.Color(112, 108, 108));
@@ -102,7 +96,7 @@ public class PanelEstilos extends javax.swing.JPanel {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton bIcono;
-    private javax.swing.JPanel contenido;
+    private javax.swing.JScrollPane contenido;
     private javax.swing.JLabel etiqueta;
     private javax.swing.JPanel etiquetaInferior;
     private javax.swing.JList<String> jListEstilos;

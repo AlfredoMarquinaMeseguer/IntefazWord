@@ -17,7 +17,7 @@
     <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
     <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
     <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
-    <AuxValue name="designerSize" type="java.awt.Dimension" value="-84,-19,0,5,115,114,0,18,106,97,118,97,46,97,119,116,46,68,105,109,101,110,115,105,111,110,65,-114,-39,-41,-84,95,68,20,2,0,2,73,0,6,104,101,105,103,104,116,73,0,5,119,105,100,116,104,120,112,0,0,0,124,0,0,5,-92"/>
+    <AuxValue name="designerSize" type="java.awt.Dimension" value="-84,-19,0,5,115,114,0,18,106,97,118,97,46,97,119,116,46,68,105,109,101,110,115,105,111,110,65,-114,-39,-41,-84,95,68,20,2,0,2,73,0,6,104,101,105,103,104,116,73,0,5,119,105,100,116,104,120,112,0,0,0,124,0,0,6,-25"/>
   </AuxValues>
 
   <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBoxLayout"/>
@@ -30,6 +30,7 @@
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="ff" green="ff" red="ff" type="rgb"/>
         </Property>
+        <Property name="selectedIndex" type="int" value="1"/>
       </Properties>
 
       <Layout class="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout"/>
@@ -89,7 +90,7 @@
                   <Dimension value="[297, 90]"/>
                 </Property>
                 <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                  <Dimension value="[280, 90]"/>
+                  <Dimension value="[320, 90]"/>
                 </Property>
               </Properties>
             </Component>
@@ -121,6 +122,31 @@
                 </Property>
               </Properties>
             </Component>
+            <Component class="javax.swing.JSeparator" name="jSeparator10">
+              <Properties>
+                <Property name="orientation" type="int" value="1"/>
+                <Property name="alignmentX" type="float" value="0.0"/>
+                <Property name="enabled" type="boolean" value="false"/>
+                <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                  <Dimension value="[10, 90]"/>
+                </Property>
+                <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                  <Dimension value="[10, 30]"/>
+                </Property>
+                <Property name="name" type="java.lang.String" value="" noResource="true"/>
+                <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                  <Dimension value="[10, 85]"/>
+                </Property>
+                <Property name="requestFocusEnabled" type="boolean" value="false"/>
+              </Properties>
+            </Component>
+            <Component class="es.alfsamser.Paneles.Inicio.PanelEstilos" name="panelEstilos1">
+              <Properties>
+                <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                  <Dimension value="[800, 90]"/>
+                </Property>
+              </Properties>
+            </Component>
             <Component class="javax.swing.JSeparator" name="jSeparator3">
               <Properties>
                 <Property name="orientation" type="int" value="1"/>
@@ -140,6 +166,17 @@
               </Properties>
             </Component>
             <Component class="es.alfsamser.Paneles.Inicio.PanelEditar" name="panelEditar1">
+              <Properties>
+                <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                  <Dimension value="[150, 90]"/>
+                </Property>
+                <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                  <Dimension value="[150, 90]"/>
+                </Property>
+                <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                  <Dimension value="[100, 90]"/>
+                </Property>
+              </Properties>
             </Component>
           </SubComponents>
           <LayoutCode>
@@ -293,7 +330,39 @@
                 <CodeMethod name="add" class="java.awt.Container" parameterTypes="java.awt.Component"/>
               </StatementProvider>
               <Parameters>
-                <CodeExpression id="12_jSeparator3">
+                <CodeExpression id="12_jSeparator10">
+                  <CodeVariable name="jSeparator10" type="8194" declaredType="javax.swing.JSeparator"/>
+                  <ExpressionOrigin>
+                    <ExpressionProvider type="ComponentRef">
+                      <ComponentRef name="jSeparator10"/>
+                    </ExpressionProvider>
+                  </ExpressionOrigin>
+                </CodeExpression>
+              </Parameters>
+            </CodeStatement>
+            <CodeStatement>
+              <CodeExpression id="6_pHome"/>
+              <StatementProvider type="CodeMethod">
+                <CodeMethod name="add" class="java.awt.Container" parameterTypes="java.awt.Component"/>
+              </StatementProvider>
+              <Parameters>
+                <CodeExpression id="13_panelEstilos1">
+                  <CodeVariable name="panelEstilos1" type="8194" declaredType="es.alfsamser.Paneles.Inicio.PanelEstilos"/>
+                  <ExpressionOrigin>
+                    <ExpressionProvider type="ComponentRef">
+                      <ComponentRef name="panelEstilos1"/>
+                    </ExpressionProvider>
+                  </ExpressionOrigin>
+                </CodeExpression>
+              </Parameters>
+            </CodeStatement>
+            <CodeStatement>
+              <CodeExpression id="6_pHome"/>
+              <StatementProvider type="CodeMethod">
+                <CodeMethod name="add" class="java.awt.Container" parameterTypes="java.awt.Component"/>
+              </StatementProvider>
+              <Parameters>
+                <CodeExpression id="14_jSeparator3">
                   <CodeVariable name="jSeparator3" type="8194" declaredType="javax.swing.JSeparator"/>
                   <ExpressionOrigin>
                     <ExpressionProvider type="ComponentRef">
@@ -309,7 +378,7 @@
                 <CodeMethod name="add" class="java.awt.Container" parameterTypes="java.awt.Component"/>
               </StatementProvider>
               <Parameters>
-                <CodeExpression id="13_panelEditar1">
+                <CodeExpression id="15_panelEditar1">
                   <CodeVariable name="panelEditar1" type="8194" declaredType="es.alfsamser.Paneles.Inicio.PanelEditar"/>
                   <ExpressionOrigin>
                     <ExpressionProvider type="ComponentRef">
@@ -362,7 +431,9 @@
         </Component>
         <Component class="javax.swing.JLabel" name="lReferencias">
           <Properties>
+            <Property name="horizontalAlignment" type="int" value="0"/>
             <Property name="text" type="java.lang.String" value="Referencias"/>
+            <Property name="horizontalTextPosition" type="int" value="0"/>
           </Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
@@ -408,11 +479,6 @@
           </Constraints>
           <SubComponents>
             <Component class="es.alfsamser.Paneles.Vista.PanelVistas" name="panelVistas1">
-              <Properties>
-                <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                  <Dimension value="[200, 90]"/>
-                </Property>
-              </Properties>
             </Component>
             <Component class="javax.swing.JSeparator" name="jSeparator4">
               <Properties>
@@ -431,10 +497,16 @@
                 <Property name="requestFocusEnabled" type="boolean" value="false"/>
               </Properties>
             </Component>
-            <Component class="es.alfsamser.Paneles.Vista.PanelMovimientoPagina" name="panelMovimientoPagina1">
+            <Component class="es.alfsamser.Paneles.Vista.PanelMovimientoPagina" name="panelMovimientoPagina2">
               <Properties>
+                <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                  <Dimension value="[125, 90]"/>
+                </Property>
+                <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                  <Dimension value="[125, 90]"/>
+                </Property>
                 <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                  <Dimension value="[125, 89]"/>
+                  <Dimension value="[125, 90]"/>
                 </Property>
               </Properties>
             </Component>
@@ -455,9 +527,11 @@
                 <Property name="requestFocusEnabled" type="boolean" value="false"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="jLabel7">
+            <Component class="es.alfsamser.Paneles.Vista.PanelMostrar" name="panelMostrar1">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Mostrar"/>
+                <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                  <Dimension value="[140, 90]"/>
+                </Property>
               </Properties>
             </Component>
             <Component class="javax.swing.JSeparator" name="jSeparator6">
@@ -528,24 +602,24 @@
           </SubComponents>
           <LayoutCode>
             <CodeStatement>
-              <CodeExpression id="14_flowLayout2">
+              <CodeExpression id="16_flowLayout2">
                 <CodeVariable name="flowLayout2" type="4096" declaredType="java.awt.FlowLayout"/>
                 <ExpressionOrigin>
                   <ExpressionProvider type="CodeConstructor">
                     <CodeConstructor class="java.awt.FlowLayout" parameterTypes="int, int, int"/>
                   </ExpressionProvider>
                   <Parameters>
-                    <CodeExpression id="15">
-                      <ExpressionOrigin>
-                        <Value type="int" value="0"/>
-                      </ExpressionOrigin>
-                    </CodeExpression>
-                    <CodeExpression id="16">
-                      <ExpressionOrigin>
-                        <Value type="int" value="0"/>
-                      </ExpressionOrigin>
-                    </CodeExpression>
                     <CodeExpression id="17">
+                      <ExpressionOrigin>
+                        <Value type="int" value="0"/>
+                      </ExpressionOrigin>
+                    </CodeExpression>
+                    <CodeExpression id="18">
+                      <ExpressionOrigin>
+                        <Value type="int" value="0"/>
+                      </ExpressionOrigin>
+                    </CodeExpression>
+                    <CodeExpression id="19">
                       <ExpressionOrigin>
                         <Value type="int" value="0"/>
                       </ExpressionOrigin>
@@ -554,21 +628,21 @@
                 </ExpressionOrigin>
               </CodeExpression>
               <StatementProvider type="CodeExpression">
-                <CodeExpression id="14_flowLayout2"/>
+                <CodeExpression id="16_flowLayout2"/>
               </StatementProvider>
               <Parameters>
-                <CodeExpression id="15"/>
-                <CodeExpression id="16"/>
                 <CodeExpression id="17"/>
+                <CodeExpression id="18"/>
+                <CodeExpression id="19"/>
               </Parameters>
             </CodeStatement>
             <CodeStatement>
-              <CodeExpression id="14_flowLayout2"/>
+              <CodeExpression id="16_flowLayout2"/>
               <StatementProvider type="CodeMethod">
                 <CodeMethod name="setAlignOnBaseline" class="java.awt.FlowLayout" parameterTypes="boolean"/>
               </StatementProvider>
               <Parameters>
-                <CodeExpression id="18">
+                <CodeExpression id="20">
                   <ExpressionOrigin>
                     <Value type="boolean" value="true"/>
                   </ExpressionOrigin>
@@ -576,7 +650,7 @@
               </Parameters>
             </CodeStatement>
             <CodeStatement>
-              <CodeExpression id="19_pVista">
+              <CodeExpression id="21_pVista">
                 <CodeVariable name="pVista" type="8194" declaredType="javax.swing.JPanel"/>
                 <ExpressionOrigin>
                   <ExpressionProvider type="ComponentRef">
@@ -588,16 +662,16 @@
                 <CodeMethod name="setLayout" class="java.awt.Container" parameterTypes="java.awt.LayoutManager"/>
               </StatementProvider>
               <Parameters>
-                <CodeExpression id="14_flowLayout2"/>
+                <CodeExpression id="16_flowLayout2"/>
               </Parameters>
             </CodeStatement>
             <CodeStatement>
-              <CodeExpression id="19_pVista"/>
+              <CodeExpression id="21_pVista"/>
               <StatementProvider type="CodeMethod">
                 <CodeMethod name="add" class="java.awt.Container" parameterTypes="java.awt.Component"/>
               </StatementProvider>
               <Parameters>
-                <CodeExpression id="20_panelVistas1">
+                <CodeExpression id="22_panelVistas1">
                   <CodeVariable name="panelVistas1" type="8194" declaredType="es.alfsamser.Paneles.Vista.PanelVistas"/>
                   <ExpressionOrigin>
                     <ExpressionProvider type="ComponentRef">
@@ -608,12 +682,12 @@
               </Parameters>
             </CodeStatement>
             <CodeStatement>
-              <CodeExpression id="19_pVista"/>
+              <CodeExpression id="21_pVista"/>
               <StatementProvider type="CodeMethod">
                 <CodeMethod name="add" class="java.awt.Container" parameterTypes="java.awt.Component"/>
               </StatementProvider>
               <Parameters>
-                <CodeExpression id="21_jSeparator4">
+                <CodeExpression id="23_jSeparator4">
                   <CodeVariable name="jSeparator4" type="8194" declaredType="javax.swing.JSeparator"/>
                   <ExpressionOrigin>
                     <ExpressionProvider type="ComponentRef">
@@ -624,28 +698,28 @@
               </Parameters>
             </CodeStatement>
             <CodeStatement>
-              <CodeExpression id="19_pVista"/>
+              <CodeExpression id="21_pVista"/>
               <StatementProvider type="CodeMethod">
                 <CodeMethod name="add" class="java.awt.Container" parameterTypes="java.awt.Component"/>
               </StatementProvider>
               <Parameters>
-                <CodeExpression id="22_panelMovimientoPagina1">
-                  <CodeVariable name="panelMovimientoPagina1" type="8194" declaredType="es.alfsamser.Paneles.Vista.PanelMovimientoPagina"/>
+                <CodeExpression id="24_panelMovimientoPagina2">
+                  <CodeVariable name="panelMovimientoPagina2" type="8194" declaredType="es.alfsamser.Paneles.Vista.PanelMovimientoPagina"/>
                   <ExpressionOrigin>
                     <ExpressionProvider type="ComponentRef">
-                      <ComponentRef name="panelMovimientoPagina1"/>
+                      <ComponentRef name="panelMovimientoPagina2"/>
                     </ExpressionProvider>
                   </ExpressionOrigin>
                 </CodeExpression>
               </Parameters>
             </CodeStatement>
             <CodeStatement>
-              <CodeExpression id="19_pVista"/>
+              <CodeExpression id="21_pVista"/>
               <StatementProvider type="CodeMethod">
                 <CodeMethod name="add" class="java.awt.Container" parameterTypes="java.awt.Component"/>
               </StatementProvider>
               <Parameters>
-                <CodeExpression id="23_jSeparator5">
+                <CodeExpression id="25_jSeparator5">
                   <CodeVariable name="jSeparator5" type="8194" declaredType="javax.swing.JSeparator"/>
                   <ExpressionOrigin>
                     <ExpressionProvider type="ComponentRef">
@@ -656,28 +730,28 @@
               </Parameters>
             </CodeStatement>
             <CodeStatement>
-              <CodeExpression id="19_pVista"/>
+              <CodeExpression id="21_pVista"/>
               <StatementProvider type="CodeMethod">
                 <CodeMethod name="add" class="java.awt.Container" parameterTypes="java.awt.Component"/>
               </StatementProvider>
               <Parameters>
-                <CodeExpression id="24_jLabel7">
-                  <CodeVariable name="jLabel7" type="8194" declaredType="javax.swing.JLabel"/>
+                <CodeExpression id="26_panelMostrar1">
+                  <CodeVariable name="panelMostrar1" type="8194" declaredType="es.alfsamser.Paneles.Vista.PanelMostrar"/>
                   <ExpressionOrigin>
                     <ExpressionProvider type="ComponentRef">
-                      <ComponentRef name="jLabel7"/>
+                      <ComponentRef name="panelMostrar1"/>
                     </ExpressionProvider>
                   </ExpressionOrigin>
                 </CodeExpression>
               </Parameters>
             </CodeStatement>
             <CodeStatement>
-              <CodeExpression id="19_pVista"/>
+              <CodeExpression id="21_pVista"/>
               <StatementProvider type="CodeMethod">
                 <CodeMethod name="add" class="java.awt.Container" parameterTypes="java.awt.Component"/>
               </StatementProvider>
               <Parameters>
-                <CodeExpression id="25_jSeparator6">
+                <CodeExpression id="27_jSeparator6">
                   <CodeVariable name="jSeparator6" type="8194" declaredType="javax.swing.JSeparator"/>
                   <ExpressionOrigin>
                     <ExpressionProvider type="ComponentRef">
@@ -688,12 +762,12 @@
               </Parameters>
             </CodeStatement>
             <CodeStatement>
-              <CodeExpression id="19_pVista"/>
+              <CodeExpression id="21_pVista"/>
               <StatementProvider type="CodeMethod">
                 <CodeMethod name="add" class="java.awt.Container" parameterTypes="java.awt.Component"/>
               </StatementProvider>
               <Parameters>
-                <CodeExpression id="26_planelZoom1">
+                <CodeExpression id="28_planelZoom1">
                   <CodeVariable name="planelZoom1" type="8194" declaredType="es.alfsamser.Paneles.Vista.PlanelZoom"/>
                   <ExpressionOrigin>
                     <ExpressionProvider type="ComponentRef">
@@ -704,12 +778,12 @@
               </Parameters>
             </CodeStatement>
             <CodeStatement>
-              <CodeExpression id="19_pVista"/>
+              <CodeExpression id="21_pVista"/>
               <StatementProvider type="CodeMethod">
                 <CodeMethod name="add" class="java.awt.Container" parameterTypes="java.awt.Component"/>
               </StatementProvider>
               <Parameters>
-                <CodeExpression id="27_jSeparator7">
+                <CodeExpression id="29_jSeparator7">
                   <CodeVariable name="jSeparator7" type="8194" declaredType="javax.swing.JSeparator"/>
                   <ExpressionOrigin>
                     <ExpressionProvider type="ComponentRef">
@@ -720,12 +794,12 @@
               </Parameters>
             </CodeStatement>
             <CodeStatement>
-              <CodeExpression id="19_pVista"/>
+              <CodeExpression id="21_pVista"/>
               <StatementProvider type="CodeMethod">
                 <CodeMethod name="add" class="java.awt.Container" parameterTypes="java.awt.Component"/>
               </StatementProvider>
               <Parameters>
-                <CodeExpression id="28_panelModoOscuro1">
+                <CodeExpression id="30_panelModoOscuro1">
                   <CodeVariable name="panelModoOscuro1" type="8194" declaredType="es.alfsamser.Paneles.Vista.PanelModoOscuro"/>
                   <ExpressionOrigin>
                     <ExpressionProvider type="ComponentRef">
@@ -736,12 +810,12 @@
               </Parameters>
             </CodeStatement>
             <CodeStatement>
-              <CodeExpression id="19_pVista"/>
+              <CodeExpression id="21_pVista"/>
               <StatementProvider type="CodeMethod">
                 <CodeMethod name="add" class="java.awt.Container" parameterTypes="java.awt.Component"/>
               </StatementProvider>
               <Parameters>
-                <CodeExpression id="29_jSeparator8">
+                <CodeExpression id="31_jSeparator8">
                   <CodeVariable name="jSeparator8" type="8194" declaredType="javax.swing.JSeparator"/>
                   <ExpressionOrigin>
                     <ExpressionProvider type="ComponentRef">

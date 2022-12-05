@@ -4,7 +4,16 @@
  */
 package es.alfsamser.interfazwordmaven;
 
+import com.formdev.flatlaf.FlatDarkLaf;
+import com.formdev.flatlaf.FlatLightLaf;
+import static java.awt.Frame.NORMAL;
+import java.awt.event.ActionEvent;
+import java.awt.event.KeyEvent;
+import javax.swing.AbstractAction;
+import javax.swing.JComponent;
+import javax.swing.KeyStroke;
 import javax.swing.UIManager;
+import javax.swing.UIManager.LookAndFeelInfo;
 
 /**
  *
@@ -17,7 +26,6 @@ public class pruebas extends javax.swing.JFrame {
      */
     public pruebas() {
         initComponents();
-
     }
 
     /**
@@ -29,13 +37,10 @@ public class pruebas extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jComboBox1 = new javax.swing.JComboBox<>();
-        panelFuente1 = new es.alfsamser.Paneles.Inicio.PanelFuente();
-
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        planelZoom1 = new es.alfsamser.Paneles.Vista.PlanelZoom();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        getContentPane().add(panelFuente1, java.awt.BorderLayout.CENTER);
+        getContentPane().add(planelZoom1, java.awt.BorderLayout.CENTER);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -44,13 +49,11 @@ public class pruebas extends javax.swing.JFrame {
      * @param args the command line arguments
      */
     public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html
-         */
-
-        //</editor-fold>
+        try {
+            UIManager.setLookAndFeel(new FlatLightLaf());
+        } catch (Exception ex) {
+            System.err.println("Failed to initialize LaF");
+        }
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
@@ -62,7 +65,6 @@ public class pruebas extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JComboBox<String> jComboBox1;
-    private es.alfsamser.Paneles.Inicio.PanelFuente panelFuente1;
+    private es.alfsamser.Paneles.Vista.PlanelZoom planelZoom1;
     // End of variables declaration//GEN-END:variables
 }
