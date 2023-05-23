@@ -121,7 +121,7 @@ public class PanelSuperior extends javax.swing.JPanel {
         jSeparator10.setRequestFocusEnabled(false);
         pHome.add(jSeparator10);
 
-        panelEstilos1.setPreferredSize(new java.awt.Dimension(800, 90));
+        panelEstilos1.setPreferredSize(new java.awt.Dimension(600, 90));
         pHome.add(panelEstilos1);
 
         jSeparator3.setOrientation(javax.swing.SwingConstants.VERTICAL);
